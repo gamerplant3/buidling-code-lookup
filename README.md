@@ -51,7 +51,7 @@ docs/             Free external data sources guide
 public/data/      Demo JSON served to browser
 ```
 
-## Data integrations (see `docs/free-data-sources.md`)
+## Data integrations (see `docs/data-sources.md`)
 
 - **Geocode enrich:** `/api/site-enrich` — climate snap/IDW hint, elevation, Toronto/Ottawa zoning, OSM frontage (one call after geocode).
 - **Zoning:** Toronto & Ottawa ArcGIS; demo polygons elsewhere.
