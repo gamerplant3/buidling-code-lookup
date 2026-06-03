@@ -1,0 +1,12 @@
+This project is for digitizing historic snow building code information and keying to geographic locations in Canada. I’ve since spoken with a client who would potentially be able to leverage that information in a portfolio review of retail clients (like TD, BMO, Shell, etc.) to determine if the roofs of their buildings are likely to have adequate reserve capacity to support solar panels. No contract as yet, but I prepared a flow chart to show how we would be able to assess the possibility of reserve roof capacity by knowing a few basic things about the sites. See attached.
+ 
+The yellow items are the main basic inputs. There would be others that are mostly static or optionally updated. The algorithm would also need to include the code equations corresponding to each particular code to go from site climate data to design flat roof snow (you know the drill). But the big help from core vs. what we could do locally might include:
+ 
+1. Assist in digitizing the raw code data from PDF. Assuming you know more about OCR than me.
+2. Somehow extrapolate the climate data for unlisted cities based on their proximity those in code (table C-2)
+3. Port over the NBC 2015 snow spreadsheet to whatever platform this will run in and assist in implementing the historic code equations
+4. Expand the algorithm to include the commentary L decision tree as shown on the flow chart
+5. Develop a nice GUI for the platform (if other than excel)
+6. Possibly develop a module that runs every city and every code-year to plot a heat map of cities over time to heuristically show when and where the code has called for greater or lesser snow load than is required today.
+ 
+ 

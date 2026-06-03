@@ -1,0 +1,17 @@
+[
+  { "maxYear": 1945, "code": "NBC 1941", "snowLoadFactor": 0.85, "safetyFactor": 1.0 },
+  { "maxYear": 1953, "code": "NBC 1953", "snowLoadFactor": 0.88, "safetyFactor": 1.0 },
+  { "maxYear": 1960, "code": "NBC 1960", "snowLoadFactor": 0.9, "safetyFactor": 1.0 },
+  { "maxYear": 1965, "code": "NBC 1965", "snowLoadFactor": 0.92, "safetyFactor": 1.0 },
+  { "maxYear": 1970, "code": "NBC 1970", "snowLoadFactor": 0.94, "safetyFactor": 1.0 },
+  { "maxYear": 1975, "code": "NBC 1975", "snowLoadFactor": 0.95, "safetyFactor": 1.0 },
+  { "maxYear": 1977, "code": "NBC 1977", "snowLoadFactor": 0.96, "safetyFactor": 1.0 },
+  { "maxYear": 1980, "code": "NBC 1980", "snowLoadFactor": 0.97, "safetyFactor": 1.0 },
+  { "maxYear": 1985, "code": "NBC 1985", "snowLoadFactor": 0.98, "safetyFactor": 1.0 },
+  { "maxYear": 1990, "code": "NBC 1990", "snowLoadFactor": 0.99, "safetyFactor": 1.0 },
+  { "maxYear": 1995, "code": "NBC 1995", "snowLoadFactor": 1.0, "safetyFactor": 1.0 },
+  { "maxYear": 2005, "code": "NBC 1995", "snowLoadFactor": 1.0, "safetyFactor": 1.0 },
+  { "maxYear": 2010, "code": "NBC 2005", "snowLoadFactor": 1.02, "safetyFactor": 1.0 },
+  { "maxYear": 2015, "code": "NBC 2010", "snowLoadFactor": 1.03, "safetyFactor": 1.0 },
+  { "maxYear": 9999, "code": "NBC 2015", "snowLoadFactor": 1.05, "safetyFactor": 1.0 }
+]
