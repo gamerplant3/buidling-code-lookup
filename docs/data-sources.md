@@ -1,6 +1,4 @@
-# Free data sources (snow reserve MVP)
-
-What this app uses today, what you can add later, and what is out of scope. Check each provider’s current licence before production use.
+# Data sources
 
 ## Wired in the app
 
@@ -28,35 +26,10 @@ Individual routes (`/api/zoning`, `/api/frontage`, `/api/elevation`, `/api/neare
 - **Other demo cities:** coarse polygons in `public/layers/demo-zoning-ontario.json`.
 - **Frontage:** by-law field (Toronto) or OSM Overpass heuristic (`lib/roadFrontage.js`) — screening only, not legal survey.
 
-### Climate
+## Possible improvements
 
-- Import: `python scripts/import_pcic_table_c2.py` (snow only by default).
-- WP10/WP50 CSVs in `data/` are **not** used for snow; structural wind is out of product scope.
-- After import or demo JSON changes: **Reset demo** → **Assess all sites**.
-
-## Reference only (not implemented)
-
-Useful for siting later; no code paths yet.
-
-| Topic | Examples |
+| Item | Comment |
 |-------|----------|
-| More geocoders | OSM Nominatim (strict rate limits), StatsCan WDS boundaries |
 | Roads | [StatsCan Road Network File](https://open.canada.ca/data/en/dataset/9260360b-bf21-436d-bd59-ac050cdd74f6) — national download; clip locally in QGIS; would replace OSM frontage |
 | More zoning | Other cities’ open data, Ontario GeoHub, paid parcel APIs |
 | Parcels / flood / soils | Municipal fabric, conservation authority GIS |
-| NRCan elevation | Prefer over Open-Meteo for production when wired |
-
-## Explicitly not planned (this MVP)
-
-- Structural wind screening (WP10/WP50) in UI or engine trails
-- National climate heat map layer
-- Bulk Nominatim geocoding
-- Automated StatsCan RNF without a user-supplied regional clip
-
-## Maintenance
-
-| Task | Command / action |
-|------|------------------|
-| Refresh Table C-2 | PCIC export → `scripts/import_pcic_table_c2.py` |
-| Reconcile demos | Reset demo in UI |
-| Stale assessments | Bumps when `climateVersion` changes (boot in `app/page.js`) |
