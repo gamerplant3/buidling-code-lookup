@@ -1,8 +1,8 @@
-# Building Code Lookup — MVP
+# Building Code Lookup
 
 Roof **reserve capacity** screening (historic NBC snow logic) with AI-powered natural language filters (Cohere) and a map + globe UI. Sites persist in your browser (IndexedDB) — no database for now, just dev.
 
-## Prerequisites
+## Uses
 
 - **Node.js** 18+
 - **Python** 3.10+
@@ -58,3 +58,15 @@ public/data/      Demo JSON served to browser
 | `COHERE_API_KEY` | — | NL → filter plan |
 | `COHERE_MODEL` | `command-r-08-2024` | Chat model |
 | `ENGINE_URL` | `http://127.0.0.1:8000` | Python assess API |
+
+## Screenshots
+
+Page
+
+<img width="1500" alt="Screenshot 2026-06-03 142718" src="https://github.com/user-attachments/assets/0663e065-f639-4233-ac3b-2aaa78d09bd6" />
+
+
+Detail view
+
+
+<img width="2108" height="776" alt="Screenshot 2026-06-03 142838" src="https://github.com/user-attachments/assets/cdf38d6c-8246-41e6-b227-0d82c024c61a" />
