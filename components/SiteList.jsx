@@ -1,5 +1,7 @@
 'use client';
 
+import { formatKpa } from '@/lib/formatNumbers';
+
 export default function SiteList({ sites, selectedId, onSelect }) {
   if (!sites.length) {
     return <p className="status-bar">No sites match the current filter.</p>;
@@ -15,7 +17,7 @@ export default function SiteList({ sites, selectedId, onSelect }) {
           ) : pass === false ? (
             <span className="badge badge-fail">FAIL</span>
           ) : (
-            <span className="badge badge-unknown">—</span>
+            <span className="badge badge-unknown">-</span>
           );
 
         return (
@@ -32,7 +34,7 @@ export default function SiteList({ sites, selectedId, onSelect }) {
             <span className="status-bar">
               {site.zoning} · {site.roadFrontageM}m frontage
               {site.reserveAssessment?.deltaKPa != null &&
-                ` · Δ ${site.reserveAssessment.deltaKPa} kPa`}
+                ` · Δ ${formatKpa(site.reserveAssessment.deltaKPa)} kPa`}
             </span>
           </li>
         );

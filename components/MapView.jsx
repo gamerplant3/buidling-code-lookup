@@ -17,8 +17,8 @@ export default function MapView({ sites, selectedId, onSelectSite }) {
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: STYLE,
-      center: [-79.38, 43.65],
-      zoom: 5,
+      center: [-96, 56],
+      zoom: 3.2,
     });
 
     map.addControl(new maplibregl.NavigationControl(), 'top-left');

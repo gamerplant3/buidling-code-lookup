@@ -29,6 +29,8 @@ Rules:
 - Use only fields and operators from this schema:
 ${filterSchemaPrompt()}
 - For "reserve", "solar", "PV", "roof capacity" use reserveAssessment.pass (boolean).
+- climateMethod: exact | nearest | idw (e.g. "IDW sites" → climateMethod eq idw).
+- climateInterpolated: true when method is idw.
 - Zoning: map user terms to lowercase strings like commercial, industrial, residential.
 - roadFrontageM is numeric metres.
 - If the user asks to sort, include sort; otherwise omit sort.

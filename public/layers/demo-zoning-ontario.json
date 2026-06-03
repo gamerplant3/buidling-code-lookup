@@ -1,0 +1,55 @@
+{
+  "source": "Demo only - approximate boxes around portfolio cities, not legal zoning",
+  "license": "Synthetic for MVP",
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "zoning": "commercial", "label": "London core (demo)" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-81.35, 42.94], [-81.12, 42.94], [-81.12, 43.02], [-81.35, 43.02], [-81.35, 42.94]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "zoning": "commercial", "label": "Leamington (demo)" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-82.65, 42.0], [-82.48, 42.0], [-82.48, 42.14], [-82.65, 42.14], [-82.65, 42.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "zoning": "commercial", "label": "Huntsville (demo)" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-79.35, 45.28], [-79.08, 45.28], [-79.08, 45.38], [-79.35, 45.38], [-79.35, 45.28]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "zoning": "commercial", "label": "Thunder Bay (demo)" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-89.42, 48.32], [-89.22, 48.32], [-89.22, 48.48], [-89.42, 48.48], [-89.42, 48.32]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "zoning": "industrial", "label": "Hornepayne (demo)" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-84.88, 49.18], [-84.68, 49.18], [-84.68, 49.28], [-84.88, 49.28], [-84.88, 49.18]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "zoning": "commercial", "label": "Toronto core (demo)" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-79.45, 43.62], [-79.32, 43.62], [-79.32, 43.72], [-79.45, 43.72], [-79.45, 43.62]]]
+      }
+    }
+  ]
+}

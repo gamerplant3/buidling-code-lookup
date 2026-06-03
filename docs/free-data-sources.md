@@ -1,86 +1,62 @@
-# Free & low-cost data sources (Canada / siting MVP)
+# Free data sources (snow reserve MVP)
 
-Curated for this project: geocoding, climate, roads, zoning, elevation. **Always check each provider’s current terms** before production or commercial use.
+What this app uses today, what you can add later, and what is out of scope. Check each provider’s current licence before production use.
 
-## Already integrated in this MVP
+## Wired in the app
 
-| Source | Use | Cost | Notes |
-|--------|-----|------|-------|
-| [NRCan Geolocator](https://geolocator.nrcan.gc.ca/) | Address → lat/lng (Canada) | Free | Used via `/api/geocode`. Min 3 chars. Prefer for Canadian sites over raw Nominatim. |
-| [OpenFreeMap](https://openfreemap.org/) | Basemap tiles | Free | MapLibre style in `MapView.jsx`. |
+| What | Source | API / data |
+|------|--------|------------|
+| Address → coordinates | [NRCan Geolocator](https://geolocator.nrcan.gc.ca/) | `GET /api/geocode` |
+| One-shot site hints | Composed server-side | `GET /api/site-enrich?lat=&lng=` — climate snap/IDW hint, Open-Meteo elevation, Toronto/Ottawa zoning, OSM frontage |
+| Table C-2 Ss/Sr | PCIC Design Value Explorer | `data/table-c2-canada.json` + Python engine (`exact` / `nearest` ≤30 km / `idw`) |
+| Snow assessment | NBC 2015 (in-engine) | `POST /api/assess` |
+| Map tiles | [OpenFreeMap](https://openfreemap.org/) | MapLibre in `MapView.jsx` |
+| NL portfolio filters | Cohere trial | `POST /api/query-plan` — filters only, not snow math |
+| Historic code notes | Curated JSON | `data/code-editions.json`, `docs/historic-editions.md` |
 
-## Geocoding & place names
+Individual routes (`/api/zoning`, `/api/frontage`, `/api/elevation`, `/api/nearest-climate`) remain for debugging; the form uses **`/api/site-enrich`** after geocode.
 
-| Source | URL | Cost | Best for |
-|--------|-----|------|----------|
-| NRCan Geolocator API | `https://geolocator.nrcan.gc.ca/api/v1/search?q=...` | Free | Addresses, cities, postal FSA, official names |
-| NRCan Geoname API | `https://geogratis.gc.ca/services/geoname/en/geonames/` | Free | Official CGNDB feature search |
-| OpenStreetMap Nominatim | `https://nominatim.openstreetmap.org/` | Free | Global; **strict usage policy** — use NRCan first in Canada, cache results, no bulk |
-| Statistics Canada Web Data Service | [WDS](https://www.statcan.gc.ca/en/developers/wds) | Free | Census boundaries, demographics (not live zoning) |
+### Geocode flow
 
-## Climate & environmental (snow, wind, temperature)
+1. User picks a Geolocator result.
+2. **`/api/site-enrich`** runs in parallel: nearest C-2 station (snap coords + `locationKey` if ≤30 km, else clear key and note IDW), elevation, zoning (Toronto `ZN_FRONTAGE` when available), else OSM frontage estimate.
+3. User saves and **Assess** runs Python with the saved coordinates / key.
 
-| Source | Cost | Notes |
-|--------|------|-------|
-| NBC Table C-2 (digitize from code PDFs) | Free- manual work | Authoritative for design snow Ss by city |
-| Environment and Climate Change Canada | Free open data | Station data for interpolation between C-2 cities |
-| [Open-Meteo](https://open-meteo.com/) | Free non-commercial API | Historical climate; useful for gap-fill, not code-official |
-| Natural Resources Canada elevation | Free | Terrain / roughness context |
+### Zoning & frontage
 
-## Roads & access (frontage proxies)
+- **Toronto / Ottawa:** municipal ArcGIS point queries (`lib/municipalZoning.js`).
+- **Other demo cities:** coarse polygons in `public/layers/demo-zoning-ontario.json`.
+- **Frontage:** by-law field (Toronto) or OSM Overpass heuristic (`lib/roadFrontage.js`) — screening only, not legal survey.
 
-| Source | Cost | Notes |
-|--------|------|-------|
-| [Statistics Canada Road Network File](https://open.canada.ca/data/en/dataset/9260360b-bf21-436d-bd59-ac050cdd74f6) | Open licence | Download GeoJSON/SHP; compute frontage in browser with Turf.js |
-| OpenStreetMap Overpass API | Free | `highway=*` near parcel — respect rate limits |
+### Climate
 
-**Demo:** keep `roadFrontageM` as a site attribute; later derive from RNF + parcel polygon.
+- Import: `python scripts/import_pcic_table_c2.py` (snow only by default).
+- WP10/WP50 CSVs in `data/` are **not** used for snow; structural wind is out of product scope.
+- After import or demo JSON changes: **Reset demo** → **Assess all sites**.
 
-## Zoning & land use
+## Reference only (not implemented)
 
-Municipal zoning is fragmented :(
+Useful for siting later; no code paths yet.
 
-| Source | Cost | Notes |
-|--------|------|-------|
-| Ontario GeoHub / municipal open data | Usually free | e.g. Toronto, Ottawa open zoning layers (GeoJSON/WFS) |
-| [Canada Open Government Portal](https://open.canada.ca/) | Free | Search “zoning” + municipality |
-| [Ontario Data Catalogue](https://data.ontario.ca/) | Free | Provincial layers; city zoning often at city portal |
-| [OpenStreetMap landuse](https://wiki.openstreetmap.org/wiki Tag:landuse=*) | Free | Coarse; not legal zoning |
-| Zoneomics, Regrid, Landgrid | Paid | Commercial parcel + zoning APIs when budget allows |
+| Topic | Examples |
+|-------|----------|
+| More geocoders | OSM Nominatim (strict rate limits), StatsCan WDS boundaries |
+| Roads | [StatsCan Road Network File](https://open.canada.ca/data/en/dataset/9260360b-bf21-436d-bd59-ac050cdd74f6) — national download; clip locally in QGIS; would replace OSM frontage |
+| More zoning | Other cities’ open data, Ontario GeoHub, paid parcel APIs |
+| Parcels / flood / soils | Municipal fabric, conservation authority GIS |
+| NRCan elevation | Prefer over Open-Meteo for production when wired |
 
-**Demo:** manual `zoning` field on sites; optional static GeoJSON in `/public/layers/` for point-in-polygon.
+## Explicitly not planned (this MVP)
 
-## Parcels & ownership
+- Structural wind screening (WP10/WP50) in UI or engine trails
+- National climate heat map layer
+- Bulk Nominatim geocoding
+- Automated StatsCan RNF without a user-supplied regional clip
 
-| Source | Cost | Notes |
-|--------|------|-------|
-| Municipal parcel fabric (open data) | Free varies | Toronto, Vancouver, etc. publish parcels |
-| Teranet / provincial registries | Paid | Legal surveys |
+## Maintenance
 
-## Soils, flood, environment (future siting layers)
-
-| Source | Cost |
-|--------|------|
-| Flood plain maps ( provincial / NRCan ) | Often free GIS |
-| Conservation authority GIS | Often free |
-| Federal contaminated sites inventory | Free |
-
-## AI / search (this repo)
-
-| Service | Cost | Role |
-|---------|------|------|
-| Cohere trial | ~1000 calls/mo free | NL → `FilterPlan` JSON only |
-
-**LLMs are for parsing user intent, NOT computing snow loads.** Using python for that.
-
-## To do (expand demo)
-
-1. Expand Table C-2 digitization (all provinces).
-2. Auto-assign `locationKey` from geocode + nearest C-2 city (already in Python).
-3. Download one city zoning GeoJSON → point-in-polygon on save.
-4. Road Network File sample for one CSD → estimate frontage.
-5. Heat map layer: batch assess grid of cities (explainer item #6).
-
-## Organization
-
-Source-linked outputs across many APIs. Every assessment result keeps `trail[]` strings and future `sourceRef` IDs — ready for agent orchestration later without changing the deterministic engine.
+| Task | Command / action |
+|------|------------------|
+| Refresh Table C-2 | PCIC export → `scripts/import_pcic_table_c2.py` |
+| Reconcile demos | Reset demo in UI |
+| Stale assessments | Bumps when `climateVersion` changes (boot in `app/page.js`) |

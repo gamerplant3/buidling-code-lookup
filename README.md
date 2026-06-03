@@ -1,12 +1,12 @@
 # Building Code Lookup
 
-Roof **reserve capacity** screening (historic NBC snow logic) with AI-powered natural language filters (Cohere) and a map + globe UI. Sites persist in your browser (IndexedDB) — no database for now, just dev.
+Roof **reserve capacity** screening (historic NBC snow logic) with AI-powered natural language filters (Cohere) and a map + globe UI. Sites persist in your browser (IndexedDB) - no database for now, just dev.
 
 ## Uses
 
 - **Node.js** 18+
 - **Python** 3.10+
-- **Cohere trial API key** — [dashboard.cohere.com](https://dashboard.cohere.com/)
+- **Cohere trial API key** - [dashboard.cohere.com](https://dashboard.cohere.com/)
 
 ## Quick start
 
@@ -17,11 +17,14 @@ npm install
 # 2. Install Python engine
 pip install -r engine/requirements.txt
 
-# 3. Configure Cohere (required for AI search)
+# 3. Build Table C-2 JSON from PCIC exports (three files in data/)
+python scripts/import_pcic_table_c2.py
+
+# 4. Configure Cohere (required for AI search)
 copy .env.example .env.local
 # Edit .env.local and set COHERE_API_KEY=...
 
-# 4. Start UI + Python engine together
+# 5. Start UI + Python engine together
 npm start
 ```
 
@@ -29,10 +32,12 @@ Open **http://localhost:3000**
 
 ### Demo flow
 
-1. Click **Assess all sites** (runs Python reserve engine on the demo Ontario sites in json).
-2. In **AI search**, try: `Commercial sites with roof reserve and at least 30m road frontage`
-3. Click map markers or list items for assessment trail / citations.
-4. **Add site** → **Geocode** (free NRCan API) → save → auto-assess.
+1. **Reset demo** loads 15 sites: 10 at listed Table C-2 stations (`exact`), 5 rural coords using **IDW** (no `locationKey`).
+2. Click **Assess all sites** (snow reserve engine).
+3. **Export CSV** for a stakeholder summary, or **Export JSON** for full site data.
+4. Select a site → **Reassess** one building without re-running the whole portfolio.
+5. Expand **Add site** when needed (collapsed by default); geocode via NRCan.
+6. **AI search** example: `Commercial sites with roof reserve and at least 30m road frontage`
 
 ## Project layout
 
@@ -40,24 +45,39 @@ Open **http://localhost:3000**
 app/              Next.js UI + API routes (Cohere, geocode, assess proxy)
 components/       Map, globe, forms, query bar
 lib/              IndexedDB, filters, assess client
-engine/           Python FastAPI — deterministic engineering -> reserve cap
-data/             Table C-2 subset, code editions, demo sites
+engine/           Python FastAPI - deterministic engineering -> reserve cap
+data/             table-c2-canada.json (from PCIC), code editions, demo-sites.json
 docs/             Free external data sources guide
 public/data/      Demo JSON served to browser
 ```
 
-## Disclaimer:
+## Data integrations (see `docs/free-data-sources.md`)
 
-- Snow reserve math is very simplified right now for demo. Connect to NBC 2015 data (eg spreadsheet?) for prod.
-- Zoning and road frontage manual fields until you attach municipal GIS layers (see `docs/free-data-sources.md`).
+- **Geocode enrich:** `/api/site-enrich` — climate snap/IDW hint, elevation, Toronto/Ottawa zoning, OSM frontage (one call after geocode).
+- **Zoning:** Toronto & Ottawa ArcGIS; demo polygons elsewhere.
+- **Frontage:** Toronto by-law field when available; else OSM estimate (not StatsCan RNF).
+- **Historic snow:** Edition factors in `data/code-editions.json` (NRC survey era notes).
+- **Roof inputs:** L, W, slope, Cw, importance in add/edit site form.
 
+## Disclaimer
+
+- Screening tool only - not a structural design or permit substitute.
+- Commentary L steps are simplified; see site detail panel for explanation.
 ## Environment variables
 
 | Variable | Default | Purpose |
 |----------|---------|---------|
-| `COHERE_API_KEY` | — | NL → filter plan |
+| `COHERE_API_KEY` | - | NL → filter plan |
 | `COHERE_MODEL` | `command-r-08-2024` | Chat model |
 | `ENGINE_URL` | `http://127.0.0.1:8000` | Python assess API |
+
+## Climate data
+
+- **Source:** `data/table-c2-canada.json` (from `scripts/import_pcic_table_c2.py`)
+- **Interpolation:** IDW for unlisted coordinates (`engine/interpolation.py`)
+- **Snow loads:** NBC 2015 §4.1.6.2 in Python (`engine/nbc2015/snow_load.py`) - flat / simple gable, Ca=1
+
+See `docs/table-c2-import.md` for PCIC file names (`lat-long`, `SL50-Ss`, `RL50-Sr`).
 
 ## Screenshots
 

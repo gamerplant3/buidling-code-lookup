@@ -208,6 +208,38 @@ textarea {
   z-index: 5;
 }
 
+.collapsible-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 0.5rem;
+  border: none;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+}
+
+.collapsible-chevron {
+  display: inline-block;
+  font-size: 0.65rem;
+  transition: transform 0.15s ease;
+  color: var(--muted);
+}
+
+.collapsible-chevron[data-open='1'] {
+  transform: rotate(90deg);
+}
+
+.collapsible-body {
+  margin-top: 0.25rem;
+}
+
 .globe-mini {
   position: absolute;
   top: 1rem;
@@ -241,6 +273,58 @@ textarea {
   color: var(--muted);
   margin: 0;
   padding-left: 1rem;
+}
+
+.assessment-case-banner {
+  font-size: 0.8rem;
+  margin: 0.5rem 0 0.75rem;
+  padding: 0.5rem 0.65rem;
+  border-left: 3px solid var(--accent, #3d9cf5);
+  background: rgba(61, 156, 245, 0.08);
+  border-radius: 0 4px 4px 0;
+}
+
+.trail-section {
+  margin-bottom: 0.75rem;
+}
+
+.trail-section-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin: 0 0 0.35rem;
+}
+
+.trail-lookup li {
+  list-style: disc;
+}
+
+.trail-calc li {
+  list-style: circle;
+}
+
+.trail-help {
+  font-size: 0.75rem;
+  margin: 0.5rem 0;
+  color: var(--muted);
+}
+
+.trail-help summary {
+  cursor: pointer;
+  color: var(--text);
+}
+
+.source-refs {
+  margin-top: 0.35rem;
+}
+
+.disclaimer {
+  font-style: italic;
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.5rem;
 }
 
 @media (max-width: 900px) {

@@ -1,0 +1,6133 @@
+{
+  "source": "PCIC Design Value Explorer (lat-long + SL50-Ss + RL50-Sr)",
+  "climateVersion": "58f2ab3141cbc0b6",
+  "coordsFile": "pcic-table-c2-lat-long.csv",
+  "ssFile": "pcic-table-c2-SL50-Ss.csv",
+  "srFile": "pcic-table-c2-RL50-Sr.csv",
+  "ssColumn": "SL50 (NBCC)",
+  "srColumn": "RL50 (NBCC)",
+  "locationCount": 680,
+  "withSnowCount": 680,
+  "locations": [
+    {
+      "key": "100_mile_house_bc",
+      "name": "100 Mile House",
+      "province": "BC",
+      "lat": 51.65,
+      "lng": -121.283,
+      "ssKPa": 2.6,
+      "srKPa": 0.3
+    },
+    {
+      "key": "abbotsford_bc",
+      "name": "Abbotsford",
+      "province": "BC",
+      "lat": 49.052,
+      "lng": -122.329,
+      "ssKPa": 2.0,
+      "srKPa": 0.3
+    },
+    {
+      "key": "agassiz_bc",
+      "name": "Agassiz",
+      "province": "BC",
+      "lat": 49.23,
+      "lng": -121.77,
+      "ssKPa": 2.4,
+      "srKPa": 0.7
+    },
+    {
+      "key": "alberni_bc",
+      "name": "Alberni",
+      "province": "BC",
+      "lat": 49.27,
+      "lng": -124.8,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "ashcroft_bc",
+      "name": "Ashcroft",
+      "province": "BC",
+      "lat": 50.72,
+      "lng": -121.28,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "bamfield_bc",
+      "name": "Bamfield",
+      "province": "BC",
+      "lat": 48.83,
+      "lng": -125.13,
+      "ssKPa": 1.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "beatton_river_bc",
+      "name": "Beatton River",
+      "province": "BC",
+      "lat": 57.38,
+      "lng": -121.4,
+      "ssKPa": 3.3,
+      "srKPa": 0.1
+    },
+    {
+      "key": "bella_bella_bc",
+      "name": "Bella Bella",
+      "province": "BC",
+      "lat": 52.16,
+      "lng": -128.14,
+      "ssKPa": 2.6,
+      "srKPa": 0.8
+    },
+    {
+      "key": "bella_coola_bc",
+      "name": "Bella Coola",
+      "province": "BC",
+      "lat": 52.37,
+      "lng": -126.75,
+      "ssKPa": 4.5,
+      "srKPa": 0.8
+    },
+    {
+      "key": "burns_lake_bc",
+      "name": "Burns Lake",
+      "province": "BC",
+      "lat": 54.23,
+      "lng": -125.75,
+      "ssKPa": 3.4,
+      "srKPa": 0.2
+    },
+    {
+      "key": "cache_creek_bc",
+      "name": "Cache Creek",
+      "province": "BC",
+      "lat": 50.8,
+      "lng": -121.32,
+      "ssKPa": 1.7,
+      "srKPa": 0.2
+    },
+    {
+      "key": "campbell_river_bc",
+      "name": "Campbell River",
+      "province": "BC",
+      "lat": 50.02,
+      "lng": -125.24,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "carmi_bc",
+      "name": "Carmi",
+      "province": "BC",
+      "lat": 49.5,
+      "lng": -119.12,
+      "ssKPa": 3.6,
+      "srKPa": 0.2
+    },
+    {
+      "key": "castlegar_bc",
+      "name": "Castlegar",
+      "province": "BC",
+      "lat": 49.32,
+      "lng": -117.67,
+      "ssKPa": 4.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "chetwynd_bc",
+      "name": "Chetwynd",
+      "province": "BC",
+      "lat": 55.7,
+      "lng": -121.63,
+      "ssKPa": 2.4,
+      "srKPa": 0.2
+    },
+    {
+      "key": "chilliwack_bc",
+      "name": "Chilliwack",
+      "province": "BC",
+      "lat": 49.167,
+      "lng": -121.95,
+      "ssKPa": 2.2,
+      "srKPa": 0.3
+    },
+    {
+      "key": "comox_bc",
+      "name": "Comox",
+      "province": "BC",
+      "lat": 49.68,
+      "lng": -124.93,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "courtenay_bc",
+      "name": "Courtenay",
+      "province": "BC",
+      "lat": 49.68,
+      "lng": -124.98,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "cranbrook_bc",
+      "name": "Cranbrook",
+      "province": "BC",
+      "lat": 49.5,
+      "lng": -115.77,
+      "ssKPa": 3.0,
+      "srKPa": 0.2
+    },
+    {
+      "key": "crescent_valley_bc",
+      "name": "Crescent Valley",
+      "province": "BC",
+      "lat": 49.45,
+      "lng": -117.55,
+      "ssKPa": 4.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "crofton_bc",
+      "name": "Crofton",
+      "province": "BC",
+      "lat": 48.87,
+      "lng": -123.65,
+      "ssKPa": 1.8,
+      "srKPa": 0.2
+    },
+    {
+      "key": "dawson_creek_bc",
+      "name": "Dawson Creek",
+      "province": "BC",
+      "lat": 55.77,
+      "lng": -120.23,
+      "ssKPa": 2.5,
+      "srKPa": 0.2
+    },
+    {
+      "key": "dease_lake_bc",
+      "name": "Dease Lake",
+      "province": "BC",
+      "lat": 58.44,
+      "lng": -130.0,
+      "ssKPa": 2.8,
+      "srKPa": 0.1
+    },
+    {
+      "key": "dog_creek_bc",
+      "name": "Dog Creek",
+      "province": "BC",
+      "lat": 51.58,
+      "lng": -122.3,
+      "ssKPa": 1.8,
+      "srKPa": 0.2
+    },
+    {
+      "key": "duncan_bc",
+      "name": "Duncan",
+      "province": "BC",
+      "lat": 48.78,
+      "lng": -123.7,
+      "ssKPa": 1.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "elko_bc",
+      "name": "Elko",
+      "province": "BC",
+      "lat": 49.3,
+      "lng": -115.12,
+      "ssKPa": 3.6,
+      "srKPa": 0.2
+    },
+    {
+      "key": "fernie_bc",
+      "name": "Fernie",
+      "province": "BC",
+      "lat": 49.5,
+      "lng": -115.07,
+      "ssKPa": 4.5,
+      "srKPa": 0.2
+    },
+    {
+      "key": "fort_nelson_bc",
+      "name": "Fort Nelson",
+      "province": "BC",
+      "lat": 58.83,
+      "lng": -122.7,
+      "ssKPa": 2.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "fort_st_john_bc",
+      "name": "Fort St. John",
+      "province": "BC",
+      "lat": 56.25,
+      "lng": -120.85,
+      "ssKPa": 2.8,
+      "srKPa": 0.1
+    },
+    {
+      "key": "glacier_bc",
+      "name": "Glacier",
+      "province": "BC",
+      "lat": 51.27,
+      "lng": -117.52,
+      "ssKPa": 9.4,
+      "srKPa": 0.2
+    },
+    {
+      "key": "gold_river_bc",
+      "name": "Gold River",
+      "province": "BC",
+      "lat": 49.78,
+      "lng": -126.05,
+      "ssKPa": 2.8,
+      "srKPa": 0.6
+    },
+    {
+      "key": "golden_bc",
+      "name": "Golden",
+      "province": "BC",
+      "lat": 51.3,
+      "lng": -116.97,
+      "ssKPa": 3.7,
+      "srKPa": 0.2
+    },
+    {
+      "key": "grand_forks_bc",
+      "name": "Grand Forks",
+      "province": "BC",
+      "lat": 49.03,
+      "lng": -118.45,
+      "ssKPa": 2.8,
+      "srKPa": 0.1
+    },
+    {
+      "key": "greenwood_bc",
+      "name": "Greenwood",
+      "province": "BC",
+      "lat": 49.1,
+      "lng": -118.68,
+      "ssKPa": 3.6,
+      "srKPa": 0.1
+    },
+    {
+      "key": "hope_bc",
+      "name": "Hope",
+      "province": "BC",
+      "lat": 49.38,
+      "lng": -121.44,
+      "ssKPa": 2.8,
+      "srKPa": 0.7
+    },
+    {
+      "key": "jordan_river_bc",
+      "name": "Jordan River",
+      "province": "BC",
+      "lat": 48.42,
+      "lng": -124.05,
+      "ssKPa": 1.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "kamloops_bc",
+      "name": "Kamloops",
+      "province": "BC",
+      "lat": 50.67,
+      "lng": -120.32,
+      "ssKPa": 1.8,
+      "srKPa": 0.2
+    },
+    {
+      "key": "kaslo_bc",
+      "name": "Kaslo",
+      "province": "BC",
+      "lat": 49.92,
+      "lng": -116.92,
+      "ssKPa": 2.8,
+      "srKPa": 0.1
+    },
+    {
+      "key": "kelowna_bc",
+      "name": "Kelowna",
+      "province": "BC",
+      "lat": 49.88,
+      "lng": -119.48,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "kimberley_bc",
+      "name": "Kimberley",
+      "province": "BC",
+      "lat": 49.68,
+      "lng": -115.98,
+      "ssKPa": 3.0,
+      "srKPa": 0.2
+    },
+    {
+      "key": "kitimat_plant_bc",
+      "name": "Kitimat Plant",
+      "province": "BC",
+      "lat": 54.05,
+      "lng": -128.63,
+      "ssKPa": 5.5,
+      "srKPa": 0.8
+    },
+    {
+      "key": "kitimat_townsite_bc",
+      "name": "Kitimat Townsite",
+      "province": "BC",
+      "lat": 54.07,
+      "lng": -128.65,
+      "ssKPa": 6.5,
+      "srKPa": 0.8
+    },
+    {
+      "key": "ladysmith_bc",
+      "name": "Ladysmith",
+      "province": "BC",
+      "lat": 48.99,
+      "lng": -123.82,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "langford_bc",
+      "name": "Langford",
+      "province": "BC",
+      "lat": 48.45,
+      "lng": -123.5,
+      "ssKPa": 1.8,
+      "srKPa": 0.3
+    },
+    {
+      "key": "lillooet_bc",
+      "name": "Lillooet",
+      "province": "BC",
+      "lat": 50.68,
+      "lng": -121.93,
+      "ssKPa": 2.1,
+      "srKPa": 0.1
+    },
+    {
+      "key": "lytton_bc",
+      "name": "Lytton",
+      "province": "BC",
+      "lat": 50.23,
+      "lng": -121.57,
+      "ssKPa": 2.8,
+      "srKPa": 0.3
+    },
+    {
+      "key": "mackenzie_bc",
+      "name": "Mackenzie",
+      "province": "BC",
+      "lat": 55.3,
+      "lng": -123.08,
+      "ssKPa": 5.1,
+      "srKPa": 0.2
+    },
+    {
+      "key": "masset_bc",
+      "name": "Masset",
+      "province": "BC",
+      "lat": 54.02,
+      "lng": -132.1,
+      "ssKPa": 1.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "mcbride_bc",
+      "name": "McBride",
+      "province": "BC",
+      "lat": 53.3,
+      "lng": -120.17,
+      "ssKPa": 4.3,
+      "srKPa": 0.2
+    },
+    {
+      "key": "mcleod_lake_bc",
+      "name": "McLeod Lake",
+      "province": "BC",
+      "lat": 54.98,
+      "lng": -123.03,
+      "ssKPa": 4.1,
+      "srKPa": 0.2
+    },
+    {
+      "key": "merritt_bc",
+      "name": "Merritt",
+      "province": "BC",
+      "lat": 50.1,
+      "lng": -120.783,
+      "ssKPa": 1.8,
+      "srKPa": 0.3
+    },
+    {
+      "key": "mission_city_bc",
+      "name": "Mission City",
+      "province": "BC",
+      "lat": 49.13,
+      "lng": -122.3,
+      "ssKPa": 2.4,
+      "srKPa": 0.3
+    },
+    {
+      "key": "montrose_bc",
+      "name": "Montrose",
+      "province": "BC",
+      "lat": 49.08,
+      "lng": -117.58,
+      "ssKPa": 4.1,
+      "srKPa": 0.1
+    },
+    {
+      "key": "nakusp_bc",
+      "name": "Nakusp",
+      "province": "BC",
+      "lat": 50.23,
+      "lng": -117.8,
+      "ssKPa": 4.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "nanaimo_bc",
+      "name": "Nanaimo",
+      "province": "BC",
+      "lat": 49.17,
+      "lng": -123.93,
+      "ssKPa": 2.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "nelson_bc",
+      "name": "Nelson",
+      "province": "BC",
+      "lat": 49.48,
+      "lng": -117.28,
+      "ssKPa": 4.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "ocean_falls_bc",
+      "name": "Ocean Falls",
+      "province": "BC",
+      "lat": 52.35,
+      "lng": -127.7,
+      "ssKPa": 3.9,
+      "srKPa": 0.8
+    },
+    {
+      "key": "osoyoos_bc",
+      "name": "Osoyoos",
+      "province": "BC",
+      "lat": 49.03,
+      "lng": -119.5,
+      "ssKPa": 1.1,
+      "srKPa": 0.1
+    },
+    {
+      "key": "parksville_bc",
+      "name": "Parksville",
+      "province": "BC",
+      "lat": 49.32,
+      "lng": -124.33,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "penticton_bc",
+      "name": "Penticton",
+      "province": "BC",
+      "lat": 49.5,
+      "lng": -119.58,
+      "ssKPa": 1.3,
+      "srKPa": 0.1
+    },
+    {
+      "key": "port_alberni_bc",
+      "name": "Port Alberni",
+      "province": "BC",
+      "lat": 49.233,
+      "lng": -124.8,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "port_alice_bc",
+      "name": "Port Alice",
+      "province": "BC",
+      "lat": 50.38,
+      "lng": -127.45,
+      "ssKPa": 1.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "port_hardy_bc",
+      "name": "Port Hardy",
+      "province": "BC",
+      "lat": 50.7,
+      "lng": -127.42,
+      "ssKPa": 0.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "port_mcneill_bc",
+      "name": "Port McNeill",
+      "province": "BC",
+      "lat": 50.58,
+      "lng": -127.1,
+      "ssKPa": 1.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "port_renfrew_bc",
+      "name": "Port Renfrew",
+      "province": "BC",
+      "lat": 48.56,
+      "lng": -124.4,
+      "ssKPa": 1.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "powell_river_bc",
+      "name": "Powell River",
+      "province": "BC",
+      "lat": 49.83,
+      "lng": -124.52,
+      "ssKPa": 1.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "prince_george_bc",
+      "name": "Prince George",
+      "province": "BC",
+      "lat": 53.92,
+      "lng": -122.75,
+      "ssKPa": 3.4,
+      "srKPa": 0.2
+    },
+    {
+      "key": "prince_rupert_bc",
+      "name": "Prince Rupert",
+      "province": "BC",
+      "lat": 54.32,
+      "lng": -130.32,
+      "ssKPa": 1.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "princeton_bc",
+      "name": "Princeton",
+      "province": "BC",
+      "lat": 49.5,
+      "lng": -120.51,
+      "ssKPa": 2.9,
+      "srKPa": 0.6
+    },
+    {
+      "key": "qualicum_beach_bc",
+      "name": "Qualicum Beach",
+      "province": "BC",
+      "lat": 49.35,
+      "lng": -124.45,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "queen_charlotte_city_bc",
+      "name": "Queen Charlotte City",
+      "province": "BC",
+      "lat": 53.26,
+      "lng": -132.08,
+      "ssKPa": 1.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "quesnel_bc",
+      "name": "Quesnel",
+      "province": "BC",
+      "lat": 52.98,
+      "lng": -122.48,
+      "ssKPa": 3.0,
+      "srKPa": 0.1
+    },
+    {
+      "key": "revelstoke_bc",
+      "name": "Revelstoke",
+      "province": "BC",
+      "lat": 50.98,
+      "lng": -118.2,
+      "ssKPa": 7.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "salmon_arm_bc",
+      "name": "Salmon Arm",
+      "province": "BC",
+      "lat": 50.7,
+      "lng": -119.28,
+      "ssKPa": 3.5,
+      "srKPa": 0.1
+    },
+    {
+      "key": "sandspit_bc",
+      "name": "Sandspit",
+      "province": "BC",
+      "lat": 53.25,
+      "lng": -131.82,
+      "ssKPa": 1.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "sechelt_bc",
+      "name": "Sechelt",
+      "province": "BC",
+      "lat": 49.47,
+      "lng": -123.75,
+      "ssKPa": 1.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "sidney_bc",
+      "name": "Sidney",
+      "province": "BC",
+      "lat": 48.65,
+      "lng": -123.4,
+      "ssKPa": 1.1,
+      "srKPa": 0.2
+    },
+    {
+      "key": "smith_river_bc",
+      "name": "Smith River",
+      "province": "BC",
+      "lat": 59.88,
+      "lng": -126.43,
+      "ssKPa": 2.8,
+      "srKPa": 0.1
+    },
+    {
+      "key": "smithers_bc",
+      "name": "Smithers",
+      "province": "BC",
+      "lat": 54.783,
+      "lng": -127.167,
+      "ssKPa": 3.5,
+      "srKPa": 0.2
+    },
+    {
+      "key": "sooke_bc",
+      "name": "Sooke",
+      "province": "BC",
+      "lat": 48.38,
+      "lng": -123.72,
+      "ssKPa": 1.3,
+      "srKPa": 0.3
+    },
+    {
+      "key": "squamish_bc",
+      "name": "Squamish",
+      "province": "BC",
+      "lat": 49.7,
+      "lng": -123.15,
+      "ssKPa": 2.8,
+      "srKPa": 0.7
+    },
+    {
+      "key": "stewart_bc",
+      "name": "Stewart",
+      "province": "BC",
+      "lat": 55.93,
+      "lng": -129.98,
+      "ssKPa": 7.9,
+      "srKPa": 0.8
+    },
+    {
+      "key": "tahsis_bc",
+      "name": "Tahsis",
+      "province": "BC",
+      "lat": 49.93,
+      "lng": -126.65,
+      "ssKPa": 1.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "taylor_bc",
+      "name": "Taylor",
+      "province": "BC",
+      "lat": 56.2,
+      "lng": -120.69,
+      "ssKPa": 2.3,
+      "srKPa": 0.1
+    },
+    {
+      "key": "terrace_bc",
+      "name": "Terrace",
+      "province": "BC",
+      "lat": 54.52,
+      "lng": -128.6,
+      "ssKPa": 5.4,
+      "srKPa": 0.6
+    },
+    {
+      "key": "tofino_bc",
+      "name": "Tofino",
+      "province": "BC",
+      "lat": 49.12,
+      "lng": -125.88,
+      "ssKPa": 1.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "trail_bc",
+      "name": "Trail",
+      "province": "BC",
+      "lat": 49.1,
+      "lng": -117.7,
+      "ssKPa": 4.1,
+      "srKPa": 0.1
+    },
+    {
+      "key": "ucluelet_bc",
+      "name": "Ucluelet",
+      "province": "BC",
+      "lat": 48.93,
+      "lng": -125.55,
+      "ssKPa": 1.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "burnaby_simon_fraser_univ_bc",
+      "name": "Burnaby (Simon Fraser Univ.)",
+      "province": "BC",
+      "lat": 49.28,
+      "lng": -122.92,
+      "ssKPa": 2.9,
+      "srKPa": 0.7
+    },
+    {
+      "key": "cloverdale_bc",
+      "name": "Cloverdale",
+      "province": "BC",
+      "lat": 49.1,
+      "lng": -122.733,
+      "ssKPa": 2.5,
+      "srKPa": 0.2
+    },
+    {
+      "key": "haney_bc",
+      "name": "Haney",
+      "province": "BC",
+      "lat": 49.22,
+      "lng": -122.6,
+      "ssKPa": 2.4,
+      "srKPa": 0.2
+    },
+    {
+      "key": "ladner_bc",
+      "name": "Ladner",
+      "province": "BC",
+      "lat": 49.08,
+      "lng": -123.08,
+      "ssKPa": 1.3,
+      "srKPa": 0.2
+    },
+    {
+      "key": "langley_bc",
+      "name": "Langley",
+      "province": "BC",
+      "lat": 49.1,
+      "lng": -122.65,
+      "ssKPa": 2.4,
+      "srKPa": 0.2
+    },
+    {
+      "key": "new_westminster_bc",
+      "name": "New Westminster",
+      "province": "BC",
+      "lat": 49.22,
+      "lng": -122.92,
+      "ssKPa": 2.3,
+      "srKPa": 0.2
+    },
+    {
+      "key": "north_vancouver_bc",
+      "name": "North Vancouver",
+      "province": "BC",
+      "lat": 49.32,
+      "lng": -123.07,
+      "ssKPa": 3.0,
+      "srKPa": 0.3
+    },
+    {
+      "key": "richmond_bc",
+      "name": "Richmond",
+      "province": "BC",
+      "lat": 49.17,
+      "lng": -123.1,
+      "ssKPa": 1.5,
+      "srKPa": 0.2
+    },
+    {
+      "key": "surrey_88_ave_156_st_bc",
+      "name": "Surrey (88 Ave & 156 St.)",
+      "province": "BC",
+      "lat": 49.163,
+      "lng": -122.79,
+      "ssKPa": 2.4,
+      "srKPa": 0.3
+    },
+    {
+      "key": "vancouver_city_hall_bc",
+      "name": "Vancouver (city hall)",
+      "province": "BC",
+      "lat": 49.25,
+      "lng": -123.12,
+      "ssKPa": 1.9,
+      "srKPa": 0.3
+    },
+    {
+      "key": "vancouver_granville_41_ave_bc",
+      "name": "Vancouver (Granville & 41 Ave)",
+      "province": "BC",
+      "lat": 49.234,
+      "lng": -123.14,
+      "ssKPa": 1.9,
+      "srKPa": 0.3
+    },
+    {
+      "key": "west_vancouver_bc",
+      "name": "West Vancouver",
+      "province": "BC",
+      "lat": 49.33,
+      "lng": -123.17,
+      "ssKPa": 2.4,
+      "srKPa": 0.2
+    },
+    {
+      "key": "vernon_bc",
+      "name": "Vernon",
+      "province": "BC",
+      "lat": 50.3,
+      "lng": -119.27,
+      "ssKPa": 2.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "victoria_bc",
+      "name": "Victoria",
+      "province": "BC",
+      "lat": 48.43,
+      "lng": -123.37,
+      "ssKPa": 1.1,
+      "srKPa": 0.2
+    },
+    {
+      "key": "victoria_gonzales_height_bc",
+      "name": "Victoria Gonzales Height",
+      "province": "BC",
+      "lat": 48.42,
+      "lng": -123.32,
+      "ssKPa": 1.5,
+      "srKPa": 0.3
+    },
+    {
+      "key": "victoria_mt_tolmie_bc",
+      "name": "Victoria Mt Tolmie",
+      "province": "BC",
+      "lat": 48.47,
+      "lng": -123.33,
+      "ssKPa": 2.1,
+      "srKPa": 0.3
+    },
+    {
+      "key": "whistler_bc",
+      "name": "Whistler",
+      "province": "BC",
+      "lat": 50.12,
+      "lng": -122.96,
+      "ssKPa": 9.5,
+      "srKPa": 0.9
+    },
+    {
+      "key": "white_rock_bc",
+      "name": "White Rock",
+      "province": "BC",
+      "lat": 49.02,
+      "lng": -122.8,
+      "ssKPa": 2.0,
+      "srKPa": 0.2
+    },
+    {
+      "key": "williams_lake_bc",
+      "name": "Williams Lake",
+      "province": "BC",
+      "lat": 52.133,
+      "lng": -122.15,
+      "ssKPa": 2.4,
+      "srKPa": 0.2
+    },
+    {
+      "key": "youbou_bc",
+      "name": "Youbou",
+      "province": "BC",
+      "lat": 48.88,
+      "lng": -124.2,
+      "ssKPa": 3.5,
+      "srKPa": 0.7
+    },
+    {
+      "key": "athabasca_ab",
+      "name": "Athabasca",
+      "province": "AB",
+      "lat": 54.72,
+      "lng": -113.28,
+      "ssKPa": 1.5,
+      "srKPa": 0.1
+    },
+    {
+      "key": "banff_ab",
+      "name": "Banff",
+      "province": "AB",
+      "lat": 51.17,
+      "lng": -115.57,
+      "ssKPa": 3.3,
+      "srKPa": 0.1
+    },
+    {
+      "key": "barrhead_ab",
+      "name": "Barrhead",
+      "province": "AB",
+      "lat": 54.13,
+      "lng": -114.4,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "beaverlodge_ab",
+      "name": "Beaverlodge",
+      "province": "AB",
+      "lat": 55.22,
+      "lng": -119.43,
+      "ssKPa": 2.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "brooks_ab",
+      "name": "Brooks",
+      "province": "AB",
+      "lat": 50.58,
+      "lng": -111.88,
+      "ssKPa": 1.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "calgary_ab",
+      "name": "Calgary",
+      "province": "AB",
+      "lat": 51.05,
+      "lng": -114.08,
+      "ssKPa": 1.1,
+      "srKPa": 0.1
+    },
+    {
+      "key": "campsie_ab",
+      "name": "Campsie",
+      "province": "AB",
+      "lat": 54.13,
+      "lng": -114.65,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "camrose_ab",
+      "name": "Camrose",
+      "province": "AB",
+      "lat": 53.02,
+      "lng": -112.83,
+      "ssKPa": 2.0,
+      "srKPa": 0.1
+    },
+    {
+      "key": "canmore_ab",
+      "name": "Canmore",
+      "province": "AB",
+      "lat": 51.09,
+      "lng": -115.35,
+      "ssKPa": 3.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "cardston_ab",
+      "name": "Cardston",
+      "province": "AB",
+      "lat": 49.2,
+      "lng": -113.3,
+      "ssKPa": 1.5,
+      "srKPa": 0.1
+    },
+    {
+      "key": "claresholm_ab",
+      "name": "Claresholm",
+      "province": "AB",
+      "lat": 50.03,
+      "lng": -113.58,
+      "ssKPa": 1.3,
+      "srKPa": 0.1
+    },
+    {
+      "key": "cold_lake_ab",
+      "name": "Cold Lake",
+      "province": "AB",
+      "lat": 54.45,
+      "lng": -110.17,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "coleman_ab",
+      "name": "Coleman",
+      "province": "AB",
+      "lat": 49.63,
+      "lng": -114.5,
+      "ssKPa": 2.7,
+      "srKPa": 0.3
+    },
+    {
+      "key": "coronation_ab",
+      "name": "Coronation",
+      "province": "AB",
+      "lat": 52.08,
+      "lng": -111.45,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "cowley_ab",
+      "name": "Cowley",
+      "province": "AB",
+      "lat": 49.57,
+      "lng": -114.08,
+      "ssKPa": 1.6,
+      "srKPa": 0.1
+    },
+    {
+      "key": "drumheller_ab",
+      "name": "Drumheller",
+      "province": "AB",
+      "lat": 51.47,
+      "lng": -112.7,
+      "ssKPa": 1.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "edmonton_ab",
+      "name": "Edmonton",
+      "province": "AB",
+      "lat": 53.55,
+      "lng": -113.47,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "edson_ab",
+      "name": "Edson",
+      "province": "AB",
+      "lat": 53.58,
+      "lng": -116.43,
+      "ssKPa": 2.1,
+      "srKPa": 0.1
+    },
+    {
+      "key": "embarras_portage_ab",
+      "name": "Embarras Portage",
+      "province": "AB",
+      "lat": 58.45,
+      "lng": -111.47,
+      "ssKPa": 2.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "fairview_ab",
+      "name": "Fairview",
+      "province": "AB",
+      "lat": 56.07,
+      "lng": -118.38,
+      "ssKPa": 2.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "fort_macleod_ab",
+      "name": "Fort MacLeod",
+      "province": "AB",
+      "lat": 49.72,
+      "lng": -113.42,
+      "ssKPa": 1.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "fort_mcmurray_ab",
+      "name": "Fort McMurray",
+      "province": "AB",
+      "lat": 56.73,
+      "lng": -111.38,
+      "ssKPa": 1.5,
+      "srKPa": 0.1
+    },
+    {
+      "key": "fort_saskatchewan_ab",
+      "name": "Fort Saskatchewan",
+      "province": "AB",
+      "lat": 53.72,
+      "lng": -113.22,
+      "ssKPa": 1.6,
+      "srKPa": 0.1
+    },
+    {
+      "key": "fort_vermilion_ab",
+      "name": "Fort Vermilion",
+      "province": "AB",
+      "lat": 58.4,
+      "lng": -116.0,
+      "ssKPa": 2.1,
+      "srKPa": 0.1
+    },
+    {
+      "key": "grande_prairie_ab",
+      "name": "Grande Prairie",
+      "province": "AB",
+      "lat": 55.17,
+      "lng": -118.8,
+      "ssKPa": 2.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "habay_ab",
+      "name": "Habay",
+      "province": "AB",
+      "lat": 58.83,
+      "lng": -118.73,
+      "ssKPa": 2.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "hardisty_ab",
+      "name": "Hardisty",
+      "province": "AB",
+      "lat": 52.67,
+      "lng": -111.3,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "high_river_ab",
+      "name": "High River",
+      "province": "AB",
+      "lat": 50.58,
+      "lng": -113.87,
+      "ssKPa": 1.3,
+      "srKPa": 0.1
+    },
+    {
+      "key": "hinton_ab",
+      "name": "Hinton",
+      "province": "AB",
+      "lat": 53.4,
+      "lng": -117.58,
+      "ssKPa": 2.6,
+      "srKPa": 0.1
+    },
+    {
+      "key": "jasper_ab",
+      "name": "Jasper",
+      "province": "AB",
+      "lat": 52.88,
+      "lng": -118.08,
+      "ssKPa": 3.0,
+      "srKPa": 0.1
+    },
+    {
+      "key": "keg_river_ab",
+      "name": "Keg River",
+      "province": "AB",
+      "lat": 57.75,
+      "lng": -117.62,
+      "ssKPa": 2.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "lac_la_biche_ab",
+      "name": "Lac la Biche",
+      "province": "AB",
+      "lat": 54.77,
+      "lng": -111.97,
+      "ssKPa": 1.6,
+      "srKPa": 0.1
+    },
+    {
+      "key": "lacombe_ab",
+      "name": "Lacombe",
+      "province": "AB",
+      "lat": 52.47,
+      "lng": -113.73,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "lethbridge_ab",
+      "name": "Lethbridge",
+      "province": "AB",
+      "lat": 49.7,
+      "lng": -112.82,
+      "ssKPa": 1.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "manning_ab",
+      "name": "Manning",
+      "province": "AB",
+      "lat": 56.92,
+      "lng": -117.62,
+      "ssKPa": 2.3,
+      "srKPa": 0.1
+    },
+    {
+      "key": "medicine_hat_ab",
+      "name": "Medicine Hat",
+      "province": "AB",
+      "lat": 50.05,
+      "lng": -110.67,
+      "ssKPa": 1.1,
+      "srKPa": 0.1
+    },
+    {
+      "key": "peace_river_ab",
+      "name": "Peace River",
+      "province": "AB",
+      "lat": 56.23,
+      "lng": -117.28,
+      "ssKPa": 2.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "pincher_creek_ab",
+      "name": "Pincher Creek",
+      "province": "AB",
+      "lat": 49.48,
+      "lng": -113.95,
+      "ssKPa": 1.5,
+      "srKPa": 0.1
+    },
+    {
+      "key": "ranfurly_ab",
+      "name": "Ranfurly",
+      "province": "AB",
+      "lat": 53.42,
+      "lng": -111.68,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "red_deer_ab",
+      "name": "Red Deer",
+      "province": "AB",
+      "lat": 52.27,
+      "lng": -113.8,
+      "ssKPa": 1.8,
+      "srKPa": 0.1
+    },
+    {
+      "key": "rocky_mountain_house_ab",
+      "name": "Rocky Mountain House",
+      "province": "AB",
+      "lat": 52.37,
+      "lng": -114.92,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "slave_lake_ab",
+      "name": "Slave Lake",
+      "province": "AB",
+      "lat": 55.28,
+      "lng": -114.77,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "stettler_ab",
+      "name": "Stettler",
+      "province": "AB",
+      "lat": 52.32,
+      "lng": -112.72,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "stony_plain_ab",
+      "name": "Stony Plain",
+      "province": "AB",
+      "lat": 53.53,
+      "lng": -114.0,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "suffield_ab",
+      "name": "Suffield",
+      "province": "AB",
+      "lat": 50.2,
+      "lng": -111.17,
+      "ssKPa": 1.3,
+      "srKPa": 0.1
+    },
+    {
+      "key": "taber_ab",
+      "name": "Taber",
+      "province": "AB",
+      "lat": 49.78,
+      "lng": -112.15,
+      "ssKPa": 1.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "turner_valley_ab",
+      "name": "Turner Valley",
+      "province": "AB",
+      "lat": 50.67,
+      "lng": -114.28,
+      "ssKPa": 1.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "valleyview_ab",
+      "name": "Valleyview",
+      "province": "AB",
+      "lat": 55.07,
+      "lng": -117.28,
+      "ssKPa": 2.3,
+      "srKPa": 0.1
+    },
+    {
+      "key": "vegreville_ab",
+      "name": "Vegreville",
+      "province": "AB",
+      "lat": 53.5,
+      "lng": -112.05,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "vermilion_ab",
+      "name": "Vermilion",
+      "province": "AB",
+      "lat": 53.37,
+      "lng": -110.85,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "wagner_ab",
+      "name": "Wagner",
+      "province": "AB",
+      "lat": 55.35,
+      "lng": -114.98,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "wainwright_ab",
+      "name": "Wainwright",
+      "province": "AB",
+      "lat": 52.82,
+      "lng": -110.87,
+      "ssKPa": 2.0,
+      "srKPa": 0.1
+    },
+    {
+      "key": "wetaskiwin_ab",
+      "name": "Wetaskiwin",
+      "province": "AB",
+      "lat": 52.97,
+      "lng": -113.37,
+      "ssKPa": 2.0,
+      "srKPa": 0.1
+    },
+    {
+      "key": "whitecourt_ab",
+      "name": "Whitecourt",
+      "province": "AB",
+      "lat": 54.15,
+      "lng": -115.68,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "wimborne_ab",
+      "name": "Wimborne",
+      "province": "AB",
+      "lat": 51.87,
+      "lng": -113.58,
+      "ssKPa": 1.6,
+      "srKPa": 0.1
+    },
+    {
+      "key": "assiniboia_sk",
+      "name": "Assiniboia",
+      "province": "SK",
+      "lat": 49.63,
+      "lng": -105.98,
+      "ssKPa": 1.6,
+      "srKPa": 0.1
+    },
+    {
+      "key": "battrum_sk",
+      "name": "Battrum",
+      "province": "SK",
+      "lat": 50.55,
+      "lng": -108.33,
+      "ssKPa": 1.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "biggar_sk",
+      "name": "Biggar",
+      "province": "SK",
+      "lat": 52.07,
+      "lng": -108.0,
+      "ssKPa": 2.1,
+      "srKPa": 0.1
+    },
+    {
+      "key": "broadview_sk",
+      "name": "Broadview",
+      "province": "SK",
+      "lat": 50.37,
+      "lng": -102.58,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "dafoe_sk",
+      "name": "Dafoe",
+      "province": "SK",
+      "lat": 51.75,
+      "lng": -104.53,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "dundurn_sk",
+      "name": "Dundurn",
+      "province": "SK",
+      "lat": 51.82,
+      "lng": -106.5,
+      "ssKPa": 1.5,
+      "srKPa": 0.1
+    },
+    {
+      "key": "estevan_sk",
+      "name": "Estevan",
+      "province": "SK",
+      "lat": 49.13,
+      "lng": -102.98,
+      "ssKPa": 1.6,
+      "srKPa": 0.1
+    },
+    {
+      "key": "hudson_bay_sk",
+      "name": "Hudson Bay",
+      "province": "SK",
+      "lat": 52.85,
+      "lng": -102.38,
+      "ssKPa": 2.0,
+      "srKPa": 0.1
+    },
+    {
+      "key": "humboldt_sk",
+      "name": "Humboldt",
+      "province": "SK",
+      "lat": 52.2,
+      "lng": -105.12,
+      "ssKPa": 2.1,
+      "srKPa": 0.1
+    },
+    {
+      "key": "island_falls_sk",
+      "name": "Island Falls",
+      "province": "SK",
+      "lat": 55.53,
+      "lng": -102.35,
+      "ssKPa": 2.1,
+      "srKPa": 0.1
+    },
+    {
+      "key": "kamsack_sk",
+      "name": "Kamsack",
+      "province": "SK",
+      "lat": 51.57,
+      "lng": -101.9,
+      "ssKPa": 2.1,
+      "srKPa": 0.2
+    },
+    {
+      "key": "kindersley_sk",
+      "name": "Kindersley",
+      "province": "SK",
+      "lat": 51.47,
+      "lng": -109.17,
+      "ssKPa": 1.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "lloydminster_sk",
+      "name": "Lloydminster",
+      "province": "SK",
+      "lat": 53.28,
+      "lng": -110.0,
+      "ssKPa": 2.0,
+      "srKPa": 0.1
+    },
+    {
+      "key": "maple_creek_sk",
+      "name": "Maple Creek",
+      "province": "SK",
+      "lat": 49.92,
+      "lng": -109.48,
+      "ssKPa": 1.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "meadow_lake_sk",
+      "name": "Meadow Lake",
+      "province": "SK",
+      "lat": 54.13,
+      "lng": -108.43,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "melfort_sk",
+      "name": "Melfort",
+      "province": "SK",
+      "lat": 52.87,
+      "lng": -104.62,
+      "ssKPa": 2.1,
+      "srKPa": 0.1
+    },
+    {
+      "key": "melville_sk",
+      "name": "Melville",
+      "province": "SK",
+      "lat": 50.92,
+      "lng": -102.8,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "moose_jaw_sk",
+      "name": "Moose Jaw",
+      "province": "SK",
+      "lat": 50.4,
+      "lng": -105.53,
+      "ssKPa": 1.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "nipawin_sk",
+      "name": "Nipawin",
+      "province": "SK",
+      "lat": 53.37,
+      "lng": -104.0,
+      "ssKPa": 2.0,
+      "srKPa": 0.1
+    },
+    {
+      "key": "north_battleford_sk",
+      "name": "North Battleford",
+      "province": "SK",
+      "lat": 52.78,
+      "lng": -108.28,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "prince_albert_sk",
+      "name": "Prince Albert",
+      "province": "SK",
+      "lat": 53.2,
+      "lng": -105.77,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "qu_appelle_sk",
+      "name": "Qu'Appelle",
+      "province": "SK",
+      "lat": 50.55,
+      "lng": -103.88,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "regina_sk",
+      "name": "Regina",
+      "province": "SK",
+      "lat": 50.45,
+      "lng": -104.62,
+      "ssKPa": 1.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "rosetown_sk",
+      "name": "Rosetown",
+      "province": "SK",
+      "lat": 51.55,
+      "lng": -108.0,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "saskatoon_sk",
+      "name": "Saskatoon",
+      "province": "SK",
+      "lat": 52.12,
+      "lng": -106.63,
+      "ssKPa": 1.7,
+      "srKPa": 0.1
+    },
+    {
+      "key": "scott_sk",
+      "name": "Scott",
+      "province": "SK",
+      "lat": 52.37,
+      "lng": -108.83,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "strasbourg_sk",
+      "name": "Strasbourg",
+      "province": "SK",
+      "lat": 51.07,
+      "lng": -104.95,
+      "ssKPa": 1.5,
+      "srKPa": 0.1
+    },
+    {
+      "key": "swift_current_sk",
+      "name": "Swift Current",
+      "province": "SK",
+      "lat": 50.28,
+      "lng": -107.8,
+      "ssKPa": 1.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "uranium_city_sk",
+      "name": "Uranium City",
+      "province": "SK",
+      "lat": 59.57,
+      "lng": -108.62,
+      "ssKPa": 2.0,
+      "srKPa": 0.1
+    },
+    {
+      "key": "weyburn_sk",
+      "name": "Weyburn",
+      "province": "SK",
+      "lat": 49.67,
+      "lng": -103.85,
+      "ssKPa": 1.8,
+      "srKPa": 0.1
+    },
+    {
+      "key": "yorkton_sk",
+      "name": "Yorkton",
+      "province": "SK",
+      "lat": 51.22,
+      "lng": -102.47,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "beausejour_mb",
+      "name": "Beausejour",
+      "province": "MB",
+      "lat": 50.067,
+      "lng": -96.517,
+      "ssKPa": 2.0,
+      "srKPa": 0.2
+    },
+    {
+      "key": "boissevain_mb",
+      "name": "Boissevain",
+      "province": "MB",
+      "lat": 49.233,
+      "lng": -100.05,
+      "ssKPa": 2.2,
+      "srKPa": 0.2
+    },
+    {
+      "key": "brandon_mb",
+      "name": "Brandon",
+      "province": "MB",
+      "lat": 49.833,
+      "lng": -99.95,
+      "ssKPa": 2.1,
+      "srKPa": 0.2
+    },
+    {
+      "key": "churchill_mb",
+      "name": "Churchill",
+      "province": "MB",
+      "lat": 58.75,
+      "lng": -94.12,
+      "ssKPa": 3.0,
+      "srKPa": 0.2
+    },
+    {
+      "key": "dauphin_mb",
+      "name": "Dauphin",
+      "province": "MB",
+      "lat": 51.15,
+      "lng": -100.05,
+      "ssKPa": 1.9,
+      "srKPa": 0.2
+    },
+    {
+      "key": "flin_flon_mb",
+      "name": "Flin Flon",
+      "province": "MB",
+      "lat": 54.77,
+      "lng": -101.88,
+      "ssKPa": 2.2,
+      "srKPa": 0.2
+    },
+    {
+      "key": "gimli_mb",
+      "name": "Gimli",
+      "province": "MB",
+      "lat": 50.64,
+      "lng": -96.99,
+      "ssKPa": 1.9,
+      "srKPa": 0.2
+    },
+    {
+      "key": "island_lake_mb",
+      "name": "Island Lake",
+      "province": "MB",
+      "lat": 53.867,
+      "lng": -94.667,
+      "ssKPa": 2.6,
+      "srKPa": 0.2
+    },
+    {
+      "key": "lac_du_bonnet_mb",
+      "name": "Lac du Bonnet",
+      "province": "MB",
+      "lat": 50.27,
+      "lng": -96.06,
+      "ssKPa": 1.9,
+      "srKPa": 0.2
+    },
+    {
+      "key": "lynn_lake_mb",
+      "name": "Lynn Lake",
+      "province": "MB",
+      "lat": 56.85,
+      "lng": -101.05,
+      "ssKPa": 2.4,
+      "srKPa": 0.2
+    },
+    {
+      "key": "morden_mb",
+      "name": "Morden",
+      "province": "MB",
+      "lat": 49.183,
+      "lng": -98.1,
+      "ssKPa": 2.2,
+      "srKPa": 0.2
+    },
+    {
+      "key": "neepawa_mb",
+      "name": "Neepawa",
+      "province": "MB",
+      "lat": 50.233,
+      "lng": -99.467,
+      "ssKPa": 2.2,
+      "srKPa": 0.2
+    },
+    {
+      "key": "pine_falls_mb",
+      "name": "Pine Falls",
+      "province": "MB",
+      "lat": 50.567,
+      "lng": -96.217,
+      "ssKPa": 1.9,
+      "srKPa": 0.2
+    },
+    {
+      "key": "portage_la_prairie_mb",
+      "name": "Portage la Prairie",
+      "province": "MB",
+      "lat": 50.0,
+      "lng": -98.29,
+      "ssKPa": 2.1,
+      "srKPa": 0.2
+    },
+    {
+      "key": "rivers_mb",
+      "name": "Rivers",
+      "province": "MB",
+      "lat": 50.033,
+      "lng": -100.233,
+      "ssKPa": 2.1,
+      "srKPa": 0.2
+    },
+    {
+      "key": "sandilands_mb",
+      "name": "Sandilands",
+      "province": "MB",
+      "lat": 49.36,
+      "lng": -96.3,
+      "ssKPa": 2.2,
+      "srKPa": 0.2
+    },
+    {
+      "key": "selkirk_mb",
+      "name": "Selkirk",
+      "province": "MB",
+      "lat": 50.15,
+      "lng": -96.867,
+      "ssKPa": 1.9,
+      "srKPa": 0.2
+    },
+    {
+      "key": "split_lake_mb",
+      "name": "Split Lake",
+      "province": "MB",
+      "lat": 56.25,
+      "lng": -96.1,
+      "ssKPa": 2.5,
+      "srKPa": 0.2
+    },
+    {
+      "key": "steinbach_mb",
+      "name": "Steinbach",
+      "province": "MB",
+      "lat": 49.533,
+      "lng": -96.683,
+      "ssKPa": 2.0,
+      "srKPa": 0.2
+    },
+    {
+      "key": "swan_river_mb",
+      "name": "Swan River",
+      "province": "MB",
+      "lat": 52.14,
+      "lng": -101.27,
+      "ssKPa": 2.0,
+      "srKPa": 0.2
+    },
+    {
+      "key": "the_pas_mb",
+      "name": "The Pas",
+      "province": "MB",
+      "lat": 53.87,
+      "lng": -101.25,
+      "ssKPa": 2.2,
+      "srKPa": 0.2
+    },
+    {
+      "key": "thompson_mb",
+      "name": "Thompson",
+      "province": "MB",
+      "lat": 55.79,
+      "lng": -97.86,
+      "ssKPa": 2.4,
+      "srKPa": 0.2
+    },
+    {
+      "key": "virden_mb",
+      "name": "Virden",
+      "province": "MB",
+      "lat": 49.86,
+      "lng": -100.93,
+      "ssKPa": 2.0,
+      "srKPa": 0.2
+    },
+    {
+      "key": "winnipeg_mb",
+      "name": "Winnipeg",
+      "province": "MB",
+      "lat": 49.89,
+      "lng": -97.15,
+      "ssKPa": 1.9,
+      "srKPa": 0.2
+    },
+    {
+      "key": "ailsa_craig_on",
+      "name": "Ailsa Craig",
+      "province": "ON",
+      "lat": 43.13,
+      "lng": -81.55,
+      "ssKPa": 2.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "ajax_on",
+      "name": "Ajax",
+      "province": "ON",
+      "lat": 43.85,
+      "lng": -79.03,
+      "ssKPa": 1.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "alexandria_on",
+      "name": "Alexandria",
+      "province": "ON",
+      "lat": 45.32,
+      "lng": -74.63,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "alliston_on",
+      "name": "Alliston",
+      "province": "ON",
+      "lat": 44.15,
+      "lng": -79.87,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "almonte_on",
+      "name": "Almonte",
+      "province": "ON",
+      "lat": 45.23,
+      "lng": -76.2,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "armstrong_on",
+      "name": "Armstrong",
+      "province": "ON",
+      "lat": 50.3,
+      "lng": -89.03,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "arnprior_on",
+      "name": "Arnprior",
+      "province": "ON",
+      "lat": 45.43,
+      "lng": -76.35,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "atikokan_on",
+      "name": "Atikokan",
+      "province": "ON",
+      "lat": 48.75,
+      "lng": -91.62,
+      "ssKPa": 2.4,
+      "srKPa": 0.3
+    },
+    {
+      "key": "attawapiskat_on",
+      "name": "Attawapiskat",
+      "province": "ON",
+      "lat": 52.93,
+      "lng": -82.43,
+      "ssKPa": 2.8,
+      "srKPa": 0.3
+    },
+    {
+      "key": "aurora_on",
+      "name": "Aurora",
+      "province": "ON",
+      "lat": 44.0,
+      "lng": -79.47,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "bancroft_on",
+      "name": "Bancroft",
+      "province": "ON",
+      "lat": 45.05,
+      "lng": -77.85,
+      "ssKPa": 3.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "barrie_on",
+      "name": "Barrie",
+      "province": "ON",
+      "lat": 44.4,
+      "lng": -79.67,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "barriefield_on",
+      "name": "Barriefield",
+      "province": "ON",
+      "lat": 44.23,
+      "lng": -76.47,
+      "ssKPa": 2.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "beaverton_on",
+      "name": "Beaverton",
+      "province": "ON",
+      "lat": 44.43,
+      "lng": -79.15,
+      "ssKPa": 2.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "belleville_on",
+      "name": "Belleville",
+      "province": "ON",
+      "lat": 44.167,
+      "lng": -77.383,
+      "ssKPa": 1.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "belmont_on",
+      "name": "Belmont",
+      "province": "ON",
+      "lat": 42.88,
+      "lng": -81.08,
+      "ssKPa": 1.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "bowmanville_on",
+      "name": "Bowmanville",
+      "province": "ON",
+      "lat": 43.91,
+      "lng": -78.68,
+      "ssKPa": 1.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "bracebridge_on",
+      "name": "Bracebridge",
+      "province": "ON",
+      "lat": 45.03,
+      "lng": -79.3,
+      "ssKPa": 3.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "bradford_on",
+      "name": "Bradford",
+      "province": "ON",
+      "lat": 44.12,
+      "lng": -79.57,
+      "ssKPa": 2.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "brampton_on",
+      "name": "Brampton",
+      "province": "ON",
+      "lat": 43.68,
+      "lng": -79.77,
+      "ssKPa": 1.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "brantford_on",
+      "name": "Brantford",
+      "province": "ON",
+      "lat": 43.13,
+      "lng": -80.27,
+      "ssKPa": 1.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "brighton_on",
+      "name": "Brighton",
+      "province": "ON",
+      "lat": 44.03,
+      "lng": -77.73,
+      "ssKPa": 1.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "brockville_on",
+      "name": "Brockville",
+      "province": "ON",
+      "lat": 44.59,
+      "lng": -75.68,
+      "ssKPa": 2.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "burk_s_falls_on",
+      "name": "Burk's Falls",
+      "province": "ON",
+      "lat": 45.62,
+      "lng": -79.4,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "burlington_on",
+      "name": "Burlington",
+      "province": "ON",
+      "lat": 43.32,
+      "lng": -79.8,
+      "ssKPa": 1.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "cambridge_on",
+      "name": "Cambridge",
+      "province": "ON",
+      "lat": 43.38,
+      "lng": -80.32,
+      "ssKPa": 1.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "campbellford_on",
+      "name": "Campbellford",
+      "province": "ON",
+      "lat": 44.3,
+      "lng": -77.8,
+      "ssKPa": 1.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "cannington_on",
+      "name": "Cannington",
+      "province": "ON",
+      "lat": 44.35,
+      "lng": -79.03,
+      "ssKPa": 2.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "carleton_place_on",
+      "name": "Carleton Place",
+      "province": "ON",
+      "lat": 45.13,
+      "lng": -76.15,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "cavan_on",
+      "name": "Cavan",
+      "province": "ON",
+      "lat": 44.2,
+      "lng": -78.47,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "centralia_on",
+      "name": "Centralia",
+      "province": "ON",
+      "lat": 43.28,
+      "lng": -81.47,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "cfb_borden_on",
+      "name": "CFB Borden",
+      "province": "ON",
+      "lat": 44.27,
+      "lng": -79.88,
+      "ssKPa": 2.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "chapleau_on",
+      "name": "Chapleau",
+      "province": "ON",
+      "lat": 47.83,
+      "lng": -83.4,
+      "ssKPa": 3.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "chatham_on",
+      "name": "Chatham",
+      "province": "ON",
+      "lat": 42.4,
+      "lng": -82.18,
+      "ssKPa": 1.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "chesley_on",
+      "name": "Chesley",
+      "province": "ON",
+      "lat": 44.28,
+      "lng": -81.08,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "clinton_on",
+      "name": "Clinton",
+      "province": "ON",
+      "lat": 43.62,
+      "lng": -81.53,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "coboconk_on",
+      "name": "Coboconk",
+      "province": "ON",
+      "lat": 44.65,
+      "lng": -78.8,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "cobourg_on",
+      "name": "Cobourg",
+      "province": "ON",
+      "lat": 43.97,
+      "lng": -78.17,
+      "ssKPa": 1.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "cochrane_on",
+      "name": "Cochrane",
+      "province": "ON",
+      "lat": 49.07,
+      "lng": -81.02,
+      "ssKPa": 2.8,
+      "srKPa": 0.3
+    },
+    {
+      "key": "colborne_on",
+      "name": "Colborne",
+      "province": "ON",
+      "lat": 44.0,
+      "lng": -77.88,
+      "ssKPa": 1.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "collingwood_on",
+      "name": "Collingwood",
+      "province": "ON",
+      "lat": 44.48,
+      "lng": -80.22,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "cornwall_on",
+      "name": "Cornwall",
+      "province": "ON",
+      "lat": 45.03,
+      "lng": -74.73,
+      "ssKPa": 2.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "corunna_on",
+      "name": "Corunna",
+      "province": "ON",
+      "lat": 42.88,
+      "lng": -82.43,
+      "ssKPa": 1.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "deep_river_on",
+      "name": "Deep River",
+      "province": "ON",
+      "lat": 46.1,
+      "lng": -77.5,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "deseronto_on",
+      "name": "Deseronto",
+      "province": "ON",
+      "lat": 44.2,
+      "lng": -77.05,
+      "ssKPa": 1.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "dorchester_on",
+      "name": "Dorchester",
+      "province": "ON",
+      "lat": 42.98,
+      "lng": -81.07,
+      "ssKPa": 1.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "dorion_on",
+      "name": "Dorion",
+      "province": "ON",
+      "lat": 48.78,
+      "lng": -88.53,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "dresden_on",
+      "name": "Dresden",
+      "province": "ON",
+      "lat": 42.58,
+      "lng": -82.18,
+      "ssKPa": 1.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "dryden_on",
+      "name": "Dryden",
+      "province": "ON",
+      "lat": 49.78,
+      "lng": -92.75,
+      "ssKPa": 2.4,
+      "srKPa": 0.3
+    },
+    {
+      "key": "dundalk_on",
+      "name": "Dundalk",
+      "province": "ON",
+      "lat": 44.17,
+      "lng": -80.394,
+      "ssKPa": 3.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "dunnville_on",
+      "name": "Dunnville",
+      "province": "ON",
+      "lat": 42.9,
+      "lng": -79.62,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "durham_on",
+      "name": "Durham",
+      "province": "ON",
+      "lat": 44.17,
+      "lng": -80.82,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "dutton_on",
+      "name": "Dutton",
+      "province": "ON",
+      "lat": 42.67,
+      "lng": -81.5,
+      "ssKPa": 1.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "earlton_on",
+      "name": "Earlton",
+      "province": "ON",
+      "lat": 47.72,
+      "lng": -79.82,
+      "ssKPa": 3.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "edison_on",
+      "name": "Edison",
+      "province": "ON",
+      "lat": 49.8,
+      "lng": -93.55,
+      "ssKPa": 2.4,
+      "srKPa": 0.3
+    },
+    {
+      "key": "elliot_lake_on",
+      "name": "Elliot Lake",
+      "province": "ON",
+      "lat": 46.381,
+      "lng": -82.657,
+      "ssKPa": 2.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "elmvale_on",
+      "name": "Elmvale",
+      "province": "ON",
+      "lat": 44.58,
+      "lng": -79.87,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "embro_on",
+      "name": "Embro",
+      "province": "ON",
+      "lat": 43.15,
+      "lng": -80.9,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "englehart_on",
+      "name": "Englehart",
+      "province": "ON",
+      "lat": 47.82,
+      "lng": -79.87,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "espanola_on",
+      "name": "Espanola",
+      "province": "ON",
+      "lat": 46.25,
+      "lng": -81.77,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "exeter_on",
+      "name": "Exeter",
+      "province": "ON",
+      "lat": 43.35,
+      "lng": -81.48,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "fenelon_falls_on",
+      "name": "Fenelon Falls",
+      "province": "ON",
+      "lat": 44.53,
+      "lng": -78.75,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "fergus_on",
+      "name": "Fergus",
+      "province": "ON",
+      "lat": 43.7,
+      "lng": -80.37,
+      "ssKPa": 2.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "forest_on",
+      "name": "Forest",
+      "province": "ON",
+      "lat": 43.1,
+      "lng": -82.0,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "fort_erie_on",
+      "name": "Fort Erie",
+      "province": "ON",
+      "lat": 42.9,
+      "lng": -78.93,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "fort_erie_ridgeway_on",
+      "name": "Fort Erie (Ridgeway)",
+      "province": "ON",
+      "lat": 42.88,
+      "lng": -79.05,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "fort_frances_on",
+      "name": "Fort Frances",
+      "province": "ON",
+      "lat": 48.61,
+      "lng": -93.39,
+      "ssKPa": 2.3,
+      "srKPa": 0.3
+    },
+    {
+      "key": "gananoque_on",
+      "name": "Gananoque",
+      "province": "ON",
+      "lat": 44.33,
+      "lng": -76.17,
+      "ssKPa": 2.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "geraldton_on",
+      "name": "Geraldton",
+      "province": "ON",
+      "lat": 49.73,
+      "lng": -86.95,
+      "ssKPa": 2.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "glencoe_on",
+      "name": "Glencoe",
+      "province": "ON",
+      "lat": 42.75,
+      "lng": -81.72,
+      "ssKPa": 1.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "goderich_on",
+      "name": "Goderich",
+      "province": "ON",
+      "lat": 43.75,
+      "lng": -81.72,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "gore_bay_on",
+      "name": "Gore Bay",
+      "province": "ON",
+      "lat": 45.92,
+      "lng": -82.47,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "graham_on",
+      "name": "Graham",
+      "province": "ON",
+      "lat": 49.25,
+      "lng": -90.57,
+      "ssKPa": 2.6,
+      "srKPa": 0.3
+    },
+    {
+      "key": "gravenhurst_muskoka_airport_on",
+      "name": "Gravenhurst (Muskoka Airport)",
+      "province": "ON",
+      "lat": 44.92,
+      "lng": -79.37,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "grimsby_on",
+      "name": "Grimsby",
+      "province": "ON",
+      "lat": 43.2,
+      "lng": -79.57,
+      "ssKPa": 0.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "guelph_on",
+      "name": "Guelph",
+      "province": "ON",
+      "lat": 43.55,
+      "lng": -80.25,
+      "ssKPa": 1.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "guthrie_on",
+      "name": "Guthrie",
+      "province": "ON",
+      "lat": 44.47,
+      "lng": -79.55,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "haileybury_on",
+      "name": "Haileybury",
+      "province": "ON",
+      "lat": 47.45,
+      "lng": -79.63,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "haldimand_caledonia_on",
+      "name": "Haldimand (Caledonia)",
+      "province": "ON",
+      "lat": 43.07,
+      "lng": -79.93,
+      "ssKPa": 1.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "haldimand_hagersville_on",
+      "name": "Haldimand (Hagersville)",
+      "province": "ON",
+      "lat": 42.97,
+      "lng": -80.05,
+      "ssKPa": 1.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "haliburton_on",
+      "name": "Haliburton",
+      "province": "ON",
+      "lat": 45.05,
+      "lng": -78.52,
+      "ssKPa": 2.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "halton_hills_georgetown_on",
+      "name": "Halton Hills (Georgetown)",
+      "province": "ON",
+      "lat": 43.65,
+      "lng": -79.92,
+      "ssKPa": 1.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "hamilton_on",
+      "name": "Hamilton",
+      "province": "ON",
+      "lat": 43.25,
+      "lng": -79.86,
+      "ssKPa": 1.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "hanover_on",
+      "name": "Hanover",
+      "province": "ON",
+      "lat": 44.15,
+      "lng": -81.03,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "hastings_on",
+      "name": "Hastings",
+      "province": "ON",
+      "lat": 44.3,
+      "lng": -77.95,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "hawkesbury_on",
+      "name": "Hawkesbury",
+      "province": "ON",
+      "lat": 45.6,
+      "lng": -74.62,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "hearst_on",
+      "name": "Hearst",
+      "province": "ON",
+      "lat": 49.68,
+      "lng": -83.67,
+      "ssKPa": 2.8,
+      "srKPa": 0.3
+    },
+    {
+      "key": "honey_harbour_on",
+      "name": "Honey Harbour",
+      "province": "ON",
+      "lat": 44.87,
+      "lng": -79.82,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "hornepayne_on",
+      "name": "Hornepayne",
+      "province": "ON",
+      "lat": 49.22,
+      "lng": -84.78,
+      "ssKPa": 3.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "huntsville_on",
+      "name": "Huntsville",
+      "province": "ON",
+      "lat": 45.33,
+      "lng": -79.22,
+      "ssKPa": 2.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "ingersoll_on",
+      "name": "Ingersoll",
+      "province": "ON",
+      "lat": 43.03,
+      "lng": -80.88,
+      "ssKPa": 1.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "iroquois_falls_on",
+      "name": "Iroquois Falls",
+      "province": "ON",
+      "lat": 48.77,
+      "lng": -80.68,
+      "ssKPa": 2.9,
+      "srKPa": 0.3
+    },
+    {
+      "key": "jellicoe_on",
+      "name": "Jellicoe",
+      "province": "ON",
+      "lat": 49.68,
+      "lng": -87.52,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "kapuskasing_on",
+      "name": "Kapuskasing",
+      "province": "ON",
+      "lat": 49.42,
+      "lng": -82.43,
+      "ssKPa": 3.0,
+      "srKPa": 0.3
+    },
+    {
+      "key": "kemptville_on",
+      "name": "Kemptville",
+      "province": "ON",
+      "lat": 45.02,
+      "lng": -75.64,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "kenora_on",
+      "name": "Kenora",
+      "province": "ON",
+      "lat": 49.82,
+      "lng": -94.43,
+      "ssKPa": 2.5,
+      "srKPa": 0.3
+    },
+    {
+      "key": "killaloe_on",
+      "name": "Killaloe",
+      "province": "ON",
+      "lat": 45.55,
+      "lng": -77.42,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "kincardine_on",
+      "name": "Kincardine",
+      "province": "ON",
+      "lat": 44.18,
+      "lng": -81.63,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "kingston_on",
+      "name": "Kingston",
+      "province": "ON",
+      "lat": 44.23,
+      "lng": -76.48,
+      "ssKPa": 2.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "kinmount_on",
+      "name": "Kinmount",
+      "province": "ON",
+      "lat": 44.78,
+      "lng": -78.65,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "kirkland_lake_on",
+      "name": "Kirkland Lake",
+      "province": "ON",
+      "lat": 48.15,
+      "lng": -80.03,
+      "ssKPa": 2.9,
+      "srKPa": 0.3
+    },
+    {
+      "key": "kitchener_on",
+      "name": "Kitchener",
+      "province": "ON",
+      "lat": 43.45,
+      "lng": -80.48,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "kitchenuhmaykoosib_on",
+      "name": "Kitchenuhmaykoosib",
+      "province": "ON",
+      "lat": 53.83,
+      "lng": -90.0,
+      "ssKPa": 3.2,
+      "srKPa": 0.2
+    },
+    {
+      "key": "lakefield_on",
+      "name": "Lakefield",
+      "province": "ON",
+      "lat": 44.43,
+      "lng": -78.27,
+      "ssKPa": 2.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "lansdowne_house_on",
+      "name": "Lansdowne House",
+      "province": "ON",
+      "lat": 52.23,
+      "lng": -87.88,
+      "ssKPa": 3.0,
+      "srKPa": 0.2
+    },
+    {
+      "key": "leamington_on",
+      "name": "Leamington",
+      "province": "ON",
+      "lat": 42.08,
+      "lng": -82.57,
+      "ssKPa": 0.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "lindsay_on",
+      "name": "Lindsay",
+      "province": "ON",
+      "lat": 44.35,
+      "lng": -78.73,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "lion_s_head_on",
+      "name": "Lion's Head",
+      "province": "ON",
+      "lat": 44.98,
+      "lng": -81.25,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "listowel_on",
+      "name": "Listowel",
+      "province": "ON",
+      "lat": 43.73,
+      "lng": -80.95,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "london_on",
+      "name": "London",
+      "province": "ON",
+      "lat": 42.98,
+      "lng": -81.23,
+      "ssKPa": 1.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "lucan_on",
+      "name": "Lucan",
+      "province": "ON",
+      "lat": 43.18,
+      "lng": -81.4,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "maitland_on",
+      "name": "Maitland",
+      "province": "ON",
+      "lat": 44.63,
+      "lng": -75.62,
+      "ssKPa": 2.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "markdale_on",
+      "name": "Markdale",
+      "province": "ON",
+      "lat": 44.32,
+      "lng": -80.65,
+      "ssKPa": 3.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "markham_on",
+      "name": "Markham",
+      "province": "ON",
+      "lat": 43.87,
+      "lng": -79.27,
+      "ssKPa": 1.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "martin_on",
+      "name": "Martin",
+      "province": "ON",
+      "lat": 49.25,
+      "lng": -91.13,
+      "ssKPa": 2.6,
+      "srKPa": 0.3
+    },
+    {
+      "key": "matheson_on",
+      "name": "Matheson",
+      "province": "ON",
+      "lat": 48.53,
+      "lng": -80.47,
+      "ssKPa": 2.8,
+      "srKPa": 0.3
+    },
+    {
+      "key": "mattawa_on",
+      "name": "Mattawa",
+      "province": "ON",
+      "lat": 46.32,
+      "lng": -78.7,
+      "ssKPa": 2.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "midland_on",
+      "name": "Midland",
+      "province": "ON",
+      "lat": 44.75,
+      "lng": -79.88,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "milton_on",
+      "name": "Milton",
+      "province": "ON",
+      "lat": 43.52,
+      "lng": -79.88,
+      "ssKPa": 1.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "milverton_on",
+      "name": "Milverton",
+      "province": "ON",
+      "lat": 43.57,
+      "lng": -80.92,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "minden_on",
+      "name": "Minden",
+      "province": "ON",
+      "lat": 44.92,
+      "lng": -78.73,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "mississauga_on",
+      "name": "Mississauga",
+      "province": "ON",
+      "lat": 43.58,
+      "lng": -79.65,
+      "ssKPa": 1.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "mississauga_port_credit_on",
+      "name": "Mississauga Port Credit",
+      "province": "ON",
+      "lat": 43.55,
+      "lng": -79.58,
+      "ssKPa": 0.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "mitchell_on",
+      "name": "Mitchell",
+      "province": "ON",
+      "lat": 43.47,
+      "lng": -81.2,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "moosonee_on",
+      "name": "Moosonee",
+      "province": "ON",
+      "lat": 51.32,
+      "lng": -80.72,
+      "ssKPa": 2.7,
+      "srKPa": 0.3
+    },
+    {
+      "key": "morrisburg_on",
+      "name": "Morrisburg",
+      "province": "ON",
+      "lat": 44.9,
+      "lng": -75.18,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "mount_forest_on",
+      "name": "Mount Forest",
+      "province": "ON",
+      "lat": 43.98,
+      "lng": -80.73,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "nakina_on",
+      "name": "Nakina",
+      "province": "ON",
+      "lat": 50.17,
+      "lng": -86.7,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "nanticoke_jarvis_on",
+      "name": "Nanticoke (Jarvis)",
+      "province": "ON",
+      "lat": 42.88,
+      "lng": -80.1,
+      "ssKPa": 1.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "nanticoke_port_dover_on",
+      "name": "Nanticoke (Port Dover)",
+      "province": "ON",
+      "lat": 42.78,
+      "lng": -80.2,
+      "ssKPa": 1.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "napanee_on",
+      "name": "Napanee",
+      "province": "ON",
+      "lat": 44.25,
+      "lng": -76.95,
+      "ssKPa": 1.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "new_liskeard_on",
+      "name": "New Liskeard",
+      "province": "ON",
+      "lat": 47.5,
+      "lng": -79.67,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "newcastle_on",
+      "name": "Newcastle",
+      "province": "ON",
+      "lat": 43.92,
+      "lng": -78.58,
+      "ssKPa": 1.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "newmarket_on",
+      "name": "Newmarket",
+      "province": "ON",
+      "lat": 44.05,
+      "lng": -79.47,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "niagara_falls_on",
+      "name": "Niagara Falls",
+      "province": "ON",
+      "lat": 43.1,
+      "lng": -79.07,
+      "ssKPa": 1.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "north_bay_on",
+      "name": "North Bay",
+      "province": "ON",
+      "lat": 46.32,
+      "lng": -79.47,
+      "ssKPa": 2.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "norwood_on",
+      "name": "Norwood",
+      "province": "ON",
+      "lat": 44.38,
+      "lng": -77.98,
+      "ssKPa": 2.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "oakville_on",
+      "name": "Oakville",
+      "province": "ON",
+      "lat": 43.45,
+      "lng": -79.68,
+      "ssKPa": 1.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "orangeville_on",
+      "name": "Orangeville",
+      "province": "ON",
+      "lat": 43.92,
+      "lng": -80.1,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "orillia_on",
+      "name": "Orillia",
+      "province": "ON",
+      "lat": 44.62,
+      "lng": -79.42,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "oshawa_on",
+      "name": "Oshawa",
+      "province": "ON",
+      "lat": 43.9,
+      "lng": -78.85,
+      "ssKPa": 1.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "ottawa_barrhaven_on",
+      "name": "Ottawa (Barrhaven)",
+      "province": "ON",
+      "lat": 45.28,
+      "lng": -75.76,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "ottawa_city_hall_on",
+      "name": "Ottawa (city hall)",
+      "province": "ON",
+      "lat": 45.42,
+      "lng": -75.69,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "ottawa_kanata_on",
+      "name": "Ottawa (Kanata)",
+      "province": "ON",
+      "lat": 45.31,
+      "lng": -75.91,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "ottawa_m_c_int_l_airport_on",
+      "name": "Ottawa (M-C Int'l Airport)",
+      "province": "ON",
+      "lat": 45.32,
+      "lng": -75.67,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "ottawa_orleans_on",
+      "name": "Ottawa (Orleans)",
+      "province": "ON",
+      "lat": 45.48,
+      "lng": -75.52,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "owen_sound_on",
+      "name": "Owen Sound",
+      "province": "ON",
+      "lat": 44.57,
+      "lng": -80.93,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "pagwa_river_on",
+      "name": "Pagwa River",
+      "province": "ON",
+      "lat": 50.02,
+      "lng": -85.22,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "paris_on",
+      "name": "Paris",
+      "province": "ON",
+      "lat": 43.2,
+      "lng": -80.38,
+      "ssKPa": 1.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "parkhill_on",
+      "name": "Parkhill",
+      "province": "ON",
+      "lat": 43.15,
+      "lng": -81.68,
+      "ssKPa": 2.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "parry_sound_on",
+      "name": "Parry Sound",
+      "province": "ON",
+      "lat": 45.35,
+      "lng": -80.03,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "pelham_fonthill_on",
+      "name": "Pelham (Fonthill)",
+      "province": "ON",
+      "lat": 43.03,
+      "lng": -79.28,
+      "ssKPa": 2.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "pembroke_on",
+      "name": "Pembroke",
+      "province": "ON",
+      "lat": 45.82,
+      "lng": -77.12,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "penetanguishene_on",
+      "name": "Penetanguishene",
+      "province": "ON",
+      "lat": 44.78,
+      "lng": -79.92,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "perth_on",
+      "name": "Perth",
+      "province": "ON",
+      "lat": 44.9,
+      "lng": -76.25,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "petawawa_on",
+      "name": "Petawawa",
+      "province": "ON",
+      "lat": 45.9,
+      "lng": -77.33,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "peterborough_on",
+      "name": "Peterborough",
+      "province": "ON",
+      "lat": 44.3,
+      "lng": -78.32,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "petrolia_on",
+      "name": "Petrolia",
+      "province": "ON",
+      "lat": 42.87,
+      "lng": -82.15,
+      "ssKPa": 1.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "pickering_dunbarton_on",
+      "name": "Pickering (Dunbarton)",
+      "province": "ON",
+      "lat": 43.82,
+      "lng": -79.1,
+      "ssKPa": 1.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "picton_on",
+      "name": "Picton",
+      "province": "ON",
+      "lat": 44.0,
+      "lng": -77.13,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "plattsville_on",
+      "name": "Plattsville",
+      "province": "ON",
+      "lat": 43.3,
+      "lng": -80.62,
+      "ssKPa": 1.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "point_alexander_on",
+      "name": "Point Alexander",
+      "province": "ON",
+      "lat": 46.13,
+      "lng": -77.57,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "port_burwell_on",
+      "name": "Port Burwell",
+      "province": "ON",
+      "lat": 42.65,
+      "lng": -80.82,
+      "ssKPa": 1.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "port_colborne_on",
+      "name": "Port Colborne",
+      "province": "ON",
+      "lat": 42.9,
+      "lng": -79.23,
+      "ssKPa": 2.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "port_elgin_on",
+      "name": "Port Elgin",
+      "province": "ON",
+      "lat": 44.43,
+      "lng": -81.4,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "port_hope_on",
+      "name": "Port Hope",
+      "province": "ON",
+      "lat": 43.95,
+      "lng": -78.3,
+      "ssKPa": 1.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "port_perry_on",
+      "name": "Port Perry",
+      "province": "ON",
+      "lat": 44.1,
+      "lng": -78.95,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "port_stanley_on",
+      "name": "Port Stanley",
+      "province": "ON",
+      "lat": 42.67,
+      "lng": -81.22,
+      "ssKPa": 1.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "prescott_on",
+      "name": "Prescott",
+      "province": "ON",
+      "lat": 44.72,
+      "lng": -75.52,
+      "ssKPa": 2.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "princeton_on",
+      "name": "Princeton",
+      "province": "ON",
+      "lat": 43.17,
+      "lng": -80.53,
+      "ssKPa": 1.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "raith_on",
+      "name": "Raith",
+      "province": "ON",
+      "lat": 48.83,
+      "lng": -89.93,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "rayside_balfour_chelmsford_on",
+      "name": "Rayside-Balfour (Chelmsford)",
+      "province": "ON",
+      "lat": 46.58,
+      "lng": -81.2,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "red_lake_on",
+      "name": "Red Lake",
+      "province": "ON",
+      "lat": 51.05,
+      "lng": -93.82,
+      "ssKPa": 2.6,
+      "srKPa": 0.3
+    },
+    {
+      "key": "renfrew_on",
+      "name": "Renfrew",
+      "province": "ON",
+      "lat": 45.47,
+      "lng": -76.68,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "richmond_hill_on",
+      "name": "Richmond Hill",
+      "province": "ON",
+      "lat": 43.87,
+      "lng": -79.45,
+      "ssKPa": 1.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "rockland_on",
+      "name": "Rockland",
+      "province": "ON",
+      "lat": 45.55,
+      "lng": -75.29,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "sarnia_on",
+      "name": "Sarnia",
+      "province": "ON",
+      "lat": 42.97,
+      "lng": -82.38,
+      "ssKPa": 1.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "sault_ste_marie_on",
+      "name": "Sault Ste. Marie",
+      "province": "ON",
+      "lat": 46.52,
+      "lng": -84.33,
+      "ssKPa": 3.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "schreiber_on",
+      "name": "Schreiber",
+      "province": "ON",
+      "lat": 48.8,
+      "lng": -87.25,
+      "ssKPa": 3.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "seaforth_on",
+      "name": "Seaforth",
+      "province": "ON",
+      "lat": 43.55,
+      "lng": -81.4,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "shelburne_on",
+      "name": "Shelburne",
+      "province": "ON",
+      "lat": 44.076,
+      "lng": -80.204,
+      "ssKPa": 3.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "simcoe_on",
+      "name": "Simcoe",
+      "province": "ON",
+      "lat": 42.83,
+      "lng": -80.3,
+      "ssKPa": 1.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "sioux_lookout_on",
+      "name": "Sioux Lookout",
+      "province": "ON",
+      "lat": 50.07,
+      "lng": -91.98,
+      "ssKPa": 2.6,
+      "srKPa": 0.3
+    },
+    {
+      "key": "smiths_falls_on",
+      "name": "Smiths Falls",
+      "province": "ON",
+      "lat": 44.9,
+      "lng": -76.02,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "smithville_on",
+      "name": "Smithville",
+      "province": "ON",
+      "lat": 43.1,
+      "lng": -79.55,
+      "ssKPa": 1.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "smooth_rock_falls_on",
+      "name": "Smooth Rock Falls",
+      "province": "ON",
+      "lat": 49.28,
+      "lng": -81.63,
+      "ssKPa": 2.7,
+      "srKPa": 0.3
+    },
+    {
+      "key": "south_river_on",
+      "name": "South River",
+      "province": "ON",
+      "lat": 45.83,
+      "lng": -79.38,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "southampton_on",
+      "name": "Southampton",
+      "province": "ON",
+      "lat": 44.48,
+      "lng": -81.38,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "st_catharines_on",
+      "name": "St. Catharines",
+      "province": "ON",
+      "lat": 43.17,
+      "lng": -79.25,
+      "ssKPa": 1.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "st_mary_s_on",
+      "name": "St. Mary's",
+      "province": "ON",
+      "lat": 43.25,
+      "lng": -81.13,
+      "ssKPa": 2.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "st_thomas_on",
+      "name": "St. Thomas",
+      "province": "ON",
+      "lat": 42.78,
+      "lng": -81.2,
+      "ssKPa": 1.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "stirling_on",
+      "name": "Stirling",
+      "province": "ON",
+      "lat": 44.3,
+      "lng": -77.55,
+      "ssKPa": 1.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "stratford_on",
+      "name": "Stratford",
+      "province": "ON",
+      "lat": 43.37,
+      "lng": -80.95,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "strathroy_on",
+      "name": "Strathroy",
+      "province": "ON",
+      "lat": 42.95,
+      "lng": -81.63,
+      "ssKPa": 1.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "sturgeon_falls_on",
+      "name": "Sturgeon Falls",
+      "province": "ON",
+      "lat": 46.37,
+      "lng": -79.92,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "sudbury_on",
+      "name": "Sudbury",
+      "province": "ON",
+      "lat": 46.5,
+      "lng": -81.0,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "sundridge_on",
+      "name": "Sundridge",
+      "province": "ON",
+      "lat": 45.77,
+      "lng": -79.4,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "tavistock_on",
+      "name": "Tavistock",
+      "province": "ON",
+      "lat": 43.32,
+      "lng": -80.83,
+      "ssKPa": 2.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "temagami_on",
+      "name": "Temagami",
+      "province": "ON",
+      "lat": 47.07,
+      "lng": -79.78,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "thamesford_on",
+      "name": "Thamesford",
+      "province": "ON",
+      "lat": 43.07,
+      "lng": -81.0,
+      "ssKPa": 1.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "thedford_on",
+      "name": "Thedford",
+      "province": "ON",
+      "lat": 43.15,
+      "lng": -81.85,
+      "ssKPa": 2.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "thunder_bay_on",
+      "name": "Thunder Bay",
+      "province": "ON",
+      "lat": 48.4,
+      "lng": -89.32,
+      "ssKPa": 2.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "tillsonburg_on",
+      "name": "Tillsonburg",
+      "province": "ON",
+      "lat": 42.85,
+      "lng": -80.73,
+      "ssKPa": 1.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "timmins_on",
+      "name": "Timmins",
+      "province": "ON",
+      "lat": 48.47,
+      "lng": -81.33,
+      "ssKPa": 2.9,
+      "srKPa": 0.3
+    },
+    {
+      "key": "timmins_porcupine_on",
+      "name": "Timmins (Porcupine)",
+      "province": "ON",
+      "lat": 48.5,
+      "lng": -81.17,
+      "ssKPa": 2.9,
+      "srKPa": 0.3
+    },
+    {
+      "key": "etobicoke_on",
+      "name": "Etobicoke",
+      "province": "ON",
+      "lat": 43.7,
+      "lng": -79.57,
+      "ssKPa": 1.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "north_york_on",
+      "name": "North York",
+      "province": "ON",
+      "lat": 43.77,
+      "lng": -79.42,
+      "ssKPa": 1.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "scarborough_on",
+      "name": "Scarborough",
+      "province": "ON",
+      "lat": 43.78,
+      "lng": -79.25,
+      "ssKPa": 1.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "toronto_city_hall_on",
+      "name": "Toronto (city hall)",
+      "province": "ON",
+      "lat": 43.65,
+      "lng": -79.38,
+      "ssKPa": 1.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "toronto_lbp_int_l_airport_on",
+      "name": "Toronto (LBP Int'l Airport)",
+      "province": "ON",
+      "lat": 43.68,
+      "lng": -79.61,
+      "ssKPa": 1.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "trenton_on",
+      "name": "Trenton",
+      "province": "ON",
+      "lat": 44.1,
+      "lng": -77.58,
+      "ssKPa": 1.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "trout_creek_on",
+      "name": "Trout Creek",
+      "province": "ON",
+      "lat": 45.98,
+      "lng": -79.37,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "uxbridge_on",
+      "name": "Uxbridge",
+      "province": "ON",
+      "lat": 44.1,
+      "lng": -79.12,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "vaughan_woodbridge_on",
+      "name": "Vaughan (Woodbridge)",
+      "province": "ON",
+      "lat": 43.78,
+      "lng": -79.6,
+      "ssKPa": 1.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "vittoria_on",
+      "name": "Vittoria",
+      "province": "ON",
+      "lat": 42.77,
+      "lng": -80.32,
+      "ssKPa": 1.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "walkerton_on",
+      "name": "Walkerton",
+      "province": "ON",
+      "lat": 44.12,
+      "lng": -81.15,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "wallaceburg_on",
+      "name": "Wallaceburg",
+      "province": "ON",
+      "lat": 42.6,
+      "lng": -82.38,
+      "ssKPa": 0.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "waterloo_on",
+      "name": "Waterloo",
+      "province": "ON",
+      "lat": 43.47,
+      "lng": -80.52,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "watford_on",
+      "name": "Watford",
+      "province": "ON",
+      "lat": 42.95,
+      "lng": -81.88,
+      "ssKPa": 1.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "wawa_on",
+      "name": "Wawa",
+      "province": "ON",
+      "lat": 47.98,
+      "lng": -84.78,
+      "ssKPa": 3.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "welland_on",
+      "name": "Welland",
+      "province": "ON",
+      "lat": 42.98,
+      "lng": -79.25,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "west_lorne_on",
+      "name": "West Lorne",
+      "province": "ON",
+      "lat": 42.6,
+      "lng": -81.6,
+      "ssKPa": 1.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "whitby_on",
+      "name": "Whitby",
+      "province": "ON",
+      "lat": 43.87,
+      "lng": -78.93,
+      "ssKPa": 1.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "whitby_brooklin_on",
+      "name": "Whitby (Brooklin)",
+      "province": "ON",
+      "lat": 43.95,
+      "lng": -78.95,
+      "ssKPa": 1.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "white_river_on",
+      "name": "White River",
+      "province": "ON",
+      "lat": 48.6,
+      "lng": -85.28,
+      "ssKPa": 3.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "wiarton_on",
+      "name": "Wiarton",
+      "province": "ON",
+      "lat": 44.75,
+      "lng": -81.15,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "windsor_on",
+      "name": "Windsor",
+      "province": "ON",
+      "lat": 42.3,
+      "lng": -83.02,
+      "ssKPa": 0.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "wingham_on",
+      "name": "Wingham",
+      "province": "ON",
+      "lat": 43.88,
+      "lng": -81.32,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "woodstock_on",
+      "name": "Woodstock",
+      "province": "ON",
+      "lat": 43.13,
+      "lng": -80.75,
+      "ssKPa": 1.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "wyoming_on",
+      "name": "Wyoming",
+      "province": "ON",
+      "lat": 42.95,
+      "lng": -82.12,
+      "ssKPa": 1.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "acton_vale_qc",
+      "name": "Acton-Vale",
+      "province": "QC",
+      "lat": 45.65,
+      "lng": -72.57,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "alma_qc",
+      "name": "Alma",
+      "province": "QC",
+      "lat": 48.55,
+      "lng": -71.65,
+      "ssKPa": 3.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "amos_qc",
+      "name": "Amos",
+      "province": "QC",
+      "lat": 48.57,
+      "lng": -78.12,
+      "ssKPa": 3.2,
+      "srKPa": 0.3
+    },
+    {
+      "key": "asbestos_qc",
+      "name": "Asbestos",
+      "province": "QC",
+      "lat": 45.77,
+      "lng": -71.93,
+      "ssKPa": 2.8,
+      "srKPa": 0.6
+    },
+    {
+      "key": "aylmer_qc",
+      "name": "Aylmer",
+      "province": "QC",
+      "lat": 45.4,
+      "lng": -75.83,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "baie_comeau_qc",
+      "name": "Baie-Comeau",
+      "province": "QC",
+      "lat": 49.22,
+      "lng": -68.15,
+      "ssKPa": 4.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "baie_saint_paul_qc",
+      "name": "Baie-Saint-Paul",
+      "province": "QC",
+      "lat": 47.44,
+      "lng": -70.51,
+      "ssKPa": 3.4,
+      "srKPa": 0.6
+    },
+    {
+      "key": "beauport_qc",
+      "name": "Beauport",
+      "province": "QC",
+      "lat": 46.87,
+      "lng": -71.18,
+      "ssKPa": 3.4,
+      "srKPa": 0.6
+    },
+    {
+      "key": "bedford_qc",
+      "name": "Bedford",
+      "province": "QC",
+      "lat": 45.12,
+      "lng": -72.98,
+      "ssKPa": 2.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "beloeil_qc",
+      "name": "Beloeil",
+      "province": "QC",
+      "lat": 45.57,
+      "lng": -73.2,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "brome_qc",
+      "name": "Brome",
+      "province": "QC",
+      "lat": 45.2,
+      "lng": -72.57,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "brossard_qc",
+      "name": "Brossard",
+      "province": "QC",
+      "lat": 45.45,
+      "lng": -73.47,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "buckingham_qc",
+      "name": "Buckingham",
+      "province": "QC",
+      "lat": 45.58,
+      "lng": -75.42,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "campbell_s_bay_qc",
+      "name": "Campbell's Bay",
+      "province": "QC",
+      "lat": 45.73,
+      "lng": -76.6,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "chambly_qc",
+      "name": "Chambly",
+      "province": "QC",
+      "lat": 45.45,
+      "lng": -73.28,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "coaticook_qc",
+      "name": "Coaticook",
+      "province": "QC",
+      "lat": 45.13,
+      "lng": -71.8,
+      "ssKPa": 2.3,
+      "srKPa": 0.6
+    },
+    {
+      "key": "contrecoeur_qc",
+      "name": "Contrecoeur",
+      "province": "QC",
+      "lat": 45.85,
+      "lng": -73.23,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "cowansville_qc",
+      "name": "Cowansville",
+      "province": "QC",
+      "lat": 45.2,
+      "lng": -72.75,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "deux_montagnes_qc",
+      "name": "Deux-Montagnes",
+      "province": "QC",
+      "lat": 45.53,
+      "lng": -73.88,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "dolbeau_qc",
+      "name": "Dolbeau",
+      "province": "QC",
+      "lat": 48.88,
+      "lng": -72.23,
+      "ssKPa": 3.5,
+      "srKPa": 0.3
+    },
+    {
+      "key": "drummondville_qc",
+      "name": "Drummondville",
+      "province": "QC",
+      "lat": 45.88,
+      "lng": -72.48,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "farnham_qc",
+      "name": "Farnham",
+      "province": "QC",
+      "lat": 45.28,
+      "lng": -72.98,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "fort_coulonge_qc",
+      "name": "Fort-Coulonge",
+      "province": "QC",
+      "lat": 45.85,
+      "lng": -76.73,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "gagnon_qc",
+      "name": "Gagnon",
+      "province": "QC",
+      "lat": 51.93,
+      "lng": -68.17,
+      "ssKPa": 4.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "gasp_qc",
+      "name": "Gasp\u00e9",
+      "province": "QC",
+      "lat": 48.83,
+      "lng": -64.48,
+      "ssKPa": 4.3,
+      "srKPa": 0.6
+    },
+    {
+      "key": "gatineau_qc",
+      "name": "Gatineau",
+      "province": "QC",
+      "lat": 45.5,
+      "lng": -75.65,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "gracefield_qc",
+      "name": "Gracefield",
+      "province": "QC",
+      "lat": 46.1,
+      "lng": -76.05,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "granby_qc",
+      "name": "Granby",
+      "province": "QC",
+      "lat": 45.4,
+      "lng": -72.73,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "harrington_harbour_qc",
+      "name": "Harrington-Harbour",
+      "province": "QC",
+      "lat": 50.5,
+      "lng": -59.48,
+      "ssKPa": 4.9,
+      "srKPa": 0.6
+    },
+    {
+      "key": "havre_st_pierre_qc",
+      "name": "Havre-St-Pierre",
+      "province": "QC",
+      "lat": 50.23,
+      "lng": -63.6,
+      "ssKPa": 4.1,
+      "srKPa": 0.6
+    },
+    {
+      "key": "hemmingford_qc",
+      "name": "Hemmingford",
+      "province": "QC",
+      "lat": 45.05,
+      "lng": -73.58,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "hull_qc",
+      "name": "Hull",
+      "province": "QC",
+      "lat": 45.43,
+      "lng": -75.73,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "iberville_qc",
+      "name": "Iberville",
+      "province": "QC",
+      "lat": 45.35,
+      "lng": -73.23,
+      "ssKPa": 2.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "inukjuak_qc",
+      "name": "Inukjuak",
+      "province": "QC",
+      "lat": 58.48,
+      "lng": -78.1,
+      "ssKPa": 4.1,
+      "srKPa": 0.2
+    },
+    {
+      "key": "joliette_qc",
+      "name": "Joliette",
+      "province": "QC",
+      "lat": 46.02,
+      "lng": -73.45,
+      "ssKPa": 3.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "kuujjuaq_qc",
+      "name": "Kuujjuaq",
+      "province": "QC",
+      "lat": 58.1,
+      "lng": -68.4,
+      "ssKPa": 4.8,
+      "srKPa": 0.2
+    },
+    {
+      "key": "kuujjuarapik_qc",
+      "name": "Kuujjuarapik",
+      "province": "QC",
+      "lat": 55.28,
+      "lng": -77.75,
+      "ssKPa": 4.2,
+      "srKPa": 0.3
+    },
+    {
+      "key": "la_pocati_re_qc",
+      "name": "La Pocati\u00e8re",
+      "province": "QC",
+      "lat": 47.37,
+      "lng": -70.04,
+      "ssKPa": 3.2,
+      "srKPa": 0.6
+    },
+    {
+      "key": "lachute_qc",
+      "name": "Lachute",
+      "province": "QC",
+      "lat": 45.65,
+      "lng": -74.33,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "lac_m_gantic_qc",
+      "name": "Lac-M\u00e9gantic",
+      "province": "QC",
+      "lat": 45.58,
+      "lng": -70.88,
+      "ssKPa": 3.2,
+      "srKPa": 0.6
+    },
+    {
+      "key": "la_malbaie_qc",
+      "name": "La-Malbaie",
+      "province": "QC",
+      "lat": 47.65,
+      "lng": -70.15,
+      "ssKPa": 3.1,
+      "srKPa": 0.6
+    },
+    {
+      "key": "la_tuque_qc",
+      "name": "La-Tuque",
+      "province": "QC",
+      "lat": 47.43,
+      "lng": -72.78,
+      "ssKPa": 3.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "lennoxville_qc",
+      "name": "Lennoxville",
+      "province": "QC",
+      "lat": 45.37,
+      "lng": -71.85,
+      "ssKPa": 2.1,
+      "srKPa": 0.6
+    },
+    {
+      "key": "l_ry_qc",
+      "name": "L\u00e9ry",
+      "province": "QC",
+      "lat": 45.35,
+      "lng": -73.8,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "loretteville_qc",
+      "name": "Loretteville",
+      "province": "QC",
+      "lat": 46.85,
+      "lng": -71.35,
+      "ssKPa": 3.7,
+      "srKPa": 0.6
+    },
+    {
+      "key": "louiseville_qc",
+      "name": "Louiseville",
+      "province": "QC",
+      "lat": 46.25,
+      "lng": -72.95,
+      "ssKPa": 2.9,
+      "srKPa": 0.4
+    },
+    {
+      "key": "magog_qc",
+      "name": "Magog",
+      "province": "QC",
+      "lat": 45.27,
+      "lng": -72.13,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "malartic_qc",
+      "name": "Malartic",
+      "province": "QC",
+      "lat": 48.13,
+      "lng": -78.13,
+      "ssKPa": 3.3,
+      "srKPa": 0.3
+    },
+    {
+      "key": "maniwaki_qc",
+      "name": "Maniwaki",
+      "province": "QC",
+      "lat": 46.38,
+      "lng": -75.97,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "masson_qc",
+      "name": "Masson",
+      "province": "QC",
+      "lat": 45.533,
+      "lng": -75.417,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "matane_qc",
+      "name": "Matane",
+      "province": "QC",
+      "lat": 48.85,
+      "lng": -67.53,
+      "ssKPa": 3.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "mont_joli_qc",
+      "name": "Mont-Joli",
+      "province": "QC",
+      "lat": 48.58,
+      "lng": -68.18,
+      "ssKPa": 4.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "mont_laurier_qc",
+      "name": "Mont-Laurier",
+      "province": "QC",
+      "lat": 46.55,
+      "lng": -75.5,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "montmagny_qc",
+      "name": "Montmagny",
+      "province": "QC",
+      "lat": 46.98,
+      "lng": -70.55,
+      "ssKPa": 2.9,
+      "srKPa": 0.6
+    },
+    {
+      "key": "beaconsfield_qc",
+      "name": "Beaconsfield",
+      "province": "QC",
+      "lat": 45.43,
+      "lng": -73.87,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "dorval_qc",
+      "name": "Dorval",
+      "province": "QC",
+      "lat": 45.45,
+      "lng": -73.75,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "laval_qc",
+      "name": "Laval",
+      "province": "QC",
+      "lat": 45.58,
+      "lng": -73.75,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "montr_al_city_hall_qc",
+      "name": "Montr\u00e9al (city hall)",
+      "province": "QC",
+      "lat": 45.509,
+      "lng": -73.554,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "montr_al_est_qc",
+      "name": "Montr\u00e9al-Est",
+      "province": "QC",
+      "lat": 45.63,
+      "lng": -73.52,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "montr_al_nord_qc",
+      "name": "Montr\u00e9al-Nord",
+      "province": "QC",
+      "lat": 45.6,
+      "lng": -73.63,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "outremont_qc",
+      "name": "Outremont",
+      "province": "QC",
+      "lat": 45.52,
+      "lng": -73.62,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "pierrefonds_qc",
+      "name": "Pierrefonds",
+      "province": "QC",
+      "lat": 45.48,
+      "lng": -73.87,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "st_lambert_qc",
+      "name": "St-Lambert",
+      "province": "QC",
+      "lat": 45.5,
+      "lng": -73.5,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "st_laurent_qc",
+      "name": "St-Laurent",
+      "province": "QC",
+      "lat": 45.5,
+      "lng": -73.67,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "ste_anne_de_bellevue_qc",
+      "name": "Ste-Anne-de-Bellevue",
+      "province": "QC",
+      "lat": 45.42,
+      "lng": -73.93,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "verdun_qc",
+      "name": "Verdun",
+      "province": "QC",
+      "lat": 45.45,
+      "lng": -73.57,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "nicolet_gentilly_qc",
+      "name": "Nicolet (Gentilly)",
+      "province": "QC",
+      "lat": 46.4,
+      "lng": -72.28,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "nitchequon_qc",
+      "name": "Nitchequon",
+      "province": "QC",
+      "lat": 53.21,
+      "lng": -70.91,
+      "ssKPa": 3.5,
+      "srKPa": 0.3
+    },
+    {
+      "key": "noranda_qc",
+      "name": "Noranda",
+      "province": "QC",
+      "lat": 48.25,
+      "lng": -79.02,
+      "ssKPa": 3.2,
+      "srKPa": 0.3
+    },
+    {
+      "key": "perc_qc",
+      "name": "Perc\u00e9",
+      "province": "QC",
+      "lat": 48.53,
+      "lng": -64.22,
+      "ssKPa": 3.8,
+      "srKPa": 0.6
+    },
+    {
+      "key": "pincourt_qc",
+      "name": "Pincourt",
+      "province": "QC",
+      "lat": 45.38,
+      "lng": -73.98,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "plessisville_qc",
+      "name": "Plessisville",
+      "province": "QC",
+      "lat": 46.22,
+      "lng": -71.78,
+      "ssKPa": 2.8,
+      "srKPa": 0.6
+    },
+    {
+      "key": "port_cartier_qc",
+      "name": "Port-Cartier",
+      "province": "QC",
+      "lat": 50.02,
+      "lng": -66.87,
+      "ssKPa": 4.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "puvinrituq_qc",
+      "name": "Puvinrituq",
+      "province": "QC",
+      "lat": 60.033,
+      "lng": -77.283,
+      "ssKPa": 4.5,
+      "srKPa": 0.2
+    },
+    {
+      "key": "ancienne_lorette_qc",
+      "name": "Ancienne-Lorette",
+      "province": "QC",
+      "lat": 46.78,
+      "lng": -71.38,
+      "ssKPa": 3.4,
+      "srKPa": 0.6
+    },
+    {
+      "key": "l_vis_qc",
+      "name": "L\u00e9vis",
+      "province": "QC",
+      "lat": 46.8,
+      "lng": -71.18,
+      "ssKPa": 3.3,
+      "srKPa": 0.6
+    },
+    {
+      "key": "qu_bec_qc",
+      "name": "Qu\u00e9bec",
+      "province": "QC",
+      "lat": 46.8,
+      "lng": -71.23,
+      "ssKPa": 3.6,
+      "srKPa": 0.6
+    },
+    {
+      "key": "sillery_qc",
+      "name": "Sillery",
+      "province": "QC",
+      "lat": 46.77,
+      "lng": -71.25,
+      "ssKPa": 3.1,
+      "srKPa": 0.6
+    },
+    {
+      "key": "ste_foy_qc",
+      "name": "Ste-Foy",
+      "province": "QC",
+      "lat": 46.78,
+      "lng": -71.28,
+      "ssKPa": 3.7,
+      "srKPa": 0.6
+    },
+    {
+      "key": "richmond_qc",
+      "name": "Richmond",
+      "province": "QC",
+      "lat": 45.67,
+      "lng": -72.15,
+      "ssKPa": 2.4,
+      "srKPa": 0.6
+    },
+    {
+      "key": "rimouski_qc",
+      "name": "Rimouski",
+      "province": "QC",
+      "lat": 48.43,
+      "lng": -68.55,
+      "ssKPa": 3.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "rivi_re_du_loup_qc",
+      "name": "Rivi\u00e8re-du-Loup",
+      "province": "QC",
+      "lat": 47.83,
+      "lng": -69.53,
+      "ssKPa": 3.5,
+      "srKPa": 0.6
+    },
+    {
+      "key": "roberval_qc",
+      "name": "Roberval",
+      "province": "QC",
+      "lat": 48.52,
+      "lng": -72.23,
+      "ssKPa": 3.5,
+      "srKPa": 0.3
+    },
+    {
+      "key": "rock_island_qc",
+      "name": "Rock-Island",
+      "province": "QC",
+      "lat": 45.04,
+      "lng": -72.1,
+      "ssKPa": 2.0,
+      "srKPa": 0.4
+    },
+    {
+      "key": "rosem_re_qc",
+      "name": "Rosem\u00e8re",
+      "province": "QC",
+      "lat": 45.63,
+      "lng": -73.8,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "rouyn_qc",
+      "name": "Rouyn",
+      "province": "QC",
+      "lat": 48.23,
+      "lng": -79.02,
+      "ssKPa": 3.1,
+      "srKPa": 0.3
+    },
+    {
+      "key": "saguenay_qc",
+      "name": "Saguenay",
+      "province": "QC",
+      "lat": 48.43,
+      "lng": -71.07,
+      "ssKPa": 3.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "saguenay_bagotville_qc",
+      "name": "Saguenay (Bagotville)",
+      "province": "QC",
+      "lat": 48.35,
+      "lng": -70.88,
+      "ssKPa": 3.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "saguenay_jonqui_re_qc",
+      "name": "Saguenay (Jonqui\u00e8re)",
+      "province": "QC",
+      "lat": 48.42,
+      "lng": -71.22,
+      "ssKPa": 3.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "saguenay_k_nogami_qc",
+      "name": "Saguenay (K\u00e9nogami)",
+      "province": "QC",
+      "lat": 48.42,
+      "lng": -71.25,
+      "ssKPa": 3.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "saint_eustache_qc",
+      "name": "Saint-Eustache",
+      "province": "QC",
+      "lat": 45.56,
+      "lng": -73.9,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "saint_jean_sur_richelieu_qc",
+      "name": "Saint-Jean-sur-Richelieu",
+      "province": "QC",
+      "lat": 45.31,
+      "lng": -73.26,
+      "ssKPa": 2.2,
+      "srKPa": 0.4
+    },
+    {
+      "key": "salaberry_de_valleyfield_qc",
+      "name": "Salaberry-de-Valleyfield",
+      "province": "QC",
+      "lat": 45.25,
+      "lng": -74.13,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "schefferville_qc",
+      "name": "Schefferville",
+      "province": "QC",
+      "lat": 54.8,
+      "lng": -66.83,
+      "ssKPa": 4.5,
+      "srKPa": 0.3
+    },
+    {
+      "key": "senneterre_qc",
+      "name": "Senneterre",
+      "province": "QC",
+      "lat": 48.38,
+      "lng": -77.23,
+      "ssKPa": 3.3,
+      "srKPa": 0.3
+    },
+    {
+      "key": "sept_les_qc",
+      "name": "Sept-\u00celes",
+      "province": "QC",
+      "lat": 50.2,
+      "lng": -66.38,
+      "ssKPa": 4.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "shawinigan_qc",
+      "name": "Shawinigan",
+      "province": "QC",
+      "lat": 46.55,
+      "lng": -72.75,
+      "ssKPa": 3.1,
+      "srKPa": 0.4
+    },
+    {
+      "key": "shawville_qc",
+      "name": "Shawville",
+      "province": "QC",
+      "lat": 45.6,
+      "lng": -76.48,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "sherbrooke_qc",
+      "name": "Sherbrooke",
+      "province": "QC",
+      "lat": 45.42,
+      "lng": -71.9,
+      "ssKPa": 2.2,
+      "srKPa": 0.6
+    },
+    {
+      "key": "sorel_qc",
+      "name": "Sorel",
+      "province": "QC",
+      "lat": 46.03,
+      "lng": -73.12,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "ste_agathe_des_monts_qc",
+      "name": "Ste-Agathe-des-Monts",
+      "province": "QC",
+      "lat": 46.05,
+      "lng": -74.28,
+      "ssKPa": 3.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "st_f_licien_qc",
+      "name": "St-F\u00e9licien",
+      "province": "QC",
+      "lat": 48.65,
+      "lng": -72.45,
+      "ssKPa": 3.5,
+      "srKPa": 0.3
+    },
+    {
+      "key": "st_georges_de_cacouna_qc",
+      "name": "St-Georges-de-Cacouna",
+      "province": "QC",
+      "lat": 47.92,
+      "lng": -69.5,
+      "ssKPa": 3.2,
+      "srKPa": 0.6
+    },
+    {
+      "key": "st_hubert_qc",
+      "name": "St-Hubert",
+      "province": "QC",
+      "lat": 45.5,
+      "lng": -73.42,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "st_hubert_de_rivi_re_du_loup_qc",
+      "name": "St-Hubert-de-Rivi\u00e8re-du-Loup",
+      "province": "QC",
+      "lat": 47.817,
+      "lng": -69.15,
+      "ssKPa": 4.4,
+      "srKPa": 0.6
+    },
+    {
+      "key": "st_hyacinthe_qc",
+      "name": "St-Hyacinthe",
+      "province": "QC",
+      "lat": 45.62,
+      "lng": -72.95,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "st_j_r_me_qc",
+      "name": "St-J\u00e9r\u00f4me",
+      "province": "QC",
+      "lat": 45.78,
+      "lng": -74.0,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "st_jovite_qc",
+      "name": "St-Jovite",
+      "province": "QC",
+      "lat": 46.12,
+      "lng": -74.6,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "st_lazare_hudson_qc",
+      "name": "St-Lazare-Hudson",
+      "province": "QC",
+      "lat": 45.4,
+      "lng": -74.14,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "st_nicolas_qc",
+      "name": "St-Nicolas",
+      "province": "QC",
+      "lat": 46.7,
+      "lng": -71.4,
+      "ssKPa": 3.5,
+      "srKPa": 0.6
+    },
+    {
+      "key": "sutton_qc",
+      "name": "Sutton",
+      "province": "QC",
+      "lat": 45.1,
+      "lng": -72.62,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "tadoussac_qc",
+      "name": "Tadoussac",
+      "province": "QC",
+      "lat": 48.15,
+      "lng": -69.72,
+      "ssKPa": 3.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "t_miscaming_qc",
+      "name": "T\u00e9miscaming",
+      "province": "QC",
+      "lat": 46.72,
+      "lng": -79.1,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "terrebonne_qc",
+      "name": "Terrebonne",
+      "province": "QC",
+      "lat": 45.69,
+      "lng": -73.63,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "thetford_mines_qc",
+      "name": "Thetford Mines",
+      "province": "QC",
+      "lat": 46.08,
+      "lng": -71.3,
+      "ssKPa": 3.5,
+      "srKPa": 0.6
+    },
+    {
+      "key": "thurso_qc",
+      "name": "Thurso",
+      "province": "QC",
+      "lat": 45.6,
+      "lng": -75.25,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "trois_rivi_res_qc",
+      "name": "Trois-Rivi\u00e8res",
+      "province": "QC",
+      "lat": 46.35,
+      "lng": -72.55,
+      "ssKPa": 2.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "val_d_or_qc",
+      "name": "Val-d'Or",
+      "province": "QC",
+      "lat": 48.1,
+      "lng": -77.78,
+      "ssKPa": 3.4,
+      "srKPa": 0.3
+    },
+    {
+      "key": "varennes_qc",
+      "name": "Varennes",
+      "province": "QC",
+      "lat": 45.68,
+      "lng": -73.43,
+      "ssKPa": 2.6,
+      "srKPa": 0.4
+    },
+    {
+      "key": "verch_res_qc",
+      "name": "Verch\u00e8res",
+      "province": "QC",
+      "lat": 45.78,
+      "lng": -73.35,
+      "ssKPa": 2.7,
+      "srKPa": 0.4
+    },
+    {
+      "key": "victoriaville_qc",
+      "name": "Victoriaville",
+      "province": "QC",
+      "lat": 46.05,
+      "lng": -71.97,
+      "ssKPa": 2.6,
+      "srKPa": 0.6
+    },
+    {
+      "key": "ville_marie_qc",
+      "name": "Ville-Marie",
+      "province": "QC",
+      "lat": 47.33,
+      "lng": -79.43,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "wakefield_qc",
+      "name": "Wakefield",
+      "province": "QC",
+      "lat": 45.64,
+      "lng": -75.93,
+      "ssKPa": 2.4,
+      "srKPa": 0.4
+    },
+    {
+      "key": "waterloo_qc",
+      "name": "Waterloo",
+      "province": "QC",
+      "lat": 45.35,
+      "lng": -72.52,
+      "ssKPa": 2.5,
+      "srKPa": 0.4
+    },
+    {
+      "key": "windsor_qc",
+      "name": "Windsor",
+      "province": "QC",
+      "lat": 45.57,
+      "lng": -72.0,
+      "ssKPa": 2.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "alma_nb",
+      "name": "Alma",
+      "province": "NB",
+      "lat": 45.6,
+      "lng": -64.95,
+      "ssKPa": 2.6,
+      "srKPa": 0.6
+    },
+    {
+      "key": "bathurst_nb",
+      "name": "Bathurst",
+      "province": "NB",
+      "lat": 47.62,
+      "lng": -65.65,
+      "ssKPa": 4.1,
+      "srKPa": 0.6
+    },
+    {
+      "key": "boiestown_nb",
+      "name": "Boiestown",
+      "province": "NB",
+      "lat": 46.455,
+      "lng": -66.419,
+      "ssKPa": 3.6,
+      "srKPa": 0.6
+    },
+    {
+      "key": "campbellton_nb",
+      "name": "Campbellton",
+      "province": "NB",
+      "lat": 48.0,
+      "lng": -66.67,
+      "ssKPa": 4.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "edmundston_nb",
+      "name": "Edmundston",
+      "province": "NB",
+      "lat": 47.37,
+      "lng": -68.33,
+      "ssKPa": 3.4,
+      "srKPa": 0.6
+    },
+    {
+      "key": "fredericton_nb",
+      "name": "Fredericton",
+      "province": "NB",
+      "lat": 45.95,
+      "lng": -66.65,
+      "ssKPa": 3.1,
+      "srKPa": 0.6
+    },
+    {
+      "key": "gagetown_nb",
+      "name": "Gagetown",
+      "province": "NB",
+      "lat": 45.79,
+      "lng": -66.16,
+      "ssKPa": 2.8,
+      "srKPa": 0.6
+    },
+    {
+      "key": "grand_falls_nb",
+      "name": "Grand Falls",
+      "province": "NB",
+      "lat": 47.05,
+      "lng": -67.73,
+      "ssKPa": 3.6,
+      "srKPa": 0.6
+    },
+    {
+      "key": "miramichi_nb",
+      "name": "Miramichi",
+      "province": "NB",
+      "lat": 47.03,
+      "lng": -65.47,
+      "ssKPa": 3.4,
+      "srKPa": 0.6
+    },
+    {
+      "key": "moncton_nb",
+      "name": "Moncton",
+      "province": "NB",
+      "lat": 46.1,
+      "lng": -64.78,
+      "ssKPa": 3.0,
+      "srKPa": 0.6
+    },
+    {
+      "key": "oromocto_nb",
+      "name": "Oromocto",
+      "province": "NB",
+      "lat": 45.84,
+      "lng": -66.48,
+      "ssKPa": 3.0,
+      "srKPa": 0.6
+    },
+    {
+      "key": "sackville_nb",
+      "name": "Sackville",
+      "province": "NB",
+      "lat": 45.88,
+      "lng": -64.37,
+      "ssKPa": 2.5,
+      "srKPa": 0.6
+    },
+    {
+      "key": "saint_andrews_nb",
+      "name": "Saint Andrews",
+      "province": "NB",
+      "lat": 45.07,
+      "lng": -67.05,
+      "ssKPa": 2.8,
+      "srKPa": 0.6
+    },
+    {
+      "key": "saint_george_nb",
+      "name": "Saint George",
+      "province": "NB",
+      "lat": 45.13,
+      "lng": -66.82,
+      "ssKPa": 2.8,
+      "srKPa": 0.6
+    },
+    {
+      "key": "saint_john_nb",
+      "name": "Saint John",
+      "province": "NB",
+      "lat": 45.267,
+      "lng": -66.05,
+      "ssKPa": 2.3,
+      "srKPa": 0.6
+    },
+    {
+      "key": "shippagan_nb",
+      "name": "Shippagan",
+      "province": "NB",
+      "lat": 47.73,
+      "lng": -64.7,
+      "ssKPa": 3.4,
+      "srKPa": 0.6
+    },
+    {
+      "key": "st_stephen_nb",
+      "name": "St. Stephen",
+      "province": "NB",
+      "lat": 45.2,
+      "lng": -67.28,
+      "ssKPa": 2.9,
+      "srKPa": 0.6
+    },
+    {
+      "key": "woodstock_nb",
+      "name": "Woodstock",
+      "province": "NB",
+      "lat": 46.16,
+      "lng": -67.6,
+      "ssKPa": 3.1,
+      "srKPa": 0.6
+    },
+    {
+      "key": "amherst_ns",
+      "name": "Amherst",
+      "province": "NS",
+      "lat": 45.83,
+      "lng": -64.2,
+      "ssKPa": 2.4,
+      "srKPa": 0.6
+    },
+    {
+      "key": "antigonish_ns",
+      "name": "Antigonish",
+      "province": "NS",
+      "lat": 45.62,
+      "lng": -62.0,
+      "ssKPa": 2.3,
+      "srKPa": 0.6
+    },
+    {
+      "key": "bridgewater_ns",
+      "name": "Bridgewater",
+      "province": "NS",
+      "lat": 44.38,
+      "lng": -64.52,
+      "ssKPa": 1.9,
+      "srKPa": 0.6
+    },
+    {
+      "key": "canso_ns",
+      "name": "Canso",
+      "province": "NS",
+      "lat": 45.33,
+      "lng": -61.0,
+      "ssKPa": 1.7,
+      "srKPa": 0.6
+    },
+    {
+      "key": "dartmouth_ns",
+      "name": "Dartmouth",
+      "province": "NS",
+      "lat": 44.67,
+      "lng": -63.57,
+      "ssKPa": 1.6,
+      "srKPa": 0.6
+    },
+    {
+      "key": "debert_ns",
+      "name": "Debert",
+      "province": "NS",
+      "lat": 45.43,
+      "lng": -63.47,
+      "ssKPa": 2.1,
+      "srKPa": 0.6
+    },
+    {
+      "key": "digby_ns",
+      "name": "Digby",
+      "province": "NS",
+      "lat": 44.62,
+      "lng": -65.77,
+      "ssKPa": 2.2,
+      "srKPa": 0.6
+    },
+    {
+      "key": "greenwood_cfb_ns",
+      "name": "Greenwood (CFB)",
+      "province": "NS",
+      "lat": 44.98,
+      "lng": -64.9,
+      "ssKPa": 2.7,
+      "srKPa": 0.6
+    },
+    {
+      "key": "halifax_ns",
+      "name": "Halifax",
+      "province": "NS",
+      "lat": 44.65,
+      "lng": -63.6,
+      "ssKPa": 1.9,
+      "srKPa": 0.6
+    },
+    {
+      "key": "kentville_ns",
+      "name": "Kentville",
+      "province": "NS",
+      "lat": 45.08,
+      "lng": -64.5,
+      "ssKPa": 2.6,
+      "srKPa": 0.6
+    },
+    {
+      "key": "liverpool_ns",
+      "name": "Liverpool",
+      "province": "NS",
+      "lat": 44.03,
+      "lng": -64.72,
+      "ssKPa": 1.7,
+      "srKPa": 0.6
+    },
+    {
+      "key": "lockeport_ns",
+      "name": "Lockeport",
+      "province": "NS",
+      "lat": 43.7,
+      "lng": -65.12,
+      "ssKPa": 1.4,
+      "srKPa": 0.6
+    },
+    {
+      "key": "louisburg_ns",
+      "name": "Louisburg",
+      "province": "NS",
+      "lat": 45.92,
+      "lng": -59.98,
+      "ssKPa": 2.1,
+      "srKPa": 0.7
+    },
+    {
+      "key": "lunenburg_ns",
+      "name": "Lunenburg",
+      "province": "NS",
+      "lat": 44.38,
+      "lng": -64.32,
+      "ssKPa": 1.9,
+      "srKPa": 0.6
+    },
+    {
+      "key": "new_glasgow_ns",
+      "name": "New Glasgow",
+      "province": "NS",
+      "lat": 45.58,
+      "lng": -62.65,
+      "ssKPa": 2.2,
+      "srKPa": 0.6
+    },
+    {
+      "key": "north_sydney_ns",
+      "name": "North Sydney",
+      "province": "NS",
+      "lat": 46.22,
+      "lng": -60.25,
+      "ssKPa": 2.4,
+      "srKPa": 0.6
+    },
+    {
+      "key": "pictou_ns",
+      "name": "Pictou",
+      "province": "NS",
+      "lat": 45.68,
+      "lng": -62.72,
+      "ssKPa": 2.2,
+      "srKPa": 0.6
+    },
+    {
+      "key": "port_hawkesbury_ns",
+      "name": "Port Hawkesbury",
+      "province": "NS",
+      "lat": 45.62,
+      "lng": -61.35,
+      "ssKPa": 2.1,
+      "srKPa": 0.6
+    },
+    {
+      "key": "springhill_ns",
+      "name": "Springhill",
+      "province": "NS",
+      "lat": 45.65,
+      "lng": -64.05,
+      "ssKPa": 3.1,
+      "srKPa": 0.6
+    },
+    {
+      "key": "stewiacke_ns",
+      "name": "Stewiacke",
+      "province": "NS",
+      "lat": 45.13,
+      "lng": -63.35,
+      "ssKPa": 1.8,
+      "srKPa": 0.6
+    },
+    {
+      "key": "sydney_ns",
+      "name": "Sydney",
+      "province": "NS",
+      "lat": 46.15,
+      "lng": -60.18,
+      "ssKPa": 2.3,
+      "srKPa": 0.6
+    },
+    {
+      "key": "tatamagouche_ns",
+      "name": "Tatamagouche",
+      "province": "NS",
+      "lat": 45.72,
+      "lng": -63.3,
+      "ssKPa": 2.2,
+      "srKPa": 0.6
+    },
+    {
+      "key": "truro_ns",
+      "name": "Truro",
+      "province": "NS",
+      "lat": 45.37,
+      "lng": -63.27,
+      "ssKPa": 2.0,
+      "srKPa": 0.6
+    },
+    {
+      "key": "wolfville_ns",
+      "name": "Wolfville",
+      "province": "NS",
+      "lat": 45.08,
+      "lng": -64.37,
+      "ssKPa": 2.6,
+      "srKPa": 0.6
+    },
+    {
+      "key": "yarmouth_ns",
+      "name": "Yarmouth",
+      "province": "NS",
+      "lat": 43.83,
+      "lng": -66.12,
+      "ssKPa": 1.8,
+      "srKPa": 0.6
+    },
+    {
+      "key": "charlottetown_pe",
+      "name": "Charlottetown",
+      "province": "PE",
+      "lat": 46.233,
+      "lng": -63.133,
+      "ssKPa": 2.7,
+      "srKPa": 0.6
+    },
+    {
+      "key": "souris_pe",
+      "name": "Souris",
+      "province": "PE",
+      "lat": 46.35,
+      "lng": -62.25,
+      "ssKPa": 2.7,
+      "srKPa": 0.6
+    },
+    {
+      "key": "summerside_pe",
+      "name": "Summerside",
+      "province": "PE",
+      "lat": 46.4,
+      "lng": -63.783,
+      "ssKPa": 3.1,
+      "srKPa": 0.6
+    },
+    {
+      "key": "tignish_pe",
+      "name": "Tignish",
+      "province": "PE",
+      "lat": 46.95,
+      "lng": -64.03,
+      "ssKPa": 3.2,
+      "srKPa": 0.6
+    },
+    {
+      "key": "argentia_nl",
+      "name": "Argentia",
+      "province": "NL",
+      "lat": 47.3,
+      "lng": -53.98,
+      "ssKPa": 2.4,
+      "srKPa": 0.7
+    },
+    {
+      "key": "bonavista_nl",
+      "name": "Bonavista",
+      "province": "NL",
+      "lat": 48.65,
+      "lng": -53.12,
+      "ssKPa": 3.1,
+      "srKPa": 0.6
+    },
+    {
+      "key": "buchans_nl",
+      "name": "Buchans",
+      "province": "NL",
+      "lat": 48.817,
+      "lng": -56.867,
+      "ssKPa": 4.7,
+      "srKPa": 0.6
+    },
+    {
+      "key": "cape_harrison_nl",
+      "name": "Cape Harrison",
+      "province": "NL",
+      "lat": 54.78,
+      "lng": -57.95,
+      "ssKPa": 6.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "cape_race_nl",
+      "name": "Cape Race",
+      "province": "NL",
+      "lat": 46.65,
+      "lng": -53.07,
+      "ssKPa": 2.3,
+      "srKPa": 0.7
+    },
+    {
+      "key": "channel_port_aux_basques_nl",
+      "name": "Channel-Port aux Basques",
+      "province": "NL",
+      "lat": 47.57,
+      "lng": -59.15,
+      "ssKPa": 3.6,
+      "srKPa": 0.7
+    },
+    {
+      "key": "corner_brook_nl",
+      "name": "Corner Brook",
+      "province": "NL",
+      "lat": 48.95,
+      "lng": -57.95,
+      "ssKPa": 3.7,
+      "srKPa": 0.6
+    },
+    {
+      "key": "gander_nl",
+      "name": "Gander",
+      "province": "NL",
+      "lat": 48.98,
+      "lng": -54.59,
+      "ssKPa": 3.7,
+      "srKPa": 0.6
+    },
+    {
+      "key": "grand_bank_nl",
+      "name": "Grand Bank",
+      "province": "NL",
+      "lat": 47.1,
+      "lng": -55.77,
+      "ssKPa": 2.4,
+      "srKPa": 0.7
+    },
+    {
+      "key": "grand_falls_nl",
+      "name": "Grand Falls",
+      "province": "NL",
+      "lat": 48.93,
+      "lng": -55.67,
+      "ssKPa": 3.4,
+      "srKPa": 0.6
+    },
+    {
+      "key": "happy_valley_goose_bay_nl",
+      "name": "Happy Valley-Goose Bay",
+      "province": "NL",
+      "lat": 53.32,
+      "lng": -60.37,
+      "ssKPa": 5.3,
+      "srKPa": 0.4
+    },
+    {
+      "key": "labrador_city_nl",
+      "name": "Labrador City",
+      "province": "NL",
+      "lat": 52.95,
+      "lng": -66.92,
+      "ssKPa": 4.8,
+      "srKPa": 0.3
+    },
+    {
+      "key": "st_anthony_nl",
+      "name": "St. Anthony",
+      "province": "NL",
+      "lat": 51.37,
+      "lng": -55.58,
+      "ssKPa": 6.1,
+      "srKPa": 0.6
+    },
+    {
+      "key": "st_john_s_nl",
+      "name": "St. John's",
+      "province": "NL",
+      "lat": 47.57,
+      "lng": -52.72,
+      "ssKPa": 2.9,
+      "srKPa": 0.7
+    },
+    {
+      "key": "stephenville_nl",
+      "name": "Stephenville",
+      "province": "NL",
+      "lat": 48.55,
+      "lng": -58.58,
+      "ssKPa": 4.1,
+      "srKPa": 0.6
+    },
+    {
+      "key": "twin_falls_nl",
+      "name": "Twin Falls",
+      "province": "NL",
+      "lat": 53.5,
+      "lng": -64.53,
+      "ssKPa": 4.8,
+      "srKPa": 0.4
+    },
+    {
+      "key": "wabana_nl",
+      "name": "Wabana",
+      "province": "NL",
+      "lat": 47.63,
+      "lng": -52.95,
+      "ssKPa": 3.0,
+      "srKPa": 0.7
+    },
+    {
+      "key": "wabush_nl",
+      "name": "Wabush",
+      "province": "NL",
+      "lat": 52.92,
+      "lng": -66.87,
+      "ssKPa": 4.8,
+      "srKPa": 0.3
+    },
+    {
+      "key": "aishihik_yt",
+      "name": "Aishihik",
+      "province": "YT",
+      "lat": 61.6,
+      "lng": -137.517,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "dawson_yt",
+      "name": "Dawson",
+      "province": "YT",
+      "lat": 64.07,
+      "lng": -139.42,
+      "ssKPa": 2.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "destruction_bay_yt",
+      "name": "Destruction Bay",
+      "province": "YT",
+      "lat": 61.25,
+      "lng": -138.8,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "faro_yt",
+      "name": "Faro",
+      "province": "YT",
+      "lat": 62.227,
+      "lng": -133.357,
+      "ssKPa": 2.3,
+      "srKPa": 0.1
+    },
+    {
+      "key": "haines_junction_yt",
+      "name": "Haines Junction",
+      "province": "YT",
+      "lat": 60.78,
+      "lng": -137.54,
+      "ssKPa": 2.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "snag_yt",
+      "name": "Snag",
+      "province": "YT",
+      "lat": 62.4,
+      "lng": -140.37,
+      "ssKPa": 2.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "teslin_yt",
+      "name": "Teslin",
+      "province": "YT",
+      "lat": 60.17,
+      "lng": -132.72,
+      "ssKPa": 3.0,
+      "srKPa": 0.1
+    },
+    {
+      "key": "watson_lake_yt",
+      "name": "Watson Lake",
+      "province": "YT",
+      "lat": 60.13,
+      "lng": -128.71,
+      "ssKPa": 3.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "whitehorse_yt",
+      "name": "Whitehorse",
+      "province": "YT",
+      "lat": 60.72,
+      "lng": -135.05,
+      "ssKPa": 2.0,
+      "srKPa": 0.1
+    },
+    {
+      "key": "aklavik_nt",
+      "name": "Aklavik",
+      "province": "NT",
+      "lat": 68.23,
+      "lng": -135.01,
+      "ssKPa": 2.8,
+      "srKPa": 0.1
+    },
+    {
+      "key": "echo_bay_port_radium_nt",
+      "name": "Echo Bay / Port Radium",
+      "province": "NT",
+      "lat": 66.05,
+      "lng": -117.88,
+      "ssKPa": 3.0,
+      "srKPa": 0.1
+    },
+    {
+      "key": "fort_good_hope_nt",
+      "name": "Fort Good Hope",
+      "province": "NT",
+      "lat": 66.29,
+      "lng": -128.63,
+      "ssKPa": 2.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "fort_mcpherson_nt",
+      "name": "Fort McPherson",
+      "province": "NT",
+      "lat": 67.43,
+      "lng": -134.88,
+      "ssKPa": 3.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "fort_providence_nt",
+      "name": "Fort Providence",
+      "province": "NT",
+      "lat": 61.35,
+      "lng": -117.65,
+      "ssKPa": 2.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "fort_resolution_nt",
+      "name": "Fort Resolution",
+      "province": "NT",
+      "lat": 61.19,
+      "lng": -113.67,
+      "ssKPa": 2.3,
+      "srKPa": 0.1
+    },
+    {
+      "key": "fort_simpson_nt",
+      "name": "Fort Simpson",
+      "province": "NT",
+      "lat": 61.93,
+      "lng": -121.35,
+      "ssKPa": 2.3,
+      "srKPa": 0.1
+    },
+    {
+      "key": "fort_smith_nt",
+      "name": "Fort Smith",
+      "province": "NT",
+      "lat": 60.0,
+      "lng": -111.88,
+      "ssKPa": 2.3,
+      "srKPa": 0.2
+    },
+    {
+      "key": "hay_river_nt",
+      "name": "Hay River",
+      "province": "NT",
+      "lat": 60.85,
+      "lng": -115.733,
+      "ssKPa": 2.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "inuvik_nt",
+      "name": "Inuvik",
+      "province": "NT",
+      "lat": 68.35,
+      "lng": -133.72,
+      "ssKPa": 3.1,
+      "srKPa": 0.1
+    },
+    {
+      "key": "mould_bay_nt",
+      "name": "Mould Bay",
+      "province": "NT",
+      "lat": 76.23,
+      "lng": -119.33,
+      "ssKPa": 1.5,
+      "srKPa": 0.1
+    },
+    {
+      "key": "norman_wells_nt",
+      "name": "Norman Wells",
+      "province": "NT",
+      "lat": 65.283,
+      "lng": -126.85,
+      "ssKPa": 3.0,
+      "srKPa": 0.1
+    },
+    {
+      "key": "rae_edzo_nt",
+      "name": "Rae-Edzo",
+      "province": "NT",
+      "lat": 62.83,
+      "lng": -116.05,
+      "ssKPa": 2.3,
+      "srKPa": 0.1
+    },
+    {
+      "key": "tungsten_nt",
+      "name": "Tungsten",
+      "province": "NT",
+      "lat": 61.95,
+      "lng": -128.27,
+      "ssKPa": 4.3,
+      "srKPa": 0.1
+    },
+    {
+      "key": "ulukhaqtuuq_holman_nt",
+      "name": "Ulukhaqtuuq / Holman",
+      "province": "NT",
+      "lat": 70.73,
+      "lng": -117.75,
+      "ssKPa": 2.1,
+      "srKPa": 0.1
+    },
+    {
+      "key": "wrigley_nt",
+      "name": "Wrigley",
+      "province": "NT",
+      "lat": 63.23,
+      "lng": -123.47,
+      "ssKPa": 2.8,
+      "srKPa": 0.1
+    },
+    {
+      "key": "yellowknife_nt",
+      "name": "Yellowknife",
+      "province": "NT",
+      "lat": 62.48,
+      "lng": -114.35,
+      "ssKPa": 2.2,
+      "srKPa": 0.1
+    },
+    {
+      "key": "alert_nu",
+      "name": "Alert",
+      "province": "NU",
+      "lat": 82.48,
+      "lng": -62.25,
+      "ssKPa": 2.6,
+      "srKPa": 0.1
+    },
+    {
+      "key": "arctic_bay_nu",
+      "name": "Arctic Bay",
+      "province": "NU",
+      "lat": 73.03,
+      "lng": -85.17,
+      "ssKPa": 2.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "arviat_nu",
+      "name": "Arviat",
+      "province": "NU",
+      "lat": 61.12,
+      "lng": -94.05,
+      "ssKPa": 3.0,
+      "srKPa": 0.2
+    },
+    {
+      "key": "baker_lake_nu",
+      "name": "Baker Lake",
+      "province": "NU",
+      "lat": 64.32,
+      "lng": -96.02,
+      "ssKPa": 3.4,
+      "srKPa": 0.2
+    },
+    {
+      "key": "eureka_nu",
+      "name": "Eureka",
+      "province": "NU",
+      "lat": 79.983,
+      "lng": -85.95,
+      "ssKPa": 1.6,
+      "srKPa": 0.1
+    },
+    {
+      "key": "igluligaarjuk_chesterfield_inlet_nu",
+      "name": "Igluligaarjuk / Chesterfield Inlet",
+      "province": "NU",
+      "lat": 63.33,
+      "lng": -90.7,
+      "ssKPa": 3.6,
+      "srKPa": 0.2
+    },
+    {
+      "key": "iqaluit_nu",
+      "name": "Iqaluit",
+      "province": "NU",
+      "lat": 63.73,
+      "lng": -68.5,
+      "ssKPa": 2.9,
+      "srKPa": 0.2
+    },
+    {
+      "key": "iqaluktuuttiaq_cambridge_bay_nu",
+      "name": "Iqaluktuuttiaq / Cambridge Bay",
+      "province": "NU",
+      "lat": 69.12,
+      "lng": -105.03,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "isachsen_nu",
+      "name": "Isachsen",
+      "province": "NU",
+      "lat": 78.78,
+      "lng": -103.53,
+      "ssKPa": 1.9,
+      "srKPa": 0.1
+    },
+    {
+      "key": "kangiqiniq_rankin_inlet_nu",
+      "name": "Kangiqiniq / Rankin Inlet",
+      "province": "NU",
+      "lat": 62.82,
+      "lng": -92.08,
+      "ssKPa": 3.0,
+      "srKPa": 0.2
+    },
+    {
+      "key": "kanngiqtugaapik_clyde_river_nu",
+      "name": "Kanngiqtugaapik / Clyde River",
+      "province": "NU",
+      "lat": 70.45,
+      "lng": -68.57,
+      "ssKPa": 4.2,
+      "srKPa": 0.2
+    },
+    {
+      "key": "kugluktuk_nu",
+      "name": "Kugluktuk",
+      "province": "NU",
+      "lat": 67.83,
+      "lng": -115.08,
+      "ssKPa": 3.4,
+      "srKPa": 0.1
+    },
+    {
+      "key": "nottingham_island_nu",
+      "name": "Nottingham Island",
+      "province": "NU",
+      "lat": 63.1,
+      "lng": -78.0,
+      "ssKPa": 4.7,
+      "srKPa": 0.2
+    },
+    {
+      "key": "resolute_nu",
+      "name": "Resolute",
+      "province": "NU",
+      "lat": 74.68,
+      "lng": -94.9,
+      "ssKPa": 2.0,
+      "srKPa": 0.1
+    },
+    {
+      "key": "resolution_island_nu",
+      "name": "Resolution Island",
+      "province": "NU",
+      "lat": 61.3,
+      "lng": -64.883,
+      "ssKPa": 5.5,
+      "srKPa": 0.2
+    },
+    {
+      "key": "salliq_coral_harbour_nu",
+      "name": "Salliq / Coral Harbour",
+      "province": "NU",
+      "lat": 64.13,
+      "lng": -83.17,
+      "ssKPa": 3.8,
+      "srKPa": 0.2
+    }
+  ]
+}

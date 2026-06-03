@@ -6,7 +6,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from reserve import assess_reserve
-from snow_lookup import load_climate_table, load_code_editions
+from snow_lookup import (
+    load_climate_table,
+    load_code_editions,
+    nearest_climate_station,
+)
 
 app = FastAPI(title="Building Code Lookup Engine", version="0.1.0")
 
@@ -24,11 +28,18 @@ class SitePayload(BaseModel):
     locationKey: str | None = None
     lat: float | None = None
     lng: float | None = None
+    elevationM: float | None = None
     replaceBallastedWithAdhered: bool = False
     isWoodStructure: bool = False
     satisfactoryPerformance: bool = False
     roofWeightExistingKPa: float = 0.35
     roofWeightNewKPa: float = 0.22
+    roofLM: float = 14.0
+    roofWM: float = 9.5
+    roofSlopeDeg: float = 0.0
+    roofSlippery: bool = False
+    importance: str = "normal"
+    cwReduction: str = "none"
 
 
 @app.get("/health")
@@ -44,6 +55,14 @@ def climate():
 @app.get("/editions")
 def editions():
     return load_code_editions()
+
+
+@app.get("/nearest-climate")
+def nearest_climate(lat: float, lng: float):
+    row = nearest_climate_station(lat, lng)
+    if not row:
+        return {"found": False}
+    return {"found": True, **row}
 
 
 @app.post("/assess")
