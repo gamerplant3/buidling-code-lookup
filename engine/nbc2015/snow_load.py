@@ -1,7 +1,7 @@
 """
 NBC 2015 specified snow load - Article 4.1.6.2 (flat / simple gable, uniform case Ca=1).
 
-References: NBC 2015 Part 4, Jabacus roof snow calculator, Snow Loading Advisor workbook.
+References: NBC 2015 Part 4
 """
 from __future__ import annotations
 
