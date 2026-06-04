@@ -34,7 +34,7 @@ Open **http://localhost:3000**
 
 1. **Reset demo** loads 15 sites: 10 at listed Table C-2 stations (`exact`), 5 rural coords using **IDW** (no `locationKey`).
 2. Click **Assess all sites** (snow reserve engine).
-3. **Scout** (right rail) - try example 1 (Toronto warehouse) or example 2 (portfolio filter). Expand tool steps to see geocode → assess calls.
+3. **Scout** (right rail) — try examples: address diligence (1), portfolio filter (2), IDW + explain (3), compare (4), summarize (5).
 4. Select a site → **Reassess** one building, or **Add site** manually.
 5. **Export CSV** for stakeholders, or **Export JSON** for full site data.
 

@@ -8,7 +8,8 @@ const EXAMPLES = [
   'Assess a 1985 industrial warehouse at 100 King St W, Toronto for rooftop solar. Flat ballasted roof.',
   'Commercial sites with roof reserve pass and at least 30m frontage',
   'Which portfolio sites use IDW climate and fail reserve? Explain the highest-risk one.',
-  'Can we put solar on a 1990 commercial building near Leamington ON? Wood deck, no performance history.',
+  'Compare the Sudbury Warehouse and Calgary Retail demo sites — why does one pass and the other fail?',
+  'Summarize my portfolio: pass rate, IDW exposure, and riskiest site.',
 ];
 
 function renderInlineMarkdown(text) {
