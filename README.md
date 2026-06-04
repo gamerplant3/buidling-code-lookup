@@ -1,6 +1,6 @@
 # Building Code Lookup
 
-Roof **reserve capacity** screening (historic NBC snow logic) with AI-powered natural language filters (Cohere) and a map + globe UI. Sites persist in your browser (IndexedDB) - no database for now, just dev.
+Roof reserve capacity bulk calculations (screening) using historic NBC snow loading. AI-powered natural language filters (Cohere) and a map + globe UI. Sites persist in your browser (IndexedDB) - no database for now, just dev.
 
 ## Uses
 
@@ -36,10 +36,10 @@ Open **http://localhost:3000**
 2. Click **Assess all sites** (snow reserve engine).
 3. **Export CSV** for a stakeholder summary, or **Export JSON** for full site data.
 4. Select a site → **Reassess** one building without re-running the whole portfolio.
-5. Expand **Add site** when needed (collapsed by default); geocode via NRCan.
+5. **Add site** does geocoding via NRCan.
 6. **AI search** example: `Commercial sites with roof reserve and at least 30m road frontage`
 
-## Project layout
+## Org
 
 ```
 app/              Next.js UI + API routes (Cohere, geocode, assess proxy)
@@ -62,7 +62,7 @@ public/data/      Demo JSON served to browser
 ## Disclaimer
 
 - Screening tool only - not a structural design or permit substitute.
-- Commentary L steps are simplified; see site detail panel for explanation.
+- Commentary L steps are simplified for this demo
 ## Environment variables
 
 | Variable | Default | Purpose |
