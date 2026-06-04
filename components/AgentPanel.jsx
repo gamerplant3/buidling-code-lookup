@@ -2,6 +2,7 @@
 
 import { useRef, useState } from 'react';
 import { extractDiligenceSnapshot } from '@/lib/agent/diligenceSnapshot';
+import { AGENT_ROLE_LABEL } from '@/lib/agent/agentMeta';
 
 const EXAMPLES = [
   'Assess a 1985 industrial warehouse at 100 King St W, Toronto for rooftop solar. Flat ballasted roof.',
@@ -125,6 +126,7 @@ export default function AgentPanel({
   onClearFilters,
   onSelectSite,
   onAddDiligenceSite,
+  onMapFocus,
 }) {
   const [input, setInput] = useState('');
   const [turns, setTurns] = useState([]);
@@ -132,7 +134,7 @@ export default function AgentPanel({
   const scrollRef = useRef(null);
   const diligenceContextRef = useRef(null);
 
-  async function sendMessage(text) {
+  async function sendMessage(text, opts = {}) {
     const message = (text ?? input).trim();
     if (!message || loading) return;
 
@@ -140,10 +142,21 @@ export default function AgentPanel({
     onLoadingChange?.(true);
     setInput('');
 
-    const history = turns.flatMap((t) => [
-      { role: 'user', content: t.user },
-      { role: 'assistant', content: t.reply },
-    ]);
+    const history = turns.flatMap((t) =>
+      t.reply != null && t.reply !== ''
+        ? [
+            { role: 'user', content: t.user },
+            { role: 'assistant', content: t.reply },
+          ]
+        : []
+    );
+
+    const turnId = Date.now();
+    setTurns((prev) => [...prev, { id: turnId, user: message, pending: true }]);
+
+    requestAnimationFrame(() => {
+      scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
+    });
 
     try {
       const res = await fetch('/api/agent', {
@@ -154,12 +167,16 @@ export default function AgentPanel({
           history,
           sites,
           diligenceContext: diligenceContextRef.current,
+          selectedLocation: opts.selectedLocation || null,
         }),
       });
       const data = await res.json();
       onLoadingChange?.(false);
 
       if (!res.ok) {
+        setTurns((prev) =>
+          prev.map((t) => (t.id === turnId ? { ...t, pending: false } : t))
+        );
         setError(data.error || 'Agent request failed');
         return;
       }
@@ -168,8 +185,9 @@ export default function AgentPanel({
       if (diligenceSnapshot) diligenceContextRef.current = diligenceSnapshot;
 
       const turn = {
-        id: Date.now(),
+        id: turnId,
         user: message,
+        pending: false,
         reply: data.reply,
         toolTrace: data.toolTrace || [],
         filterPlan: data.filterPlan,
@@ -178,10 +196,12 @@ export default function AgentPanel({
         mapFocus: data.mapFocus || null,
         geocodeCandidates: data.geocodeCandidates || null,
         siteToAdd: data.siteToAdd || null,
+        offersPortfolioAdd: Boolean(data.offersPortfolioAdd),
+        applyPortfolioFilter: Boolean(data.applyPortfolioFilter),
         diligenceSnapshot,
       };
 
-      setTurns((prev) => [...prev, turn]);
+      setTurns((prev) => prev.map((t) => (t.id === turnId ? turn : t)));
       onAgentResult?.(turn);
 
       if (data.siteToAdd) diligenceContextRef.current = null;
@@ -191,6 +211,9 @@ export default function AgentPanel({
       });
     } catch (e) {
       onLoadingChange?.(false);
+      setTurns((prev) =>
+        prev.map((t) => (t.id === turnId ? { ...t, pending: false } : t))
+      );
       setError(e.message);
     }
   }
@@ -203,8 +226,20 @@ export default function AgentPanel({
   }
 
   function pickGeocodeOption(candidate, index) {
+    onMapFocus?.({
+      lat: candidate.lat,
+      lng: candidate.lng,
+      label: candidate.label,
+    });
     sendMessage(
-      `Use option ${index + 1}: ${candidate.label} (${Number(candidate.lat).toFixed(4)}, ${Number(candidate.lng).toFixed(4)})`
+      `Use option ${index + 1}: ${candidate.label} (${Number(candidate.lat).toFixed(4)}, ${Number(candidate.lng).toFixed(4)})`,
+      {
+        selectedLocation: {
+          lat: candidate.lat,
+          lng: candidate.lng,
+          label: candidate.label,
+        },
+      }
     );
   }
 
@@ -219,7 +254,7 @@ export default function AgentPanel({
       <div className="agent-thread" ref={scrollRef}>
         {turns.length === 0 && !loading && (
           <div className="agent-bubble agent-bubble-assistant agent-empty">
-            <span className="agent-role">Agent</span>
+            <span className="agent-role">{AGENT_ROLE_LABEL}</span>
             Waiting…
           </div>
         )}
@@ -255,36 +290,39 @@ export default function AgentPanel({
                 ))}
               </div>
             )}
-            <div className="agent-bubble agent-bubble-assistant">
-              <span className="agent-role">Agent</span>
-              <AgentMarkdown text={turn.reply} sites={sites} onSelectSite={onSelectSite} />
-              {turn.matchedSiteIds?.length > 0 && (
-                <p className="agent-meta">
-                  Portfolio filter: {turn.matchedSiteIds.length} site
-                  {turn.matchedSiteIds.length === 1 ? '' : 's'} matched
-                </p>
-              )}
-              {turn.diligenceSnapshot && !turn.siteToAdd && /portfolio/i.test(turn.reply) && (
-                <div className="agent-turn-actions">
-                  <button
-                    type="button"
-                    className="btn btn-sm"
-                    disabled={loading}
-                    onClick={() => onAddDiligenceSite?.(turn.diligenceSnapshot)}
-                  >
-                    Yes, add to portfolio
-                  </button>
+            {turn.pending ? (
+              <div className="agent-bubble agent-bubble-assistant agent-loading">
+                <span className="agent-role">{AGENT_ROLE_LABEL}</span>
+                Running tools…
+              </div>
+            ) : (
+              turn.reply != null && (
+                <div className="agent-bubble agent-bubble-assistant">
+                  <span className="agent-role">{AGENT_ROLE_LABEL}</span>
+                  <AgentMarkdown text={turn.reply} sites={sites} onSelectSite={onSelectSite} />
+                  {turn.applyPortfolioFilter && turn.matchedSiteIds?.length > 0 && (
+                    <p className="agent-meta">
+                      Portfolio filter: {turn.matchedSiteIds.length} site
+                      {turn.matchedSiteIds.length === 1 ? '' : 's'} matched
+                    </p>
+                  )}
+                  {turn.offersPortfolioAdd && !turn.siteToAdd && (
+                    <div className="agent-turn-actions">
+                      <button
+                        type="button"
+                        className="btn btn-sm"
+                        disabled={loading}
+                        onClick={() => onAddDiligenceSite?.(turn.diligenceSnapshot)}
+                      >
+                        Yes, add to portfolio
+                      </button>
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
+              )
+            )}
           </div>
         ))}
-        {loading && (
-          <div className="agent-bubble agent-bubble-assistant agent-loading">
-            <span className="agent-role">Agent</span>
-            Running tools…
-          </div>
-        )}
       </div>
 
       {error && <p className="status-bar" style={{ color: 'var(--fail)' }}>{error}</p>}

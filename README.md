@@ -1,6 +1,6 @@
 # Building Code Lookup
 
-Roof reserve capacity bulk calculations (screening) using historic NBC snow loading. **Agentic diligence** (Cohere tool use) geocodes, assesses, and explains reserve — or searches your portfolio. Sites persist in your browser (IndexedDB).
+Roof reserve capacity bulk calculations (screening) using historic NBC snow loading. **Scout** — the AI agent (Cohere tool use) — geocodes, assesses, and explains reserve, or searches your portfolio. Sites persist in your browser (IndexedDB).
 
 ## Uses
 
@@ -20,7 +20,7 @@ pip install -r engine/requirements.txt
 # 3. Build Table C-2 JSON from PCIC exports (three files in data/)
 python scripts/import_pcic_table_c2.py
 
-# 4. Configure Cohere (required for diligence agent)
+# 4. Configure Cohere (required for Scout)
 copy .env.example .env.local
 # Edit .env.local and set COHERE_API_KEY=...
 
@@ -34,7 +34,7 @@ Open **http://localhost:3000**
 
 1. **Reset demo** loads 15 sites: 10 at listed Table C-2 stations (`exact`), 5 rural coords using **IDW** (no `locationKey`).
 2. Click **Assess all sites** (snow reserve engine).
-3. **Diligence agent** — try example 1 (Toronto warehouse) or example 2 (portfolio filter). Expand tool steps to see geocode → assess calls.
+3. **Scout** (right rail) — try example 1 (Toronto warehouse) or example 2 (portfolio filter). Expand tool steps to see geocode → assess calls.
 4. Select a site → **Reassess** one building, or **Add site** manually.
 5. **Export CSV** for stakeholders, or **Export JSON** for full site data.
 
@@ -44,7 +44,7 @@ Open **http://localhost:3000**
 app/              Next.js UI + API routes (agent, geocode, assess proxy)
 components/       Map, globe, agent panel, forms
 lib/              IndexedDB, agent tools, assess client
-lib/agent/        Cohere orchestrator + tool executors
+lib/agent/        Scout (Cohere orchestrator + tool executors)
 engine/           Python FastAPI - deterministic engineering -> reserve cap
 data/             table-c2-canada.json (from PCIC), code editions, demo-sites.json
 docs/             Free external data sources guide
@@ -54,7 +54,7 @@ public/data/      Demo JSON served to browser
 ## Data integrations (see `docs/data-sources.md`)
 
 - **Geocode enrich:** `/api/site-enrich` — climate snap/IDW hint, elevation, Toronto/Ottawa zoning, OSM frontage (one call after geocode).
-- **Agent geocode:** NRCan Geolocator first; Nominatim fallback so the agent can still geocode Canadian addresses when NRCan’s geocoder is unreachable (502 response).
+- **Agent geocode (Scout):** NRCan Geolocator first; Nominatim fallback so Scout can still geocode Canadian addresses when NRCan’s geocoder is unreachable (502 response).
 - **Zoning:** Toronto & Ottawa ArcGIS; demo polygons elsewhere.
 - **Frontage:** Toronto by-law field when available; else OSM estimate (not StatsCan RNF).
 - **Historic snow:** Edition factors in `data/code-editions.json` (NRC survey era notes).
@@ -68,8 +68,8 @@ public/data/      Demo JSON served to browser
 
 | Variable | Default | Purpose |
 |----------|---------|---------|
-| `COHERE_API_KEY` | - | Diligence agent (tool use) |
-| `COHERE_MODEL` | `command-r-08-2024` | Chat model with tools |
+| `COHERE_API_KEY` | - | Scout (tool use) |
+| `COHERE_MODEL` | `command-r-08-2024` | Scout chat model |
 | `ENGINE_URL` | `http://127.0.0.1:8000` | Python assess API |
 
 ## Climate data

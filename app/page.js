@@ -9,6 +9,7 @@ import SiteForm from '@/components/SiteForm';
 import SiteList from '@/components/SiteList';
 import SiteDetail from '@/components/SiteDetail';
 import { buildSiteFromDiligence } from '@/lib/agent/diligenceSnapshot';
+import { AGENT_SIDEBAR_TITLE } from '@/lib/agent/agentMeta';
 import { applyFilterPlan } from '@/lib/applyFilters';
 import { assessAllSites, assessSite } from '@/lib/assessSite';
 import { downloadAssessmentCsv } from '@/lib/exportAssessmentCsv';
@@ -119,14 +120,17 @@ export default function HomePage() {
     allSites.find((s) => s.id === selectedId);
 
   function handleAgentResult(turn) {
-    if (turn.filterPlan) {
+    if (turn.applyPortfolioFilter && turn.filterPlan) {
       setFilterPlan(turn.filterPlan);
       const { matched: m } = applyFilterPlan(allSites, turn.filterPlan);
       setStatus(`Agent filter — ${m} of ${allSites.length} sites match.`);
-    } else if (turn.matchedSiteIds?.length) {
+    } else if (turn.applyPortfolioFilter && turn.matchedSiteIds?.length) {
       setStatus(`Agent found ${turn.matchedSiteIds.length} matching site(s).`);
     }
-    if (turn.mapFocus) setMapFocus(turn.mapFocus);
+    if (turn.mapFocus) {
+      setMapFocus(turn.mapFocus);
+      setSelectedId(null);
+    }
     if (turn.siteToAdd) {
       void handleSaveSite(turn.siteToAdd).then(() => {
         setSelectedId(turn.siteToAdd.id);
@@ -134,8 +138,10 @@ export default function HomePage() {
       });
       return;
     }
-    const highlight = turn.highlightSiteIds?.[0] || turn.matchedSiteIds?.[0];
-    if (highlight) setSelectedId(highlight);
+    if (!turn.mapFocus) {
+      const highlight = turn.highlightSiteIds?.[0] || turn.matchedSiteIds?.[0];
+      if (highlight) setSelectedId(highlight);
+    }
   }
 
   async function handleAddDiligenceSite(snapshot) {
@@ -253,7 +259,7 @@ export default function HomePage() {
         <div className="header-title-row">
           <h1>Building Code Lookup</h1>
           <span className="header-tagline">
-            Roof snow reserve screening (NBC 2015) · AI Agent (Cohere{' '}
+            Roof snow reserve screening (NBC 2015) · AI agent (Cohere{' '}
             {agentModel || '…'})
           </span>
         </div>
@@ -357,7 +363,7 @@ export default function HomePage() {
 
       <CollapsibleRail
         side="right"
-        title="Diligence agent"
+        title={AGENT_SIDEBAR_TITLE}
         open={rightRailOpen}
         onToggle={() => setRightRailOpen((v) => !v)}
       >
@@ -369,6 +375,7 @@ export default function HomePage() {
           onClearFilters={handleClearAgentFilters}
           onSelectSite={setSelectedId}
           onAddDiligenceSite={handleAddDiligenceSite}
+          onMapFocus={setMapFocus}
         />
       </CollapsibleRail>
     </div>

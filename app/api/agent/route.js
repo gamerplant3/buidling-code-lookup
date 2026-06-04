@@ -15,6 +15,7 @@ export async function POST(request) {
       history: body.history || [],
       sites: body.sites || [],
       diligenceContext: body.diligenceContext || null,
+      selectedLocation: body.selectedLocation || null,
     });
 
     return NextResponse.json(result);
