@@ -136,7 +136,7 @@ export default function SiteForm({ onSave, onUpdate, climateCities, editSite }) 
 
   return (
     <CollapsiblePanel
-      title={editing ? `Edit site - ${editSite.name}` : 'Add site'}
+      title={editing ? 'Site properties' : 'Add site'}
       defaultOpen={false}
       openWhen={editing}
     >

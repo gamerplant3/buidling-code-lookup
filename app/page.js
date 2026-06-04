@@ -3,10 +3,12 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import MapView from '@/components/MapView';
 import GlobeMini from '@/components/GlobeMini';
-import QueryBar from '@/components/QueryBar';
+import AgentPanel from '@/components/AgentPanel';
+import CollapsibleRail from '@/components/CollapsibleRail';
 import SiteForm from '@/components/SiteForm';
 import SiteList from '@/components/SiteList';
 import SiteDetail from '@/components/SiteDetail';
+import { buildSiteFromDiligence } from '@/lib/agent/diligenceSnapshot';
 import { applyFilterPlan } from '@/lib/applyFilters';
 import { assessAllSites, assessSite } from '@/lib/assessSite';
 import { downloadAssessmentCsv } from '@/lib/exportAssessmentCsv';
@@ -27,16 +29,18 @@ import {
 export default function HomePage() {
   const [allSites, setAllSites] = useState([]);
   const [filterPlan, setFilterPlan] = useState(null);
-  const [planExplanation, setPlanExplanation] = useState('');
-  const [planError, setPlanError] = useState('');
   const [selectedId, setSelectedId] = useState(null);
   const [climateCities, setClimateCities] = useState([]);
   const [status, setStatus] = useState('Loading…');
-  const [queryLoading, setQueryLoading] = useState(false);
+  const [agentLoading, setAgentLoading] = useState(false);
   const [assessLoading, setAssessLoading] = useState(false);
   const [reassessId, setReassessId] = useState(null);
   const [climateVersion, setClimateVersion] = useState(null);
   const [staleAssessments, setStaleAssessments] = useState(false);
+  const [leftRailOpen, setLeftRailOpen] = useState(true);
+  const [rightRailOpen, setRightRailOpen] = useState(true);
+  const [mapFocus, setMapFocus] = useState(null);
+  const [agentModel, setAgentModel] = useState(null);
 
   const initDemo = useCallback(async () => {
     const res = await fetch('/api/demo-sites');
@@ -45,8 +49,16 @@ export default function HomePage() {
     await saveAllSites(demo);
     setAllSites(demo);
     setSelectedId(null);
+    setFilterPlan(null);
     setStaleAssessments(true);
     setStatus(`Loaded demo portfolio (${demo.length} sites). Click “Assess all sites”.`);
+  }, []);
+
+  useEffect(() => {
+    fetch('/api/agent/config')
+      .then((r) => r.json())
+      .then((d) => setAgentModel(d.model))
+      .catch(() => setAgentModel('command-r-08-2024'));
   }, []);
 
   useEffect(() => {
@@ -106,14 +118,37 @@ export default function HomePage() {
   const selectedSite = visibleSites.find((s) => s.id === selectedId) ||
     allSites.find((s) => s.id === selectedId);
 
-  async function handlePlan(plan, error, explanation) {
-    setQueryLoading(false);
-    setPlanError(error || '');
-    setPlanExplanation(explanation || '');
-    setFilterPlan(plan);
-    if (plan && !error) {
-      setStatus(`Filter applied - ${applyFilterPlan(allSites, plan).matched} of ${allSites.length} sites match.`);
+  function handleAgentResult(turn) {
+    if (turn.filterPlan) {
+      setFilterPlan(turn.filterPlan);
+      const { matched: m } = applyFilterPlan(allSites, turn.filterPlan);
+      setStatus(`Agent filter — ${m} of ${allSites.length} sites match.`);
+    } else if (turn.matchedSiteIds?.length) {
+      setStatus(`Agent found ${turn.matchedSiteIds.length} matching site(s).`);
     }
+    if (turn.mapFocus) setMapFocus(turn.mapFocus);
+    if (turn.siteToAdd) {
+      void handleSaveSite(turn.siteToAdd).then(() => {
+        setSelectedId(turn.siteToAdd.id);
+        setStatus(`Added ${turn.siteToAdd.name} to portfolio.`);
+      });
+      return;
+    }
+    const highlight = turn.highlightSiteIds?.[0] || turn.matchedSiteIds?.[0];
+    if (highlight) setSelectedId(highlight);
+  }
+
+  async function handleAddDiligenceSite(snapshot) {
+    const site = buildSiteFromDiligence(snapshot);
+    await handleSaveSite(site);
+    setSelectedId(site.id);
+    setMapFocus({ lat: site.lat, lng: site.lng, label: site.name });
+    setStatus(`Added ${site.name} to portfolio.`);
+  }
+
+  function handleClearAgentFilters() {
+    setFilterPlan(null);
+    setStatus(`Showing all ${allSites.length} sites.`);
   }
 
   async function handleAssessAll() {
@@ -204,82 +239,94 @@ export default function HomePage() {
     setStatus(`Imported ${imported.length} sites.`);
   }
 
+  const layoutClass = [
+    'layout',
+    leftRailOpen ? '' : 'layout--left-collapsed',
+    rightRailOpen ? '' : 'layout--right-collapsed',
+  ]
+    .filter(Boolean)
+    .join(' ');
+
   return (
-    <div className="layout">
+    <div className={layoutClass}>
       <header className="header">
-        <h1>Building Code Lookup</h1>
-        <p>Roof snow reserve screening (NBC) · AI portfolio filters</p>
+        <div className="header-title-row">
+          <h1>Building Code Lookup</h1>
+          <span className="header-tagline">
+            Roof snow reserve screening (NBC 2015) · AI Agent (Cohere{' '}
+            {agentModel || '…'})
+          </span>
+        </div>
         {staleAssessments && (
-          <p className="status-bar" style={{ color: 'var(--fail)', marginTop: '0.5rem' }}>
+          <p className="status-bar header-stale" style={{ color: 'var(--fail)' }}>
             Assessments are out of date - run “Assess all” or re-assess individual sites.
           </p>
         )}
       </header>
 
-      <aside className="sidebar">
-        <QueryBar
-          loading={queryLoading}
-          setLoading={setQueryLoading}
-          onPlan={handlePlan}
-        />
-
-        {planExplanation && (
-          <p className="status-bar">
-            <strong>AI:</strong> {planExplanation}
-          </p>
-        )}
-        {planError && <p className="status-bar" style={{ color: 'var(--fail)' }}>{planError}</p>}
-        {filterPlan && (
-          <pre className="plan-json">{JSON.stringify(filterPlan, null, 2)}</pre>
-        )}
-
-        <div className="panel">
-          <h2>Portfolio ({matched}/{allSites.length})</h2>
-          <div className="form-row">
+      <CollapsibleRail
+        side="left"
+        title="Portfolio"
+        open={leftRailOpen}
+        onToggle={() => setLeftRailOpen((v) => !v)}
+      >
+        <div className="panel portfolio-panel">
+          <h2>
+            Sites {matched}/{allSites.length}
+          </h2>
+          {filterPlan && (
+            <p className="status-bar portfolio-filter-hint">
+              Filtered ·{' '}
+              <button
+                type="button"
+                className="btn btn-secondary btn-sm"
+                onClick={handleClearAgentFilters}
+              >
+                All
+              </button>
+            </p>
+          )}
+          <div className="portfolio-actions">
             <button
               type="button"
-              className="btn"
-              disabled={assessLoading || !!reassessId}
+              className="btn btn-sm"
+              disabled={assessLoading || !!reassessId || agentLoading}
               onClick={handleAssessAll}
             >
-              {assessLoading ? 'Assessing…' : 'Assess all sites'}
+              {assessLoading ? '…' : 'Assess'}
             </button>
             <button
               type="button"
-              className="btn btn-secondary"
+              className="btn btn-secondary btn-sm"
               disabled={assessLoading}
               onClick={handleExportCsv}
             >
-              Export CSV
+              CSV
             </button>
-          </div>
-          <div className="form-row">
             <button
               type="button"
-              className="btn btn-secondary"
+              className="btn btn-secondary btn-sm"
               onClick={() => exportSitesJson(allSites)}
             >
-              Export JSON
+              JSON
             </button>
-            <label className="btn btn-secondary" style={{ cursor: 'pointer' }}>
-              Import JSON
+            <label className="btn btn-secondary btn-sm portfolio-file-btn">
+              Import
               <input type="file" accept=".json" hidden onChange={handleImport} />
             </label>
-          </div>
-          <div className="form-row">
-            <button type="button" className="btn btn-secondary" onClick={initDemo}>
-              Reset demo
+            <button type="button" className="btn btn-secondary btn-sm" onClick={initDemo}>
+              Reset
             </button>
             <button
               type="button"
-              className="btn btn-danger"
+              className="btn btn-danger btn-sm"
               disabled={!selectedId}
               onClick={handleDeleteSelected}
             >
               Delete
             </button>
           </div>
-          <p className="status-bar">{status}</p>
+          <p className="status-bar portfolio-status">{status}</p>
           <SiteList sites={visibleSites} selectedId={selectedId} onSelect={setSelectedId} />
         </div>
 
@@ -289,13 +336,14 @@ export default function HomePage() {
           onUpdate={handleUpdateSite}
           editSite={selectedSite}
         />
-      </aside>
+      </CollapsibleRail>
 
       <main className="main">
         <MapView
           sites={visibleSites}
           selectedId={selectedId}
           onSelectSite={setSelectedId}
+          mapFocus={mapFocus}
         />
         <GlobeMini sites={visibleSites} />
         <SiteDetail
@@ -306,6 +354,23 @@ export default function HomePage() {
           onClose={() => setSelectedId(null)}
         />
       </main>
+
+      <CollapsibleRail
+        side="right"
+        title="Diligence agent"
+        open={rightRailOpen}
+        onToggle={() => setRightRailOpen((v) => !v)}
+      >
+        <AgentPanel
+          sites={allSites}
+          loading={agentLoading}
+          onLoadingChange={setAgentLoading}
+          onAgentResult={handleAgentResult}
+          onClearFilters={handleClearAgentFilters}
+          onSelectSite={setSelectedId}
+          onAddDiligenceSite={handleAddDiligenceSite}
+        />
+      </CollapsibleRail>
     </div>
   );
 }

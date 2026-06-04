@@ -30,11 +30,10 @@ export default function SiteList({ sites, selectedId, onSelect }) {
             tabIndex={0}
           >
             <strong>{site.name}</strong> {badge}
-            <br />
-            <span className="status-bar">
-              {site.zoning} · {site.roadFrontageM}m frontage
+            <span className="site-list-meta">
+              {site.zoning}
               {site.reserveAssessment?.deltaKPa != null &&
-                ` · Δ ${formatKpa(site.reserveAssessment.deltaKPa)} kPa`}
+                ` · Δ${formatKpa(site.reserveAssessment.deltaKPa)}`}
             </span>
           </li>
         );

@@ -9,7 +9,7 @@
 | Table C-2 Ss/Sr | PCIC Design Value Explorer | `data/table-c2-canada.json` + Python engine (`exact` / `nearest` ≤30 km / `idw`) |
 | Snow assessment | NBC 2015 (in-engine) | `POST /api/assess` |
 | Map tiles | [OpenFreeMap](https://openfreemap.org/) | MapLibre in `MapView.jsx` |
-| NL portfolio filters | Cohere trial | `POST /api/query-plan` — filters only, not snow math |
+| Diligence agent | Cohere trial (tool use) | `POST /api/agent` — geocode, assess, portfolio search; snow math stays in Python |
 | Historic code notes | Curated JSON | `data/code-editions.json`, `docs/historic-editions.md` |
 
 Individual routes (`/api/zoning`, `/api/frontage`, `/api/elevation`, `/api/nearest-climate`) remain for debugging; the form uses **`/api/site-enrich`** after geocode.
