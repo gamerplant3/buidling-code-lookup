@@ -1,6 +1,6 @@
 # Building Code Lookup
 
-Roof reserve capacity bulk calculations (screening) using historic NBC snow loading. **Scout** — the AI agent (Cohere tool use) — geocodes, assesses, and explains reserve, or searches your portfolio. Sites persist in your browser (IndexedDB).
+Roof reserve capacity bulk calculations (screening) using historic NBC snow loading. **Scout** - the AI agent (Cohere tool use) - geocodes, assesses, and explains reserve, or searches your portfolio. Sites persist in your browser (IndexedDB).
 
 ## Uses
 
@@ -34,7 +34,7 @@ Open **http://localhost:3000**
 
 1. **Reset demo** loads 15 sites: 10 at listed Table C-2 stations (`exact`), 5 rural coords using **IDW** (no `locationKey`).
 2. Click **Assess all sites** (snow reserve engine).
-3. **Scout** (right rail) — try example 1 (Toronto warehouse) or example 2 (portfolio filter). Expand tool steps to see geocode → assess calls.
+3. **Scout** (right rail) - try example 1 (Toronto warehouse) or example 2 (portfolio filter). Expand tool steps to see geocode → assess calls.
 4. Select a site → **Reassess** one building, or **Add site** manually.
 5. **Export CSV** for stakeholders, or **Export JSON** for full site data.
 
@@ -53,7 +53,7 @@ public/data/      Demo JSON served to browser
 
 ## Data integrations (see `docs/data-sources.md`)
 
-- **Geocode enrich:** `/api/site-enrich` — climate snap/IDW hint, elevation, Toronto/Ottawa zoning, OSM frontage (one call after geocode).
+- **Geocode enrich:** `/api/site-enrich` - climate snap/IDW hint, elevation, Toronto/Ottawa zoning, OSM frontage (one call after geocode).
 - **Agent geocode (Scout):** NRCan Geolocator first; Nominatim fallback so Scout can still geocode Canadian addresses when NRCan’s geocoder is unreachable (502 response).
 - **Zoning:** Toronto & Ottawa ArcGIS; demo polygons elsewhere.
 - **Frontage:** Toronto by-law field when available; else OSM estimate (not StatsCan RNF).

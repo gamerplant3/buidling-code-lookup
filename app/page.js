@@ -123,7 +123,7 @@ export default function HomePage() {
     if (turn.applyPortfolioFilter && turn.filterPlan) {
       setFilterPlan(turn.filterPlan);
       const { matched: m } = applyFilterPlan(allSites, turn.filterPlan);
-      setStatus(`Agent filter — ${m} of ${allSites.length} sites match.`);
+      setStatus(`Agent filter - ${m} of ${allSites.length} sites match.`);
     } else if (turn.applyPortfolioFilter && turn.matchedSiteIds?.length) {
       setStatus(`Agent found ${turn.matchedSiteIds.length} matching site(s).`);
     }

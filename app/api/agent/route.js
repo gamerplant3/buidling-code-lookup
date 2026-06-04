@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { runDiligenceAgent } from '@/lib/agent/orchestrator';
 
-/** POST /api/agent — diligence agent with Cohere tool use */
+/** POST /api/agent - diligence agent with Cohere tool use */
 export async function POST(request) {
   try {
     const body = await request.json();

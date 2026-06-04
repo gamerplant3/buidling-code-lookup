@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { enrichSiteFromCoordinates } from '@/lib/siteEnrich';
 
-/** GET /api/site-enrich?lat=&lng= — climate, elevation, zoning, frontage in one call */
+/** GET /api/site-enrich?lat=&lng= - climate, elevation, zoning, frontage in one call */
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
   const lat = Number(searchParams.get('lat'));

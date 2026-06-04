@@ -99,7 +99,7 @@ function ToolTraceStep({ step }) {
           ▶
         </span>
         Step {step.step}
-        {step.toolPlan ? ` — ${step.toolPlan.slice(0, 72)}${step.toolPlan.length > 72 ? '…' : ''}` : ''}
+        {step.toolPlan ? ` - ${step.toolPlan.slice(0, 72)}${step.toolPlan.length > 72 ? '…' : ''}` : ''}
       </button>
       {open && (
         <div className="agent-tool-step-body">
@@ -107,7 +107,7 @@ function ToolTraceStep({ step }) {
             <details key={i} className="agent-tool-call">
               <summary>
                 <code>{call.name}</code>
-                {call.error && <span className="agent-tool-err"> — error</span>}
+                {call.error && <span className="agent-tool-err"> - error</span>}
               </summary>
               <pre>{JSON.stringify({ args: call.args, result: call.result }, null, 2)}</pre>
             </details>

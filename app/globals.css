@@ -491,7 +491,7 @@ textarea {
   }
 }
 
-/* —— Rails (portfolio left, agent right) —— */
+/* -- Rails (portfolio left, agent right) -- */
 
 .btn-sm {
   font-size: var(--fs-base);
@@ -594,7 +594,7 @@ textarea {
   padding-top: 0.25rem;
 }
 
-/* —— Agent panel (right rail, full height) —— */
+/* -- Agent panel (right rail, full height) -- */
 
 .agent-panel {
   flex: 1;

@@ -86,7 +86,7 @@ export default function SiteForm({ onSave, onUpdate, climateCities, editSite }) 
         `/api/site-enrich?lat=${encodeURIComponent(lat)}&lng=${encodeURIComponent(lng)}`
       );
       if (!res.ok) {
-        setGeoHint('Enrichment failed — enter fields manually.');
+        setGeoHint('Enrichment failed - enter fields manually.');
         return;
       }
       const { patch, hints } = await res.json();
@@ -95,9 +95,9 @@ export default function SiteForm({ onSave, onUpdate, climateCities, editSite }) 
         if (!patch.locationKey) delete next.locationKey;
         return next;
       });
-      setGeoHint(hints?.length ? hints.join(' · ') : 'Saved coordinates — assess for snow loads.');
+      setGeoHint(hints?.length ? hints.join(' · ') : 'Saved coordinates - assess for snow loads.');
     } catch {
-      setGeoHint('Enrichment failed — enter fields manually.');
+      setGeoHint('Enrichment failed - enter fields manually.');
     }
   }
 
