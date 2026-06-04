@@ -84,5 +84,6 @@ See `docs/table-c2-import.md` for PCIC file names (`lat-long`, `SL50-Ss`, `RL50-
 
 Page
 
-<img width="1500" alt="Screenshot 2026-06-04 123324" src="https://github.com/user-attachments/assets/d54a600b-035e-49d9-a7f8-e673e11c7bad" />
+<img width="1500" alt="Screenshot 2026-06-04 125857" src="https://github.com/user-attachments/assets/72ee69b9-a5e7-454a-bc28-581a40ac3b6d" />
+
 
