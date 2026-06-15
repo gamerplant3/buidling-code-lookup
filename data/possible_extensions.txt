@@ -1,0 +1,307 @@
+Review additional data sources and APIs for potential extension. Preference for national/government databases (more authoritative).
+
+1) USGS — United States Geological Survey
+- Used for: earthquake events (ComCat), seismic hazard models (NSHM), topographic maps, high-resolution DEMs (3DEP), geology/landslide info.
+- Government? Yes — federal.
+- Links: https://www.usgs.gov/ (ComCat: https://earthquake.usgs.gov/; NSHM: https://www.usgs.gov/programs/earthquake-hazards/national-seismic-hazard-model)
+- Trustworthiness: High. Near-real-time quake catalog, authoritative seismic hazard products. DEM quality varies by product (3DEP/LiDAR = very high; SRTM = coarser).
+
+2) FEMA — Federal Emergency Management Agency
+- Used for: Flood Insurance Rate Maps (FIRM), National Flood Hazard Layer (NFHL), flood zone designations used for permitting/insurance.
+- Government? Yes — federal.
+- Links: https://msc.fema.gov/ and https://www.fema.gov/flood-maps/national-flood-hazard-layer
+- Trustworthiness: High as the legal standard for flood insurance and many permits. Limitations: map updates are episodic; local studies or recent changes (drainage work, climate shifts) may not yet be reflected.
+
+3) NRCS / USDA Web Soil Survey & SSURGO
+- Used for: soil mapping, soil type, drainage class, hydrologic soil group and many engineering-relevant attributes.
+- Government? Yes — federal.
+- Links: https://websoilsurvey.sc.egov.usda.gov/ and https://www.nrcs.usda.gov/
+- Trustworthiness: High for planning and preliminary design. Limitation: map-unit-level data can hide within-unit variability — engineering projects still need local borings/field tests.
+
+4) NOAA / NCEI / PRISM
+- Used for: climate normals (temperature, precipitation), degree days, long-term climate statistics. PRISM often used for high-resolution precipitation/temperature surfaces.
+- Government? NOAA/NCEI are federal; PRISM is academic (Oregon State).
+- Links: https://www.ncei.noaa.gov/, https://prism.oregonstate.edu/
+- Trustworthiness: High for long-term averages. Limitations: interpolation error in complex terrain; normals are updated on decadal cycles.
+
+5) NREL — National Renewable Energy Laboratory (NSRDB, PVWatts)
+- Used for: solar resource data, insolation, photovoltaic yield estimates and solar design guidance.
+- Government? Yes — U.S. Department of Energy national lab.
+- Links: https://www.nrel.gov/ (NSRDB: https://nsrdb.nrel.gov/, PVWatts: https://pvwatts.nrel.gov/)
+- Trustworthiness: High for solar resource and system performance modeling.
+
+6) OpenStreetMap (OSM) / Nominatim and Commercial Geocoders (Google Maps, Bing, etc.)
+- Used for: geocoding / reverse geocoding (turning addresses into coordinates and vice versa).
+- Government? No — OSM is community-driven; Google/Bing are private.
+- Links: https://www.openstreetmap.org/ (Nominatim: https://nominatim.openstreetmap.org/), Google Geocoding API: https://developers.google.com/maps/documentation/geocoding/overview
+- Trustworthiness: Good to excellent. OSM coverage quality varies by region (very strong in many areas). Commercial geocoders are robust but proprietary — licensing and occasional address-matching quirks apply. For legal boundary/parcel certainty, I defer to local county/town parcel/GIS data.
+
+7) SRTM / ASTER / Global DEM products (NASA / JPL)
+- Used for: global elevation where higher-resolution local DEMs are not available.
+- Government? NASA (federal) for SRTM / ASTER data.
+- Links: https://www2.jpl.nasa.gov/srtm/ and USGS National Map: https://www.usgs.gov/core-science-systems/national-geospatial-program/national-map
+- Trustworthiness: Good for regional/topographic context; resolution (~30 m) is coarser than LiDAR/3DEP used within the U.S.
+
+8) ISRIC / FAO / Global soil datasets
+- Used for: broad-scale soil information outside the U.S. where NRCS/SSURGO coverage is not applicable.
+- Government? No — international research organizations.
+- Links: https://www.isric.org/
+- Trustworthiness: Useful for screening and planning; coarse resolution — not a substitute for local site investigation.
+
+9) EPA & State/Local Environment/GIS Portals
+- Used for: wetlands, contaminated sites (Superfund/CERCLIS), environmental constraints, local GIS layers (parcels, zoning, orthophotos).
+- Government? EPA is federal; many state and county GIS portals are government.
+- Links: https://www.epa.gov/ (and local county/state GIS portals — vary by jurisdiction)
+- Trustworthiness: High for recorded regulatory constraints. Local GIS data often authoritative for parcels/addresses but can vary in currency.
+
+Notes on reliability and limitations (short and practical):
+- Government datasets (USGS, FEMA, NRCS, NOAA, NREL, EPA) are generally the most authoritative and traceable — use these for regulatory and design decisions whenever available.
+- Community or private datasets (OSM, commercial geocoders, Maxar/Google imagery) are excellent for situational awareness and practical work but aren’t the legal record in most jurisdictions.
+- Spatial resolution and update frequency matter: e.g., USGS 3DEP/LiDAR >> SRTM; FEMA FIRMs can be years out of date; SSURGO can be heterogeneous within a mapped unit.
+- For engineering-level decisions (foundations, grading, floodproofing, contamination), these datasets are the right first step — but they do not replace site-specific field tests, borings, survey control, and local permitting checks.
+- US-only vs global: soil/flood/seismic detailed tools that I use are primarily U.S.-focused (NRCS, FEMA, FEMA NFHL, USGS NSHM). Climate and geocoding services have good global coverage, but soil and regulatory flood data are best inside the U.S.
+
+
+Testing prompt with rough setup:
+"Give me an example run for [ address ]. For all information that you return, list the APIs, datasets, and map layers that you used (with links, for audit). If a data source that you have does not have information for this address, list the data source anyway and report transparently that you failed to get data for the requested location."
+
+[ example run, urban address philadelphia city hall ]
+
+Good — here’s a concise, auditable example run for 1400 John F. Kennedy Blvd, Philadelphia, PA (the Dilworth Park / City Hall area). I ran the standard site-survey lookups and list every API / dataset / map layer used (with links) and note any failures.
+
+Summary (quick answers)
+- Geocoded location: 39.953206, -75.1643762 (Display name from geocoder: “Dilworth Park Café, 1400, John F. Kennedy Boulevard, Center City, Philadelphia, PA 19107”)
+- Ground elevation: 44.1 ft (13.4 m) — USGS 3DEP
+- Soil: NOT MAPPED (no SSURGO/soil survey polygon found at this location — likely unmapped urban fill/impervious area)
+- Recent earthquakes (past 365 days, M≥2.5 within 100 km): none found
+- Seismic risk summary: Moderate (standard design provisions recommended; historical events up to ~M4.8 within ~200 km in last 10 years)
+- Climate normals (annual): mean temp ~56.7°F; annual precipitation ~54.4 in; HDD ≈ 4324; CDD ≈ 1291 (estimate)
+- Sun position on 2026-06-15 (solar noon): altitude ≈ 73.3°, azimuth ≈ 180°; sunrise ≈ 04:31, sunset ≈ 19:30 (local solar times shown)
+- Solar analysis: recommended fixed panel tilt ≈ 40° facing 180° (due south) for annual energy optimization (local recommendation)
+- FEMA Flood Zone: Zone X — Area of minimal flood hazard (outside SFHA). Low flood risk.
+
+Detailed outputs and notes (with sources and links)
+1) Geocoding (address → coordinates)
+- Result: latitude 39.953206, longitude -75.1643762. Display name: “Dilworth Park Café, 1400, John F. Kennedy Boulevard, Center City, Philadelphia, Philadelphia County, Pennsylvania, 19107, United States”.
+- API/dataset used: Nominatim / OpenStreetMap geocoding
+- Endpoint / docs: https://nominatim.org/ and https://wiki.openstreetmap.org/wiki/Nominatim
+- Note: successful.
+
+2) Elevation
+- Result: 44.1 ft (13.4 m)
+- API/dataset used: USGS 3D Elevation Program (3DEP) / The National Map elevation products
+- Link / viewer: https://www.usgs.gov/core-science-systems/ngp/3dep and https://viewer.nationalmap.gov/basic/
+- Map layer (commonly used): USGS 3DEP DEM
+- Note: successful.
+
+3) Soils
+- Result: NOT MAPPED at this location. The soil query returned no mapped SSURGO/STATSGO polygon — typical for dense urban surfaces (paved areas, fill) where detailed SSURGO mapping is not provided.
+- API/dataset attempted: USDA NRCS Web Soil Survey / SSURGO / STATSGO2
+- Links:
+  - Web Soil Survey: https://websoilsurvey.sc.egov.usda.gov/
+  - NRCS soils portal: https://www.nrcs.usda.gov/wps/portal/nrcs/main/soils/survey/
+- Map layer (typical): NRCS SSURGO/STATSGO WMS or ArcGIS REST services
+  - Example NRCS service endpoints: https://sdmdataaccess.nrcs.usda.gov/ and NRCS ArcGIS services (varies by region)
+- Note: FAILURE TO RETURN DETAILED SOIL MAPPING for this exact point. I report this transparently — the NRCS database has no mapped polygon here (urban area). Recommendation: for design work get local subsurface borings / geotechnical investigation.
+
+4) Recent earthquakes
+- Result: 0 earthquakes M≥2.5 within 100 km in the past 365 days (query radius 100 km, days_back=365, min_magnitude=2.5)
+- API/dataset used: USGS Earthquake Hazards Program (event API / catalog)
+- Endpoint / docs: https://earthquake.usgs.gov/fdsnws/event/1/ and https://earthquake.usgs.gov/
+- Map layer (commonly): USGS earthquake GeoJSON feeds
+- Note: successful (no recent events meeting the query threshold).
+
+5) Seismic risk summary
+- Result: Risk level reported as MODERATE; recommendation to follow local building codes and standard seismic design. Historical indicators: up to ~M4.8 within ~200 km in recent decade per USGS
+- API/dataset used: USGS Earthquake Hazards Program and related hazard products / catalog
+- Relevant pages / models: https://earthquake.usgs.gov/hazards/ and USGS National Seismic Hazard Model info: https://earthquake.usgs.gov/data/nshm/
+- Note: successful. This is a regional assessment; for structural design use local code maps (ASCE 7 / Pennsylvania amendments) and site-specific response spectra if required.
+
+6) Climate normals (annual averages, degree-days)
+- Result (annual normals): mean temp ≈ 56.7°F; average high ≈ 65.4°F; average low ≈ 48.8°F; extreme high ≈ 98.8°F; extreme low ≈ 7.1°F; annual precip ≈ 54.4 in; HDD ≈ 4324; CDD ≈ 1291; approximate climate zone 3A (warm-humid)
+- API/dataset used: Open-Meteo historical / climate normals (used as source for climate normals here)
+- Endpoint / docs: https://open-meteo.com/en/docs
+- Alternate authoritative dataset (for regulatory or design work): NOAA NCEI climate normals — https://www.ncdc.noaa.gov/cdo-web/datatools/normals (use for official climatology)
+- Note: successful (estimates). For design-critical work (HVAC sizing, energy modeling) use local ASHRAE / NOAA station normals.
+
+7) Sun position (instant)
+- Query: June 15, 2026 (solar noon)
+- Result: solar altitude ≈ 73.3°, azimuth ≈ 180°; sunrise ≈ 04:31, sunset ≈ 19:30; solar noon ≈ 12:00; day length ≈ 14.99 hrs
+- Algorithm / dataset used: NOAA solar position algorithms (solar calculator)
+- Links:
+  - NOAA Solar Calculator: https://gml.noaa.gov/grad/solcalc/
+  - NREL Solar Position Algorithm reference: https://www.nrel.gov/grid/solar-resource/solar-positioning.html
+- Note: successful.
+
+8) Solar analysis (annual panel guidance)
+- Result: summer solstice max altitude ≈ 73.5°; winter solstice max altitude ≈ 26.6°; recommended fixed module tilt ≈ 40° facing 180° (south) for annual performance (local recommendation).
+- Methods / datasets used: calculated solar geometry (NOAA algorithms) and common PV siting rules-of-thumb (NREL / PVWatts guidance)
+- Links:
+  - NOAA solar calc: https://gml.noaa.gov/grad/solcalc/
+  - NREL PVWatts / guidance: https://pvwatts.nrel.gov/
+- Note: successful. For utility-grade array, run detailed shading/irradiance model (PVsyst or NREL SAM).
+
+9) Flood / FEMA
+- Result: FEMA zone: X (Area of Minimal Flood Hazard); not in SFHA; low risk.
+- API/dataset used: FEMA National Flood Hazard Layer (NFHL)
+- Links:
+  - FEMA NFHL information: https://www.fema.gov/flood-maps/national-flood-hazard-layer
+  - NFHL map viewer: https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0b6a6b4c6145b28df6b1b1b4cb6e67 (or search the address in that viewer)
+  - NFHL REST services: https://hazards.fema.gov/gis/nfhl/rest/services
+- Note: successful.
+
+Raw tool provenance (what I actually called)
+- Geocoding: Nominatim / OpenStreetMap geocode: returned display_name and coordinates. (link: https://nominatim.org/)
+- Elevation: USGS 3DEP elevation query (3DEP / The National Map). (link: https://www.usgs.gov/core-science-systems/ngp/3dep)
+- Soils: NRCS Web Soil Survey / SSURGO attempted; query returned no mapped soil polygon for that point (NOT MAPPED). (links: https://websoilsurvey.sc.egov.usda.gov/, https://www.nrcs.usda.gov/)
+- Earthquakes & seismic: USGS Earthquake Hazards Program (event catalog and hazard summaries). (links: https://earthquake.usgs.gov/)
+- Climate normals: Open-Meteo historical/climate normals used for quick annual stats. (link: https://open-meteo.com/en/docs)
+- Sun position & solar geometry: NOAA solar position algorithms / examples; NREL reference for solar positioning. (links: https://gml.noaa.gov/grad/solcalc/, https://www.nrel.gov/grid/solar-resource/solar-positioning.html)
+- Solar analysis: calculated from solar geometry and simple insolation guidance; NREL PVWatts referenced. (link: https://pvwatts.nrel.gov/)
+- Flood zones: FEMA NFHL. (links above)
+
+Limitations and recommended next steps (practical, no fluff)
+- Soil: urban areas commonly have no SSURGO mapping — obtain site-specific geotechnical borings and lab testing before foundations or below-grade work.
+- Flood / drainage: FEMA NFHL says Zone X (low risk) but check local municipality flood studies, stormwater guides, and existing drainage maps — urban flooding from overloaded storm systems can differ from NFHL results.
+- Seismic: risk is moderate; follow local building codes (ASCE 7 / Philadelphia amendments). For critical structures, obtain site-specific response spectra and possibly a geotechnical seismic site response analysis.
+- Solar siting: rooftop shading (surrounding buildings, trees) will strongly affect production — run a LiDAR-based shading analysis or on-site shading survey for PV design.
+
+If you want, I can:
+- Produce a printable “site-survey factsheet” with these values and the source links.
+- Run a LiDAR-based solar/shade analysis for this exact building footprint.
+- Prepare a checklist and scope for a geotechnical borings program (number/depth/reports) for this site.
+
+Sources / links summary (single list for audit)
+- Nominatim / OpenStreetMap (geocoding): https://nominatim.org/ and https://wiki.openstreetmap.org/wiki/Nominatim
+- USGS 3DEP / The National Map (elevation / DEM): https://www.usgs.gov/core-science-systems/ngp/3dep and https://viewer.nationalmap.gov/basic/
+- USDA NRCS Web Soil Survey / SSURGO / STATSGO: https://websoilsurvey.sc.egov.usda.gov/ and https://www.nrcs.usda.gov/
+- USGS Earthquake Hazards Program (catalog, hazard models): https://earthquake.usgs.gov/ and API docs https://earthquake.usgs.gov/fdsnws/event/1/
+- Open-Meteo (climate normals / historical): https://open-meteo.com/en/docs
+- NOAA Solar Calculator (solar position algorithms): https://gml.noaa.gov/grad/solcalc/
+- NREL Solar Position / PV guidance and PVWatts: https://www.nrel.gov/grid/solar-resource/solar-positioning.html and https://pvwatts.nrel.gov/
+- FEMA National Flood Hazard Layer (NFHL) / viewer / services: https://www.fema.gov/flood-maps/national-flood-hazard-layer and https://hazards-fema.maps.arcgis.com/apps/webappviewer/index.html?id=8b0b6a6b4c6145b28df6b1b1b4cb6e67
+
+Final note (Cliff-style)
+You’ve got solid basic site info — low flood risk, modest elevation, no recent local quakes, but no mapped soils (urban). If you’re doing construction or a PV array, the next move is geotech borings and a shading study. Want me to generate a drilling scope and a map with recommended boring locations?
+
+
+
+[ example run, rural kansas ]
+
+All right — here’s a clean, auditable example run for 23868 219th St, Leavenworth, KS. I ran the standard toolkit and list each result followed immediately by the exact API/dataset/map layer I used (with links) and a short trustworthiness note. Where a source returned no data I report that honestly.
+
+Quick site summary (from the run)
+- Address (geocoded): 23868, 219th Street, Leavenworth County, Kansas 66048  
+  - Coordinates: 39.2117731, -95.0869604  
+  - Source: Nominatim / OpenStreetMap geocoding (functions.geocode_address)  
+  - Link: https://nominatim.openstreetmap.org/ and https://www.openstreetmap.org/  
+  - Trust: Good for locating buildings/addresses. Not a legal parcel record — use county parcel data for legal boundaries.
+
+- Elevation: 902 ft (274.9 m)  
+  - Source (functions.get_elevation): USGS 3D Elevation Program (3DEP) / The National Map elevation products  
+  - Link: https://www.usgs.gov/core-science-systems/ngp/3dep and https://nationalmap.gov/elevation.html  
+  - Trust: High (3DEP/LiDAR top-tier when available). Excellent for planning; verify spot elevations with on-site survey for construction work.
+
+- Soil data: NOT MAPPED (no soil survey data available for this point)  
+  - Source (functions.get_soil_data): USDA NRCS Web Soil Survey / SSURGO attempted lookup  
+  - Link: https://websoilsurvey.sc.egov.usda.gov/ and SSURGO overview https://www.nrcs.usda.gov/  
+  - Trust: NRCS/SSURGO is the authoritative national soil map for the U.S. In this case the dataset returned “NOT MAPPED” — common for some rural/urban parcels, farmsteads, or small/unmapped areas. Recommendation: order site-specific geotechnical borings / lab tests (SSURGO is screening-level only).
+
+- Recent earthquakes (past 365 days, M≥2.5 within 100 km): None found (count = 0)  
+  - Source (functions.get_recent_earthquakes): USGS ComCat / Earthquake Catalog API  
+  - Link: https://earthquake.usgs.gov/fdsnws/event/1/ and https://earthquake.usgs.gov/earthquakes/search/  
+  - Trust: USGS ComCat is authoritative and near‑real‑time for seismic events.
+
+- Seismic risk summary: Minimal historical seismic activity; recommendation to follow local building codes for any seismic design.  
+  - Source (functions.get_seismic_risk_summary): USGS Earthquake Hazards Program / NSHM-derived guidance  
+  - Link: https://earthquake.usgs.gov/ and National Seismic Hazard Model info https://www.usgs.gov/programs/earthquake-hazards/national-seismic-hazard-model  
+  - Trust: High. Kansas is a low-seismicity region; still check local building code (IBC/ASCE) requirements.
+
+- Climate normals / summary:  
+  - Annual mean temp: ~55.5 °F; annual precipitation: ~38.9 in; HDD ≈ 4840, CDD ≈ 1351; estimated ASHRAE climate zone ~3A (warm-humid)  
+  - Source (functions.get_climate_normals): Open‑Meteo Historical Weather API (high-level climate normals used for screening)  
+  - Link: https://open-meteo.com/ (for the API used). For official normals see NOAA/NCEI: https://www.ncei.noaa.gov/ and PRISM (high-res) https://prism.oregonstate.edu/  
+  - Trust: Open‑Meteo is fine for quick screening. For permitting or HVAC design use NOAA/NCEI or PRISM station-based normals and local station data.
+
+- Sun position (example: 2026-06-21 at 12:00 local): altitude ≈ 73.6°, azimuth ≈ 162.1°; sunrise 04:53, sunset 19:49, solar noon ≈ 12:21 (day length ≈ 14.93 h)  
+  - Source (functions.get_sun_position): NOAA-based solar position calculations / solar algorithms  
+  - Link: NOAA Solar Calculator / algorithms: https://gml.noaa.gov/grad/solcalc/  
+  - Trust: High for solar position; use for shading/solar PV siting. For PV yield use NREL NSRDB.
+
+- Solar analysis (annual):  
+  - Summer max altitude ≈ 74.2°, winter max ≈ 27.4°; recommended fixed PV tilt ≈ 39° and azimuth ≈ 180° (due south) for panel siting optimization.  
+  - Source (functions.get_solar_analysis): Calculated using NOAA solar position algorithms (for geometry) — for irradiance/energy use NREL NSRDB / PVWatts.  
+  - Links: NOAA solar position: https://gml.noaa.gov/grad/solcalc/ ; NREL NSRDB: https://nsrdb.nrel.gov/ and PVWatts: https://pvwatts.nrel.gov/  
+  - Trust: Geometry: High. For energy yields, use NREL NSRDB (government lab) for reliable irradiance and PVWatts for system estimates.
+
+- Flood zone (FEMA NFHL / FIRM): FAILED — FEMA API request returned HTTP 404 (no result from the automated call). I attempted to query FEMA NFHL but the API returned an error. You should check directly:  
+  - Attempted sources (functions.get_flood_zone and functions.get_flood_risk_summary): FEMA Map Service Center (NFHL/FIRM) — automated lookup failed with HTTP 404.  
+  - Links to check manually: FEMA Map Service Center (interactive): https://msc.fema.gov/portal and NFHL REST services: https://hazards.fema.gov/gis/nfhl/rest/services  
+  - Local backup: check Leavenworth County / City floodplain maps and the county parcel/GIS layer (county GIS is the authoritative local source for permitting). If you want, I can attempt a second FEMA query or pull county GIS maps.  
+  - Trust: FEMA NFHL / FIRM is the legal reference for flood insurance and many permits. Automated failures happen — always verify with MSC and county/city floodplain administrators.
+
+Sources attempted even if no data returned
+- USDA NRCS Web Soil Survey / SSURGO — attempted, returned NOT MAPPED for this point (link above). If you need on-site soil engineering parameters, order borings and lab tests.
+- FEMA NFHL/FIRM — attempted, API returned 404; no automated flood-zone result from that call. Manual check required (MSC or county).
+
+Audit list — exact APIs / datasets / map layers used in this run
+(Each item links to the authoritative source that I queried or would query for more detail.)
+
+1) Geocoding
+- Nominatim / OpenStreetMap (geocode_address) — used to convert input address to coordinates.  
+  - API / docs: https://nominatim.openstreetmap.org/ and https://www.openstreetmap.org/  
+  - Role: address → lat/lon.
+
+2) Elevation
+- USGS 3D Elevation Program (3DEP) / The National Map elevation products (get_elevation)  
+  - Data / docs: https://www.usgs.gov/core-science-systems/ngp/3dep and https://nationalmap.gov/elevation.html  
+  - Role: ground elevation (returned 902 ft).
+
+3) Soils
+- USDA NRCS Web Soil Survey / SSURGO (get_soil_data)  
+  - Web Soil Survey: https://websoilsurvey.sc.egov.usda.gov/ ; NRCS soils: https://www.nrcs.usda.gov/  
+  - Role: mapped soil classification and engineering properties (returned NOT MAPPED — no mapped SSURGO unit at the point).
+
+4) Recent earthquakes
+- USGS ComCat / Earthquake Catalog API (get_recent_earthquakes)  
+  - API: https://earthquake.usgs.gov/fdsnws/event/1/ and search: https://earthquake.usgs.gov/earthquakes/search/  
+  - Role: list of recent seismic events (none ≥2.5 within 100 km in past year).
+
+5) Seismic risk summary
+- USGS Earthquake Hazards Program / NSHM guidance (get_seismic_risk_summary)  
+  - Resources: https://earthquake.usgs.gov/ and NSHM: https://www.usgs.gov/programs/earthquake-hazards/national-seismic-hazard-model  
+  - Role: high-level seismic risk assessment (minimal).
+
+6) Climate normals
+- Open‑Meteo Historical Weather API (get_climate_normals) — used here for quick normals.  
+  - API: https://open-meteo.com/  
+  - Official alternatives: NOAA/NCEI climate normals: https://www.ncei.noaa.gov/ ; PRISM (high-res): https://prism.oregonstate.edu/  
+  - Role: mean temp, precip, degree days (screening-level numbers).
+
+7) Solar position / solar geometry
+- NOAA solar position algorithms (get_sun_position, get_solar_analysis)  
+  - NOAA solar calculator / algorithms: https://gml.noaa.gov/grad/solcalc/  
+  - For solar resource/energy: NREL NSRDB & PVWatts: https://nsrdb.nrel.gov/ and https://pvwatts.nrel.gov/  
+  - Role: sun angles, sunrise/sunset, recommended PV tilt/azimuth.
+
+8) Flood mapping (attempted)
+- FEMA Map Service Center / NFHL / FIRM (get_flood_zone & get_flood_risk_summary attempted but API returned 404)  
+  - FEMA MSC: https://msc.fema.gov/portal and NFHL services: https://hazards.fema.gov/gis/nfhl/rest/services  
+  - Role: flood zone designation (no result from automated call — check MSC manually or county floodplain maps).
+
+Notes on trustworthiness (short)
+- Federal/national datasets used here are the most authoritative: USGS (elevation, seismic), FEMA (flood), USDA NRCS (soils), NOAA/NCEI/PRISM (climate), NREL (solar). Count on these for permitting and regulatory work when applicable. Links above point to the authoritative sources.
+- OpenStreetMap / Nominatim (geocoding) and Open‑Meteo (climate quick-check) are very useful and generally reliable for field work, but are not the legal record — use county records or NOAA/NCEI for final design and permitting.
+- Where a dataset returned no mapped data (NRCS soils) or the external API failed (FEMA NFHL 404), that is logged above. Those gaps are exactly why I recommend on-site geotechnical borings, an elevation control survey, and a manual FEMA / county floodplain check for any design or permitting work.
+
+Recommended next steps if you want a full site package
+1) I can retry FEMA NFHL lookup and/or pull the Leavenworth County GIS parcel and floodplain layers (if you want I’ll try again and return screenshots/map extents).  
+2) Order one or more geotechnical borings with lab tests (SOIL: NOT MAPPED means SSURGO couldn’t be used for engineering). Typical minimum: 2–3 borings for a house footprint.  
+3) Get an on-site RTK survey for precise elevations and boundary tie (3DEP is good but not a substitute for a control survey).  
+4) If you want solar energy yield: I can pull NREL NSRDB irradiance and run PVWatts with a proposed array.
+
+Next steps
+- Re-run the FEMA lookup (I’ll do a second call and/or walk you through the FEMA MSC check), and/or
+- Pull Leavenworth County parcel/GIS and floodplain layers (I will attempt the county GIS source next).
+
+Which of those would you like me to do next?
